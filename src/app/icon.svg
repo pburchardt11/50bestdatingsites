@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#c4a87c"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+  <text x="16" y="20" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="url(#g)">50</text>
+  <text x="16" y="27" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="5.5" font-weight="600" letter-spacing="1.5" fill="#c4a87c" opacity="0.8">BEST</text>
+</svg>

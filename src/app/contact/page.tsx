@@ -106,8 +106,14 @@ export default function ContactPage() {
           <div className="lg:col-span-2 space-y-6">
             <div className="rounded-xl border border-card-border bg-card-bg p-6">
               <h3 className="font-serif text-lg font-bold text-text mb-3">
-                What We Can Help With
+                50 Best Limited
               </h3>
+              <p className="text-sm text-text/60 leading-relaxed mb-4">
+                50 Best Limited is the publisher of the 50 Best network of review sites.
+              </p>
+              <h4 className="font-serif text-base font-bold text-text mb-2">
+                What We Can Help With
+              </h4>
               <ul className="space-y-3 text-sm text-text/60">
                 <li className="flex items-start gap-2">
                   <span className="text-gold mt-0.5">&#8226;</span>

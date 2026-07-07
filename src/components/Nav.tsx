@@ -23,8 +23,17 @@ export default function Nav() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-serif text-xl font-bold tracking-wide text-gold sm:text-2xl">
-              50 BEST DATING SITES
+            <span className="font-serif text-2xl font-bold text-gold sm:text-3xl" style={{ letterSpacing: -1, lineHeight: 1 }}>
+              50
+            </span>
+            <span className="h-5 w-px bg-gold/40" />
+            <span className="flex flex-col">
+              <span className="text-[8px] font-semibold uppercase tracking-[3px] text-gold/80" style={{ fontFamily: 'var(--font-sans)' }}>
+                Best
+              </span>
+              <span className="font-serif text-base font-normal italic text-text sm:text-lg" style={{ letterSpacing: 1, lineHeight: 1.1 }}>
+                Dating Sites
+              </span>
             </span>
           </Link>
 
