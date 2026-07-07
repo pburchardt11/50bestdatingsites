@@ -1,6 +1,7 @@
 // data.ts — All site, country, and blog data for 50 Best Dating Sites
 
 import type { DatingSite, Country, BlogPost } from "./dating-db";
+import { extraCountries, extraBlogPosts } from "./extra-data";
 
 // ─── 50 Dating Sites ────────────────────────────────────────────────────────
 
@@ -3589,6 +3590,7 @@ export const countries: Country[] = [
     onlineDatingPopularity: "low",
     legalNotes: "Micronesia has limited internet infrastructure spread across many islands. English is the official language. The very small and dispersed population makes dating apps impractical for most residents. Traditional courtship through community networks remains dominant.",
   },
+  ...extraCountries,
 ];
 
 // ─── 50 Blog Posts ───────────────────────────────────────────────────────────
@@ -4376,4 +4378,5 @@ Red flags are not guarantees of bad intentions. Some people are genuinely bad at
 
 Trust your instincts. If something feels off, it probably is. The cost of passing on someone who turned out to be genuine is far lower than the cost of ignoring warning signs and getting hurt. In online dating, healthy skepticism is not cynicism. It is self-care.`,
   },
+  ...extraBlogPosts,
 ];

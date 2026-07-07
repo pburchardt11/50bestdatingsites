@@ -51,22 +51,19 @@ export default function HomePage() {
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden border-b border-card-border">
-        {/* Radial glow */}
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(196,168,124,0.08)_0%,transparent_70%)]" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 sm:py-28 lg:px-8 lg:py-36">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-gold/70">
-            Expert Rankings &amp; Reviews 2026
+            Trusted by Millions | 2,000+ Sites Reviewed | 200 Countries
           </p>
           <h1 className="font-serif text-5xl font-bold leading-tight tracking-tight text-text sm:text-6xl lg:text-7xl">
-            50 Best Dating Sites
+            Discover the Top 50 Dating Sites
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text/60">
-            Independently researched rankings of the world&apos;s top dating
-            platforms. Scored on safety, ease of use, value, and match quality.
+            Expertly curated rankings of the world's leading dating platforms. Evaluated on safety, usability, value, and match quality.
           </p>
 
-          {/* Search bar */}
           <SearchBar className="mx-auto mt-10 max-w-xl" />
         </div>
       </section>
@@ -78,8 +75,7 @@ export default function HomePage() {
             Top 10 Global Rankings
           </h2>
           <p className="mt-3 text-text/50">
-            The highest-rated dating platforms based on our comprehensive
-            scoring methodology.
+            The highest-rated dating platforms based on our comprehensive scoring methodology.
           </p>
         </div>
 
@@ -122,7 +118,7 @@ export default function HomePage() {
             Browse by Category
           </h2>
           <p className="mt-3 text-text/50">
-            Find the best dating sites for your specific needs.
+            Find the best dating sites tailored to your specific needs.
           </p>
         </div>
 
@@ -158,7 +154,7 @@ export default function HomePage() {
               Browse by Country
             </h2>
             <p className="mt-3 text-text/50">
-              Dating site availability and rankings for 60 countries.
+              Explore dating site availability and rankings across 60 countries.
             </p>
           </div>
 
@@ -222,35 +218,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SEO Text ───────────────────────────────────────────── */}
+      {/* ── How We Rate ─────────────────────────────────────────── */}
       <section className="border-t border-card-border bg-[#0a0a0a]">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-bold text-text">
-            How We Rank the Best Dating Sites
+            How We Rate the Best Dating Sites
           </h2>
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-text/50">
             <p>
-              Our expert team evaluates every major dating platform across four
-              key dimensions: Safety &amp; Privacy, Ease of Use, Value for
-              Money, and Match Quality. Each site receives a score from 1 to 10
-              in every category, which are then weighted to produce an overall
-              ranking out of 10.
+              Our expert team evaluates every major dating platform across four key dimensions: Safety & Privacy, Ease of Use, Value for Money, and Match Quality. Each site receives a score from 1 to 10 in every category, which are then weighted to produce an overall ranking out of 10.
             </p>
             <p>
-              We test each platform by creating genuine profiles, analyzing the
-              matching algorithm&apos;s effectiveness, evaluating the onboarding
-              experience, assessing safety features like photo verification and
-              reporting tools, and comparing free versus premium tier value. Our
-              rankings are updated quarterly to reflect platform changes and user
-              feedback.
+              We test each platform by creating genuine profiles, analyzing the matching algorithm's effectiveness, evaluating the onboarding experience, assessing safety features like photo verification and reporting tools, and comparing free versus premium tier value. Our rankings are updated quarterly to reflect platform changes and user feedback.
             </p>
             <p>
-              Whether you&apos;re looking for serious relationships, casual
-              dating, niche communities, or connections in a specific country,
-              our rankings help you find the right platform. We cover general
-              dating apps, sites for over 50s, LGBTQ+ platforms, international
-              dating services, and specialised niche sites across 60 countries
-              worldwide.
+              Whether you're looking for serious relationships, casual dating, niche communities, or connections in a specific country, our rankings help you find the right platform. We cover general dating apps, sites for over 50s, LGBTQ+ platforms, international dating services, and specialized niche sites across 60 countries worldwide.
             </p>
           </div>
         </div>
