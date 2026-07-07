@@ -15,7 +15,11 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const sites = getAllSites();
-  return sites.slice(0, 20).map((s) => ({ slug: s.slug }));
+  // Pre-render top 200 sites at build time; rest via ISR
+  return sites
+    .sort((a, b) => a.globalRank - b.globalRank)
+    .slice(0, 200)
+    .map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata(

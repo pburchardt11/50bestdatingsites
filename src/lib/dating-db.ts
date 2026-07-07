@@ -1,6 +1,18 @@
 // dating-db.ts — Data access layer for 50 Best Dating Sites
 
-import { datingSites, countries, blogPosts } from "./data";
+import { datingSites as coreSites, countries, blogPosts } from "./data";
+
+// Try to load generated extended sites
+let extendedSites: DatingSite[] = [];
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const generated = require("./generated-sites.json") as DatingSite[];
+  extendedSites = generated;
+} catch {
+  // File doesn't exist yet — that's fine
+}
+
+const datingSites: DatingSite[] = [...coreSites, ...extendedSites];
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -11,7 +23,7 @@ export interface DatingSite {
   url: string;
   founded: number;
   headquarters: string;
-  globalRank: number; // 1-50
+  globalRank: number;
   category: string;
   pricing: {
     free: boolean;
@@ -128,6 +140,22 @@ export function searchSites(query: string): DatingSite[] {
       s.features.some((f) => f.toLowerCase().includes(q)) ||
       s.editorial.toLowerCase().includes(q)
   );
+}
+
+export function hasDetailedReview(site: DatingSite): boolean {
+  return site.globalRank <= 500 && site.prosAndCons.pros.length >= 3;
+}
+
+export function getDetailedSites(): DatingSite[] {
+  return datingSites.filter(hasDetailedReview);
+}
+
+export function getBasicSites(): DatingSite[] {
+  return datingSites.filter((s) => !hasDetailedReview(s));
+}
+
+export function getTotalSiteCount(): number {
+  return datingSites.length;
 }
 
 export function getAllBlogPosts(): BlogPost[] {
