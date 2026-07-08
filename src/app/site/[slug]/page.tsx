@@ -15,7 +15,6 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const sites = getAllSites();
-  // Pre-render top 200 sites at build time; rest via ISR
   return sites
     .sort((a, b) => a.globalRank - b.globalRank)
     .slice(0, 200)
@@ -76,6 +75,11 @@ export default async function SiteDetailPage(
     },
   };
 
+  // Parse gender ratio for visualization
+  const genderMatch = site.demographics.genderRatio.match(/(\d+)%\s*male\s*\/\s*(\d+)%\s*female/i);
+  const malePct = genderMatch ? parseInt(genderMatch[1]) : 50;
+  const femalePct = genderMatch ? parseInt(genderMatch[2]) : 50;
+
   return (
     <>
       <script
@@ -113,6 +117,7 @@ export default async function SiteDetailPage(
                   </span>
                 </div>
                 <p className="mt-2 text-lg text-text/50">{site.bestFor}</p>
+                <p className="mt-1 text-xs text-text/30">Last Updated: July 2026</p>
               </div>
             </div>
 
@@ -126,6 +131,19 @@ export default async function SiteDetailPage(
               </span>
               <span className="text-sm text-text/40">out of 10</span>
             </div>
+          </div>
+
+          {/* Prominent CTA */}
+          <div className="mt-8">
+            <a
+              href={site.url}
+              target="_blank"
+              rel="nofollow sponsored noopener"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-8 py-4 font-serif text-lg font-bold text-[#080808] transition-opacity hover:opacity-90"
+            >
+              Visit {site.name}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            </a>
           </div>
         </div>
       </section>
@@ -167,13 +185,129 @@ export default async function SiteDetailPage(
               </div>
             </section>
 
+            {/* Pricing Plans */}
+            <section>
+              <h2 className="mb-6 font-serif text-2xl font-bold text-text">
+                Pricing Plans
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {/* Free tier */}
+                {site.pricing.free && (
+                  <div className="rounded-xl border border-card-border bg-card-bg p-6">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="rounded-full bg-emerald-900/30 px-2.5 py-0.5 text-xs font-semibold text-emerald-400">Free</span>
+                    </div>
+                    <p className="font-serif text-3xl font-bold text-text">{site.pricing.currency} 0</p>
+                    <p className="mt-1 text-sm text-text/40">Basic features included</p>
+                    <ul className="mt-4 space-y-2 text-sm text-text/60">
+                      <li className="flex items-center gap-2">
+                        <span className="text-emerald-400">&#10003;</span> Create profile
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-emerald-400">&#10003;</span> Browse matches
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-emerald-400">&#10003;</span> Limited messaging
+                      </li>
+                    </ul>
+                  </div>
+                )}
+
+                {/* Premium tier */}
+                <div className="rounded-xl border border-gold/20 bg-gold/5 p-6">
+                  <div className="mb-2 flex items-center gap-2">
+                    <span className="rounded-full bg-gold/20 px-2.5 py-0.5 text-xs font-semibold text-gold">Premium</span>
+                  </div>
+                  <p className="font-serif text-3xl font-bold text-gold">
+                    {site.pricing.currency} {site.pricing.premiumMonthly}
+                    <span className="text-base font-normal text-text/40">/mo</span>
+                  </p>
+                  <p className="mt-1 text-sm text-text/40">All features unlocked</p>
+                  <ul className="mt-4 space-y-2 text-sm text-text/60">
+                    <li className="flex items-center gap-2">
+                      <span className="text-gold">&#10003;</span> Unlimited messaging
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-gold">&#10003;</span> Advanced filters
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-gold">&#10003;</span> See who likes you
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-gold">&#10003;</span> Priority visibility
+                    </li>
+                  </ul>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                    className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-gold to-gold-light px-4 py-2.5 text-sm font-bold text-[#080808] transition-opacity hover:opacity-90"
+                  >
+                    Get Premium
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* User Demographics */}
+            <section>
+              <h2 className="mb-6 font-serif text-2xl font-bold text-text">
+                User Demographics
+              </h2>
+              <div className="rounded-xl border border-card-border bg-card-bg p-6 space-y-6">
+                {/* Age range */}
+                <div>
+                  <div className="mb-2 flex items-center justify-between text-sm">
+                    <span className="text-text/60">Age Range</span>
+                    <span className="font-medium text-text/80">{site.demographics.minAge} - {site.demographics.maxAge}</span>
+                  </div>
+                  <div className="relative h-3 rounded-full bg-card-border overflow-hidden">
+                    <div
+                      className="absolute h-full rounded-full bg-gradient-to-r from-gold/60 to-gold"
+                      style={{
+                        left: `${((site.demographics.minAge - 18) / (65 - 18)) * 100}%`,
+                        right: `${((65 - site.demographics.maxAge) / (65 - 18)) * 100}%`,
+                      }}
+                    />
+                  </div>
+                  <div className="mt-1 flex justify-between text-[11px] text-text/30">
+                    <span>18</span>
+                    <span>Primary: {site.demographics.primaryAge}</span>
+                    <span>65+</span>
+                  </div>
+                </div>
+
+                {/* Gender ratio */}
+                <div>
+                  <div className="mb-2 flex items-center justify-between text-sm">
+                    <span className="text-text/60">Gender Ratio</span>
+                    <span className="font-medium text-text/80">{site.demographics.genderRatio}</span>
+                  </div>
+                  <div className="flex h-3 overflow-hidden rounded-full">
+                    <div
+                      className="bg-blue-500/60 transition-all"
+                      style={{ width: `${malePct}%` }}
+                    />
+                    <div
+                      className="bg-pink-500/60 transition-all"
+                      style={{ width: `${femalePct}%` }}
+                    />
+                  </div>
+                  <div className="mt-1 flex justify-between text-[11px] text-text/30">
+                    <span>Male {malePct}%</span>
+                    <span>Female {femalePct}%</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Pros & Cons */}
             <section>
               <h2 className="mb-6 font-serif text-2xl font-bold text-text">
                 Pros &amp; Cons
               </h2>
               <div className="grid gap-6 sm:grid-cols-2">
-                {/* Pros */}
                 <div className="rounded-xl border border-emerald-900/30 bg-emerald-950/20 p-6">
                   <h3 className="mb-4 font-serif text-lg font-bold text-emerald-400">
                     Pros
@@ -181,18 +315,8 @@ export default async function SiteDetailPage(
                   <ul className="space-y-3">
                     {site.prosAndCons.pros.map((pro) => (
                       <li key={pro} className="flex items-start gap-3">
-                        <svg
-                          className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5 13l4 4L19 7"
-                          />
+                        <svg className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                         <span className="text-sm text-text/70">{pro}</span>
                       </li>
@@ -200,7 +324,6 @@ export default async function SiteDetailPage(
                   </ul>
                 </div>
 
-                {/* Cons */}
                 <div className="rounded-xl border border-red-900/30 bg-red-950/20 p-6">
                   <h3 className="mb-4 font-serif text-lg font-bold text-red-400">
                     Cons
@@ -208,18 +331,8 @@ export default async function SiteDetailPage(
                   <ul className="space-y-3">
                     {site.prosAndCons.cons.map((con) => (
                       <li key={con} className="flex items-start gap-3">
-                        <svg
-                          className="mt-0.5 h-5 w-5 shrink-0 text-red-400"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                          />
+                        <svg className="mt-0.5 h-5 w-5 shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         <span className="text-sm text-text/70">{con}</span>
                       </li>
@@ -270,23 +383,12 @@ export default async function SiteDetailPage(
             <a
               href={site.url}
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="nofollow sponsored noopener"
               className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-6 py-4 font-serif text-lg font-bold text-[#080808] transition-opacity hover:opacity-90"
             >
               Visit {site.name}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
 
@@ -299,7 +401,7 @@ export default async function SiteDetailPage(
                 {[
                   ['Founded', String(site.founded)],
                   ['Headquarters', site.headquarters],
-                  ['Global Rank', `#${site.globalRank} of 50`],
+                  ['Global Rank', `#${site.globalRank}`],
                   ['User Base', site.metrics.userBase],
                   ['Monthly Active', site.metrics.activeMonthly],
                   ['Success Rate', site.metrics.successRate],
@@ -325,6 +427,7 @@ export default async function SiteDetailPage(
                   </div>
                 ))}
               </dl>
+              <p className="mt-4 text-center text-[11px] text-text/30">Last Updated: July 2026</p>
             </div>
 
             {/* Compare link */}
