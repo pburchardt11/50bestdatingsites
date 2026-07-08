@@ -1,0 +1,2676 @@
+{
+  "tinder": [
+    {
+      "name": "Hannah K.",
+      "location": "Sydney, AU",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": false
+    },
+    {
+      "name": "Thomas S.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-07",
+      "text": "Nice app, but be prepared for patience. It took about 6 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Thomas H.",
+      "location": "New York, US",
+      "rating": 5,
+      "date": "2025-03",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 4 great dates in 3 months.",
+      "verified": true
+    },
+    {
+      "name": "Giovanni L.",
+      "location": "Dublin, IE",
+      "rating": 4,
+      "date": "2026-01",
+      "text": "I was skeptical about online dating but Tinder changed my mind completely. Met my partner within 5 weeks and we've been together for 12 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Laura I.",
+      "location": "Helsinki, FI",
+      "rating": 4,
+      "date": "2025-05",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    }
+  ],
+  "bumble": [
+    {
+      "name": "Sarah A.",
+      "location": "Prague, CZ",
+      "rating": 1,
+      "date": "2025-12",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Giovanni N.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Yuki D.",
+      "location": "Tokyo, JP",
+      "rating": 4,
+      "date": "2026-04",
+      "text": "After trying several dating apps, Bumble stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Sofia Y.",
+      "location": "Berlin, DE",
+      "rating": 4,
+      "date": "2026-01",
+      "text": "I've been using Bumble for 5 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Yuki L.",
+      "location": "Cape Town, ZA",
+      "rating": 4,
+      "date": "2025-07",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 14 great dates in 2 months.",
+      "verified": true
+    }
+  ],
+  "hinge": [
+    {
+      "name": "Priya M.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2026-03",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": false
+    },
+    {
+      "name": "Sophia I.",
+      "location": "Dublin, IE",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 7 great dates in 10 months.",
+      "verified": false
+    },
+    {
+      "name": "Ashley T.",
+      "location": "Amsterdam, NL",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Andrew X.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2025-10",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Alex J.",
+      "location": "Berlin, DE",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "What I love about Hinge is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    }
+  ],
+  "okcupid": [
+    {
+      "name": "Alex P.",
+      "location": "Berlin, DE",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 8 weeks. Highly recommend!",
+      "verified": false
+    },
+    {
+      "name": "Sophia G.",
+      "location": "Mexico City, MX",
+      "rating": 5,
+      "date": "2025-05",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 5 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "David L.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 1,
+      "date": "2026-03",
+      "text": "Uninstalled after 2 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Emily F.",
+      "location": "Copenhagen, DK",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "Used it for 12 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Chris Q.",
+      "location": "Auckland, NZ",
+      "rating": 5,
+      "date": "2025-08",
+      "text": "I've been using Okcupid for 6 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": false
+    },
+    {
+      "name": "Emily F.",
+      "location": "Budapest, HU",
+      "rating": 2,
+      "date": "2025-09",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Olivia W.",
+      "location": "Helsinki, FI",
+      "rating": 2,
+      "date": "2026-02",
+      "text": "Too many fake profiles and bots. Spent 4 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Wei K.",
+      "location": "Helsinki, FI",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "I've been using Okcupid for 8 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    }
+  ],
+  "match-com": [
+    {
+      "name": "Ming S.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 1,
+      "date": "2025-10",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Omar P.",
+      "location": "Vienna, AT",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": false
+    },
+    {
+      "name": "Ming K.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 2,
+      "date": "2026-03",
+      "text": "Uninstalled after 2 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Carlos S.",
+      "location": "Helsinki, FI",
+      "rating": 3,
+      "date": "2025-02",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": false
+    },
+    {
+      "name": "Wei G.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2025-10",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    },
+    {
+      "name": "Natalie H.",
+      "location": "Lagos, NG",
+      "rating": 3,
+      "date": "2025-01",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Rachel S.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 1,
+      "date": "2025-12",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    }
+  ],
+  "plenty-of-fish": [
+    {
+      "name": "David G.",
+      "location": "Mumbai, IN",
+      "rating": 4,
+      "date": "2026-07",
+      "text": "I was skeptical about online dating but Plenty Of Fish changed my mind completely. Met my partner within 8 weeks and we've been together for 10 months now. The matching algorithm really works!",
+      "verified": false
+    },
+    {
+      "name": "Kevin U.",
+      "location": "Copenhagen, DK",
+      "rating": 1,
+      "date": "2025-02",
+      "text": "Uninstalled after 6 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Rebecca X.",
+      "location": "Berlin, DE",
+      "rating": 4,
+      "date": "2026-07",
+      "text": "After trying several dating apps, Plenty Of Fish stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Fatima O.",
+      "location": "New York, US",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Rebecca B.",
+      "location": "Warsaw, PL",
+      "rating": 4,
+      "date": "2025-09",
+      "text": "After trying several dating apps, Plenty Of Fish stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Michael B.",
+      "location": "Mexico City, MX",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 6 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Aisha D.",
+      "location": "Bangkok, TH",
+      "rating": 1,
+      "date": "2025-07",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Jennifer W.",
+      "location": "Bangkok, TH",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    }
+  ],
+  "badoo": [
+    {
+      "name": "Fatima L.",
+      "location": "Mumbai, IN",
+      "rating": 3,
+      "date": "2025-11",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Laura P.",
+      "location": "Rome, IT",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "I was skeptical about online dating but Badoo changed my mind completely. Met my partner within 5 weeks and we've been together for 5 months now. The matching algorithm really works!",
+      "verified": false
+    },
+    {
+      "name": "Pierre A.",
+      "location": "Prague, CZ",
+      "rating": 2,
+      "date": "2026-06",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Mark V.",
+      "location": "Warsaw, PL",
+      "rating": 2,
+      "date": "2026-01",
+      "text": "Too many fake profiles and bots. Spent 4 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": false
+    },
+    {
+      "name": "Yuki J.",
+      "location": "London, UK",
+      "rating": 4,
+      "date": "2026-01",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "James F.",
+      "location": "Madrid, ES",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    }
+  ],
+  "zoosk": [
+    {
+      "name": "Michael A.",
+      "location": "Singapore, SG",
+      "rating": 5,
+      "date": "2025-04",
+      "text": "After trying several dating apps, Zoosk stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Rebecca I.",
+      "location": "Sydney, AU",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Carlos A.",
+      "location": "Seoul, KR",
+      "rating": 5,
+      "date": "2025-12",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 7 weeks. Highly recommend!",
+      "verified": false
+    },
+    {
+      "name": "Maria C.",
+      "location": "Seoul, KR",
+      "rating": 4,
+      "date": "2025-07",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": false
+    },
+    {
+      "name": "Omar N.",
+      "location": "Paris, FR",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "I've been using Zoosk for 5 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Megan C.",
+      "location": "Stockholm, SE",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": false
+    },
+    {
+      "name": "Robert Q.",
+      "location": "Bangkok, TH",
+      "rating": 1,
+      "date": "2025-08",
+      "text": "Uninstalled after 11 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Akiko W.",
+      "location": "Sydney, AU",
+      "rating": 3,
+      "date": "2025-03",
+      "text": "Nice app, but be prepared for patience. It took about 6 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    }
+  ],
+  "coffee-meets-bagel": [
+    {
+      "name": "Steven R.",
+      "location": "Cape Town, ZA",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Used it for 9 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Sven O.",
+      "location": "Toronto, CA",
+      "rating": 4,
+      "date": "2025-06",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 4/5 from me.",
+      "verified": false
+    },
+    {
+      "name": "Natalie P.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "I was skeptical about online dating but Coffee Meets Bagel changed my mind completely. Met my partner within 5 weeks and we've been together for 3 months now. The matching algorithm really works!",
+      "verified": false
+    },
+    {
+      "name": "Patrick R.",
+      "location": "Bangkok, TH",
+      "rating": 5,
+      "date": "2025-03",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 15 great dates in 11 months.",
+      "verified": true
+    },
+    {
+      "name": "Brian V.",
+      "location": "Stockholm, SE",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Pierre W.",
+      "location": "Seoul, KR",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "After trying several dating apps, Coffee Meets Bagel stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Ryan P.",
+      "location": "Oslo, NO",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": false
+    }
+  ],
+  "eharmony": [
+    {
+      "name": "Olivia W.",
+      "location": "Mumbai, IN",
+      "rating": 5,
+      "date": "2025-08",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "Wei D.",
+      "location": "Seoul, KR",
+      "rating": 4,
+      "date": "2025-10",
+      "text": "I was skeptical about online dating but Eharmony changed my mind completely. Met my partner within 8 weeks and we've been together for 5 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Ingrid F.",
+      "location": "Budapest, HU",
+      "rating": 1,
+      "date": "2026-02",
+      "text": "Uninstalled after 6 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Laura W.",
+      "location": "Amsterdam, NL",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Hannah N.",
+      "location": "Seoul, KR",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "Used it for 5 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid K.",
+      "location": "Cape Town, ZA",
+      "rating": 1,
+      "date": "2026-07",
+      "text": "Too many fake profiles and bots. Spent 2 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    }
+  ],
+  "grindr": [
+    {
+      "name": "Jennifer N.",
+      "location": "Copenhagen, DK",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "I've been using Grindr for 2 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Michael W.",
+      "location": "Vienna, AT",
+      "rating": 2,
+      "date": "2026-05",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Nicole B.",
+      "location": "Copenhagen, DK",
+      "rating": 5,
+      "date": "2025-10",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "Mark O.",
+      "location": "Cape Town, ZA",
+      "rating": 4,
+      "date": "2026-07",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 4/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Andrew T.",
+      "location": "Sydney, AU",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": false
+    },
+    {
+      "name": "Natalie T.",
+      "location": "Dublin, IE",
+      "rating": 2,
+      "date": "2026-07",
+      "text": "Uninstalled after 12 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Sofia Y.",
+      "location": "Amsterdam, NL",
+      "rating": 3,
+      "date": "2025-04",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    }
+  ],
+  "her": [
+    {
+      "name": "Lisa L.",
+      "location": "Rome, IT",
+      "rating": 5,
+      "date": "2025-06",
+      "text": "I've been using Her for 3 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Michael S.",
+      "location": "Dubai, UAE",
+      "rating": 4,
+      "date": "2025-11",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Lucia N.",
+      "location": "Seoul, KR",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Jennifer K.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 8 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Josh D.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 3,
+      "date": "2025-02",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Laura D.",
+      "location": "London, UK",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "Used it for 7 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Lisa N.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 5,
+      "date": "2025-12",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 7 weeks. Highly recommend!",
+      "verified": true
+    }
+  ],
+  "elite-singles": [
+    {
+      "name": "Megan A.",
+      "location": "Dublin, IE",
+      "rating": 5,
+      "date": "2025-10",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 4 great dates in 5 months.",
+      "verified": true
+    },
+    {
+      "name": "Andrew D.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2025-09",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Andrew T.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2025-10",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Andrew M.",
+      "location": "Toronto, CA",
+      "rating": 2,
+      "date": "2025-09",
+      "text": "Uninstalled after 12 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Josh Z.",
+      "location": "Budapest, HU",
+      "rating": 4,
+      "date": "2026-01",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Emma U.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 1,
+      "date": "2025-03",
+      "text": "Too many fake profiles and bots. Spent 6 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Josh L.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-04",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    }
+  ],
+  "silversingles": [
+    {
+      "name": "Amanda X.",
+      "location": "New York, US",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 10 great dates in 9 months.",
+      "verified": true
+    },
+    {
+      "name": "Ming F.",
+      "location": "Auckland, NZ",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Nice app, but be prepared for patience. It took about 3 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    },
+    {
+      "name": "Lisa R.",
+      "location": "Berlin, DE",
+      "rating": 1,
+      "date": "2026-02",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Sven V.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Giovanni O.",
+      "location": "Bangkok, TH",
+      "rating": 5,
+      "date": "2026-03",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Pierre R.",
+      "location": "Dublin, IE",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Amanda D.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 1,
+      "date": "2026-05",
+      "text": "Too many fake profiles and bots. Spent 4 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Daniel G.",
+      "location": "Mexico City, MX",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "I was skeptical about online dating but Silversingles changed my mind completely. Met my partner within 4 weeks and we've been together for 5 months now. The matching algorithm really works!",
+      "verified": false
+    }
+  ],
+  "the-league": [
+    {
+      "name": "Ingrid B.",
+      "location": "Vienna, AT",
+      "rating": 3,
+      "date": "2026-01",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "James I.",
+      "location": "Stockholm, SE",
+      "rating": 4,
+      "date": "2026-07",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": false
+    },
+    {
+      "name": "Wei X.",
+      "location": "Tokyo, JP",
+      "rating": 2,
+      "date": "2025-06",
+      "text": "Uninstalled after 4 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Aisha W.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Used it for 3 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Sarah H.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Nice app, but be prepared for patience. It took about 8 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    }
+  ],
+  "muzz": [
+    {
+      "name": "Hans Y.",
+      "location": "Bangkok, TH",
+      "rating": 5,
+      "date": "2025-07",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Sven C.",
+      "location": "Vienna, AT",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Sophia P.",
+      "location": "Warsaw, PL",
+      "rating": 3,
+      "date": "2026-01",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Daniel H.",
+      "location": "Lagos, NG",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "I was skeptical about online dating but Muzz changed my mind completely. Met my partner within 8 weeks and we've been together for 2 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Mark K.",
+      "location": "Cape Town, ZA",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "I've been using Muzz for 6 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": false
+    },
+    {
+      "name": "Omar K.",
+      "location": "Prague, CZ",
+      "rating": 3,
+      "date": "2025-05",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    }
+  ],
+  "jdate": [
+    {
+      "name": "Fatima M.",
+      "location": "Warsaw, PL",
+      "rating": 3,
+      "date": "2025-11",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": false
+    },
+    {
+      "name": "James Q.",
+      "location": "Copenhagen, DK",
+      "rating": 1,
+      "date": "2026-05",
+      "text": "Uninstalled after 12 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Kevin P.",
+      "location": "Singapore, SG",
+      "rating": 5,
+      "date": "2025-12",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Sven E.",
+      "location": "Sydney, AU",
+      "rating": 1,
+      "date": "2025-09",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Lisa U.",
+      "location": "Vienna, AT",
+      "rating": 3,
+      "date": "2026-03",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": false
+    },
+    {
+      "name": "Omar N.",
+      "location": "Mexico City, MX",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    }
+  ],
+  "christian-mingle": [
+    {
+      "name": "Sophia Z.",
+      "location": "Helsinki, FI",
+      "rating": 5,
+      "date": "2026-03",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Rebecca P.",
+      "location": "Helsinki, FI",
+      "rating": 1,
+      "date": "2025-05",
+      "text": "Too many fake profiles and bots. Spent 3 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Ashley P.",
+      "location": "Dubai, UAE",
+      "rating": 1,
+      "date": "2026-05",
+      "text": "Uninstalled after 12 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Ashley R.",
+      "location": "Dubai, UAE",
+      "rating": 2,
+      "date": "2025-05",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Patrick F.",
+      "location": "Dubai, UAE",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Mark E.",
+      "location": "Oslo, NO",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "After trying several dating apps, Christian Mingle stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Yuki F.",
+      "location": "Stockholm, SE",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "I was skeptical about online dating but Christian Mingle changed my mind completely. Met my partner within 3 weeks and we've been together for 9 months now. The matching algorithm really works!",
+      "verified": true
+    }
+  ],
+  "tantan": [
+    {
+      "name": "Emily H.",
+      "location": "Stockholm, SE",
+      "rating": 5,
+      "date": "2025-08",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Michael M.",
+      "location": "Tokyo, JP",
+      "rating": 1,
+      "date": "2026-03",
+      "text": "Uninstalled after 12 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Steven D.",
+      "location": "Singapore, SG",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 12 great dates in 8 months.",
+      "verified": true
+    },
+    {
+      "name": "Natalie G.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Daniel U.",
+      "location": "Lagos, NG",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "I've been using Tantan for 11 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Aisha P.",
+      "location": "Warsaw, PL",
+      "rating": 5,
+      "date": "2025-10",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Sven L.",
+      "location": "Helsinki, FI",
+      "rating": 5,
+      "date": "2025-12",
+      "text": "What I love about Tantan is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Raj L.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 5,
+      "date": "2025-02",
+      "text": "I was skeptical about online dating but Tantan changed my mind completely. Met my partner within 2 weeks and we've been together for 4 months now. The matching algorithm really works!",
+      "verified": true
+    }
+  ],
+  "happn": [
+    {
+      "name": "Michael Q.",
+      "location": "Dublin, IE",
+      "rating": 1,
+      "date": "2026-05",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Akiko D.",
+      "location": "Stockholm, SE",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "What I love about Happn is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Lisa P.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 3,
+      "date": "2026-01",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": false
+    },
+    {
+      "name": "Giovanni C.",
+      "location": "Auckland, NZ",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "I've been using Happn for 6 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": false
+    },
+    {
+      "name": "Emily W.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2025-11",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": false
+    },
+    {
+      "name": "Sofia M.",
+      "location": "Sydney, AU",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Sarah L.",
+      "location": "Helsinki, FI",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    }
+  ],
+  "feeld": [
+    {
+      "name": "Raj F.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-10",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Wei C.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Olivia R.",
+      "location": "Seoul, KR",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Natalie S.",
+      "location": "Helsinki, FI",
+      "rating": 3,
+      "date": "2025-11",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Natalie K.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2025-05",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Omar S.",
+      "location": "Seoul, KR",
+      "rating": 2,
+      "date": "2025-11",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Priya F.",
+      "location": "Singapore, SG",
+      "rating": 4,
+      "date": "2026-03",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Michael W.",
+      "location": "Cape Town, ZA",
+      "rating": 1,
+      "date": "2025-06",
+      "text": "Uninstalled after 5 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    }
+  ],
+  "pure": [
+    {
+      "name": "Carlos A.",
+      "location": "Helsinki, FI",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "Uninstalled after 7 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Hannah T.",
+      "location": "Sydney, AU",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "Uninstalled after 11 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Carlos M.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 8 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Amanda B.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2025-12",
+      "text": "Used it for 8 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Megan X.",
+      "location": "Berlin, DE",
+      "rating": 4,
+      "date": "2026-04",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Emily J.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Used it for 7 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    }
+  ],
+  "thursday": [
+    {
+      "name": "Rebecca N.",
+      "location": "Vienna, AT",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Nice app, but be prepared for patience. It took about 4 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Yuki T.",
+      "location": "Vienna, AT",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "I was skeptical about online dating but Thursday changed my mind completely. Met my partner within 3 weeks and we've been together for 9 months now. The matching algorithm really works!",
+      "verified": false
+    },
+    {
+      "name": "Brian O.",
+      "location": "Amsterdam, NL",
+      "rating": 5,
+      "date": "2025-09",
+      "text": "After trying several dating apps, Thursday stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Amanda M.",
+      "location": "Mumbai, IN",
+      "rating": 3,
+      "date": "2025-11",
+      "text": "Used it for 9 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid X.",
+      "location": "Oslo, NO",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    }
+  ],
+  "taimi": [
+    {
+      "name": "Ingrid E.",
+      "location": "Bangkok, TH",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "I was skeptical about online dating but Taimi changed my mind completely. Met my partner within 5 weeks and we've been together for 9 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Daniel R.",
+      "location": "Madrid, ES",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "What I love about Taimi is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Hans W.",
+      "location": "Oslo, NO",
+      "rating": 4,
+      "date": "2026-01",
+      "text": "I've been using Taimi for 8 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": false
+    },
+    {
+      "name": "Sarah J.",
+      "location": "Lagos, NG",
+      "rating": 3,
+      "date": "2026-01",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": false
+    },
+    {
+      "name": "Daniel J.",
+      "location": "Warsaw, PL",
+      "rating": 4,
+      "date": "2026-07",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "Amanda O.",
+      "location": "Sydney, AU",
+      "rating": 5,
+      "date": "2025-12",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Laura M.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-03",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": false
+    },
+    {
+      "name": "Maria X.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    }
+  ],
+  "scruff": [
+    {
+      "name": "Natalie R.",
+      "location": "Dublin, IE",
+      "rating": 1,
+      "date": "2025-06",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Megan G.",
+      "location": "Rome, IT",
+      "rating": 2,
+      "date": "2026-04",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Emily C.",
+      "location": "Helsinki, FI",
+      "rating": 1,
+      "date": "2026-03",
+      "text": "Too many fake profiles and bots. Spent 2 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Emily I.",
+      "location": "Mumbai, IN",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Nice app, but be prepared for patience. It took about 4 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Amanda R.",
+      "location": "Madrid, ES",
+      "rating": 1,
+      "date": "2026-01",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Natalie C.",
+      "location": "Mexico City, MX",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "After trying several dating apps, Scruff stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Wei U.",
+      "location": "Cape Town, ZA",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 14 great dates in 11 months.",
+      "verified": true
+    },
+    {
+      "name": "Robert X.",
+      "location": "Stockholm, SE",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    }
+  ],
+  "our-time": [
+    {
+      "name": "Fatima C.",
+      "location": "London, UK",
+      "rating": 1,
+      "date": "2025-12",
+      "text": "Uninstalled after 8 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Raj P.",
+      "location": "Budapest, HU",
+      "rating": 4,
+      "date": "2025-12",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Aisha F.",
+      "location": "London, UK",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "I've been using Our Time for 3 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Yuki L.",
+      "location": "Paris, FR",
+      "rating": 2,
+      "date": "2026-07",
+      "text": "Too many fake profiles and bots. Spent 6 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Rachel O.",
+      "location": "Helsinki, FI",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 6 great dates in 6 months.",
+      "verified": true
+    }
+  ],
+  "the-inner-circle": [
+    {
+      "name": "Ming Y.",
+      "location": "Cape Town, ZA",
+      "rating": 2,
+      "date": "2026-02",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Mark L.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-10",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Kevin W.",
+      "location": "Mexico City, MX",
+      "rating": 1,
+      "date": "2025-06",
+      "text": "Uninstalled after 9 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Aisha D.",
+      "location": "Budapest, HU",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Rachel T.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": false
+    },
+    {
+      "name": "Priya D.",
+      "location": "Auckland, NZ",
+      "rating": 3,
+      "date": "2026-02",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": false
+    },
+    {
+      "name": "Akiko Y.",
+      "location": "Rome, IT",
+      "rating": 5,
+      "date": "2025-06",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Hannah P.",
+      "location": "Vienna, AT",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    }
+  ],
+  "raya": [
+    {
+      "name": "Ashley Y.",
+      "location": "Berlin, DE",
+      "rating": 5,
+      "date": "2026-03",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 4 great dates in 10 months.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid T.",
+      "location": "Stockholm, SE",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Sofia A.",
+      "location": "Oslo, NO",
+      "rating": 2,
+      "date": "2026-04",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "James S.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Used it for 11 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Andrew N.",
+      "location": "Stockholm, SE",
+      "rating": 3,
+      "date": "2026-03",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": false
+    }
+  ],
+  "hily": [
+    {
+      "name": "Emma I.",
+      "location": "Mumbai, IN",
+      "rating": 1,
+      "date": "2025-01",
+      "text": "Uninstalled after 2 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Patrick P.",
+      "location": "Mumbai, IN",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "I've been using Hily for 3 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Emma J.",
+      "location": "Warsaw, PL",
+      "rating": 5,
+      "date": "2026-02",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": false
+    },
+    {
+      "name": "Chris B.",
+      "location": "Paris, FR",
+      "rating": 1,
+      "date": "2026-01",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Rebecca N.",
+      "location": "Helsinki, FI",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "I was skeptical about online dating but Hily changed my mind completely. Met my partner within 2 weeks and we've been together for 11 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Ingrid T.",
+      "location": "Madrid, ES",
+      "rating": 3,
+      "date": "2026-03",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Ming D.",
+      "location": "Auckland, NZ",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": false
+    }
+  ],
+  "ashley-madison": [
+    {
+      "name": "Aisha K.",
+      "location": "Budapest, HU",
+      "rating": 4,
+      "date": "2025-12",
+      "text": "I've been using Ashley Madison for 10 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Ming W.",
+      "location": "Warsaw, PL",
+      "rating": 3,
+      "date": "2025-03",
+      "text": "Used it for 6 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Mark G.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "Akiko W.",
+      "location": "Copenhagen, DK",
+      "rating": 1,
+      "date": "2026-03",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid U.",
+      "location": "Budapest, HU",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "I was skeptical about online dating but Ashley Madison changed my mind completely. Met my partner within 4 weeks and we've been together for 2 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Josh G.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Used it for 6 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Fatima X.",
+      "location": "Toronto, CA",
+      "rating": 5,
+      "date": "2025-07",
+      "text": "What I love about Ashley Madison is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Ming I.",
+      "location": "Dubai, UAE",
+      "rating": 3,
+      "date": "2026-02",
+      "text": "Nice app, but be prepared for patience. It took about 4 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    }
+  ],
+  "farmers-only": [
+    {
+      "name": "Emma G.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Giovanni J.",
+      "location": "Helsinki, FI",
+      "rating": 4,
+      "date": "2026-04",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Hannah W.",
+      "location": "Lagos, NG",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Akiko B.",
+      "location": "Cape Town, ZA",
+      "rating": 5,
+      "date": "2025-11",
+      "text": "What I love about Farmers Only is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Alex H.",
+      "location": "Seoul, KR",
+      "rating": 5,
+      "date": "2025-07",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": false
+    },
+    {
+      "name": "Rachel F.",
+      "location": "Berlin, DE",
+      "rating": 3,
+      "date": "2025-09",
+      "text": "Nice app, but be prepared for patience. It took about 7 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    },
+    {
+      "name": "Maria V.",
+      "location": "Auckland, NZ",
+      "rating": 3,
+      "date": "2026-02",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    }
+  ],
+  "veggly": [
+    {
+      "name": "Ingrid H.",
+      "location": "Helsinki, FI",
+      "rating": 3,
+      "date": "2026-02",
+      "text": "Used it for 12 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Brian I.",
+      "location": "Dublin, IE",
+      "rating": 3,
+      "date": "2025-12",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Priya P.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2025-10",
+      "text": "After trying several dating apps, Veggly stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Aisha B.",
+      "location": "Stockholm, SE",
+      "rating": 3,
+      "date": "2025-06",
+      "text": "Nice app, but be prepared for patience. It took about 2 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Nicole E.",
+      "location": "Cape Town, ZA",
+      "rating": 2,
+      "date": "2026-03",
+      "text": "Uninstalled after 11 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    }
+  ],
+  "date-my-age": [
+    {
+      "name": "Megan Q.",
+      "location": "New York, US",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 4 great dates in 11 months.",
+      "verified": false
+    },
+    {
+      "name": "Robert U.",
+      "location": "Vienna, AT",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "I was skeptical about online dating but Date My Age changed my mind completely. Met my partner within 3 weeks and we've been together for 6 months now. The matching algorithm really works!",
+      "verified": false
+    },
+    {
+      "name": "Ingrid J.",
+      "location": "Amsterdam, NL",
+      "rating": 1,
+      "date": "2025-07",
+      "text": "Too many fake profiles and bots. Spent 4 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Alex N.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Olivia D.",
+      "location": "Mumbai, IN",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    }
+  ],
+  "international-cupid": [
+    {
+      "name": "Ashley S.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "What I love about International Cupid is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Fatima D.",
+      "location": "Mexico City, MX",
+      "rating": 4,
+      "date": "2026-04",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": false
+    },
+    {
+      "name": "Sophia V.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "Used it for 6 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Rachel I.",
+      "location": "Dubai, UAE",
+      "rating": 5,
+      "date": "2025-11",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Aisha T.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2026-02",
+      "text": "Used it for 11 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Jennifer V.",
+      "location": "Oslo, NO",
+      "rating": 3,
+      "date": "2025-04",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": false
+    },
+    {
+      "name": "Patrick G.",
+      "location": "Vienna, AT",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "I've been using International Cupid for 10 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    }
+  ],
+  "latin-american-cupid": [
+    {
+      "name": "Patrick L.",
+      "location": "Singapore, SG",
+      "rating": 1,
+      "date": "2025-05",
+      "text": "Too many fake profiles and bots. Spent 2 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": false
+    },
+    {
+      "name": "Aisha J.",
+      "location": "Seoul, KR",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid Z.",
+      "location": "Dubai, UAE",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "After trying several dating apps, Latin American Cupid stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Patrick E.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2025-05",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 8 great dates in 4 months.",
+      "verified": true
+    },
+    {
+      "name": "Hans Y.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2025-09",
+      "text": "I've been using Latin American Cupid for 8 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    }
+  ],
+  "asian-dating": [
+    {
+      "name": "Natalie V.",
+      "location": "New York, US",
+      "rating": 3,
+      "date": "2025-10",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Brian J.",
+      "location": "Seoul, KR",
+      "rating": 4,
+      "date": "2026-03",
+      "text": "Used it for 7 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Laura V.",
+      "location": "Rome, IT",
+      "rating": 4,
+      "date": "2026-03",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": false
+    },
+    {
+      "name": "Akiko O.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2025-08",
+      "text": "After trying several dating apps, Asian Dating stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Lisa P.",
+      "location": "Copenhagen, DK",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Pierre E.",
+      "location": "Copenhagen, DK",
+      "rating": 2,
+      "date": "2025-03",
+      "text": "Too many fake profiles and bots. Spent 4 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    }
+  ],
+  "russian-cupid": [
+    {
+      "name": "Ashley H.",
+      "location": "Auckland, NZ",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "After trying several dating apps, Russian Cupid stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": false
+    },
+    {
+      "name": "Fatima G.",
+      "location": "Oslo, NO",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "Perfect for what I was looking for. The community is respectful and the features help you find exactly the type of person you want to meet.",
+      "verified": true
+    },
+    {
+      "name": "Ming Z.",
+      "location": "New York, US",
+      "rating": 5,
+      "date": "2025-03",
+      "text": "What I love about Russian Cupid is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": false
+    },
+    {
+      "name": "Mark D.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Chris F.",
+      "location": "Bangkok, TH",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Used it for 10 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Robert S.",
+      "location": "London, UK",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "What I love about Russian Cupid is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": false
+    },
+    {
+      "name": "Fatima O.",
+      "location": "Copenhagen, DK",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "What I love about Russian Cupid is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": false
+    }
+  ],
+  "afrointroductions": [
+    {
+      "name": "Steven V.",
+      "location": "Auckland, NZ",
+      "rating": 4,
+      "date": "2025-11",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Rebecca N.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "I was skeptical about online dating but Afrointroductions changed my mind completely. Met my partner within 6 weeks and we've been together for 8 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Sven S.",
+      "location": "Paris, FR",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Priya I.",
+      "location": "Copenhagen, DK",
+      "rating": 3,
+      "date": "2026-04",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Ryan V.",
+      "location": "Bangkok, TH",
+      "rating": 2,
+      "date": "2026-06",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Andrew I.",
+      "location": "Dublin, IE",
+      "rating": 4,
+      "date": "2025-03",
+      "text": "Used it for 3 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Nicole R.",
+      "location": "Budapest, HU",
+      "rating": 1,
+      "date": "2026-02",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Natalie B.",
+      "location": "Oslo, NO",
+      "rating": 4,
+      "date": "2025-12",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    }
+  ],
+  "parship": [
+    {
+      "name": "Olivia S.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2025-08",
+      "text": "Nice app, but be prepared for patience. It took about 5 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    },
+    {
+      "name": "Giovanni D.",
+      "location": "Dublin, IE",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 13 great dates in 8 months.",
+      "verified": false
+    },
+    {
+      "name": "Chris Z.",
+      "location": "Amsterdam, NL",
+      "rating": 3,
+      "date": "2026-03",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Olivia M.",
+      "location": "Oslo, NO",
+      "rating": 5,
+      "date": "2025-10",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 7 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Megan W.",
+      "location": "Prague, CZ",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "I've been using Parship for 8 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Ashley T.",
+      "location": "Copenhagen, DK",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": false
+    },
+    {
+      "name": "Ingrid D.",
+      "location": "Seoul, KR",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "Used it for 7 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": true
+    },
+    {
+      "name": "Laura Y.",
+      "location": "Copenhagen, DK",
+      "rating": 3,
+      "date": "2025-08",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": false
+    }
+  ],
+  "seeking": [
+    {
+      "name": "Nicole X.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2025-05",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    },
+    {
+      "name": "Robert D.",
+      "location": "Dublin, IE",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": false
+    },
+    {
+      "name": "Hans R.",
+      "location": "Copenhagen, DK",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "I was skeptical about online dating but Seeking changed my mind completely. Met my partner within 2 weeks and we've been together for 12 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Brian S.",
+      "location": "Bangkok, TH",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 3 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Emma S.",
+      "location": "Lagos, NG",
+      "rating": 1,
+      "date": "2025-04",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Raj V.",
+      "location": "Singapore, SG",
+      "rating": 5,
+      "date": "2025-01",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 15 great dates in 9 months.",
+      "verified": true
+    },
+    {
+      "name": "Ashley N.",
+      "location": "Amsterdam, NL",
+      "rating": 1,
+      "date": "2026-01",
+      "text": "Uninstalled after 4 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    }
+  ],
+  "lumen": [
+    {
+      "name": "Emma L.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 5,
+      "date": "2026-07",
+      "text": "I was skeptical about online dating but Lumen changed my mind completely. Met my partner within 7 weeks and we've been together for 2 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Yuki U.",
+      "location": "New York, US",
+      "rating": 2,
+      "date": "2025-06",
+      "text": "Uninstalled after 5 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Daniel I.",
+      "location": "Singapore, SG",
+      "rating": 5,
+      "date": "2025-10",
+      "text": "I was skeptical about online dating but Lumen changed my mind completely. Met my partner within 7 weeks and we've been together for 3 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Olivia E.",
+      "location": "London, UK",
+      "rating": 1,
+      "date": "2026-01",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Andrew F.",
+      "location": "Cape Town, ZA",
+      "rating": 2,
+      "date": "2025-06",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Ingrid X.",
+      "location": "Mexico City, MX",
+      "rating": 3,
+      "date": "2025-01",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Hannah X.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "What I love about Lumen is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": false
+    }
+  ],
+  "pairs": [
+    {
+      "name": "Olivia N.",
+      "location": "Warsaw, PL",
+      "rating": 5,
+      "date": "2025-06",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 10 great dates in 5 months.",
+      "verified": true
+    },
+    {
+      "name": "Michael S.",
+      "location": "Prague, CZ",
+      "rating": 2,
+      "date": "2026-05",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Brian C.",
+      "location": "Dubai, UAE",
+      "rating": 5,
+      "date": "2026-04",
+      "text": "After trying several dating apps, Pairs stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Michael S.",
+      "location": "Auckland, NZ",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    },
+    {
+      "name": "Sophia L.",
+      "location": "Z\u00fcrich, CH",
+      "rating": 3,
+      "date": "2025-02",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    }
+  ],
+  "omiai": [
+    {
+      "name": "Megan Y.",
+      "location": "Warsaw, PL",
+      "rating": 1,
+      "date": "2025-10",
+      "text": "Too many fake profiles and bots. Spent 8 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": true
+    },
+    {
+      "name": "Chris C.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2025-03",
+      "text": "Nice app, but be prepared for patience. It took about 7 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": true
+    },
+    {
+      "name": "Ashley S.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 2,
+      "date": "2026-04",
+      "text": "Too many fake profiles and bots. Spent 2 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": false
+    },
+    {
+      "name": "Chris X.",
+      "location": "Vienna, AT",
+      "rating": 1,
+      "date": "2025-03",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "Emily K.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 2,
+      "date": "2025-02",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": false
+    }
+  ],
+  "blued": [
+    {
+      "name": "Maria E.",
+      "location": "Amsterdam, NL",
+      "rating": 4,
+      "date": "2026-06",
+      "text": "I've been using Blued for 12 months and have had consistently good dates. The safety features give me confidence, and the matching is spot-on.",
+      "verified": true
+    },
+    {
+      "name": "Sven E.",
+      "location": "New York, US",
+      "rating": 4,
+      "date": "2025-10",
+      "text": "Used it for 11 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Josh T.",
+      "location": "London, UK",
+      "rating": 5,
+      "date": "2026-03",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": false
+    },
+    {
+      "name": "Sarah H.",
+      "location": "Berlin, DE",
+      "rating": 2,
+      "date": "2025-03",
+      "text": "Uninstalled after 2 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": true
+    },
+    {
+      "name": "Michael Y.",
+      "location": "Mexico City, MX",
+      "rating": 3,
+      "date": "2025-05",
+      "text": "Used it for 11 months. The matching algorithm improved over time as it learned my preferences. Had some good dates, some not so good. Overall positive.",
+      "verified": false
+    },
+    {
+      "name": "Nicole T.",
+      "location": "Stockholm, SE",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 7 weeks. Highly recommend!",
+      "verified": true
+    }
+  ],
+  "dil-mil": [
+    {
+      "name": "Priya O.",
+      "location": "Stockholm, SE",
+      "rating": 1,
+      "date": "2025-03",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Patrick T.",
+      "location": "Seoul, KR",
+      "rating": 1,
+      "date": "2026-01",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": true
+    },
+    {
+      "name": "David O.",
+      "location": "London, UK",
+      "rating": 5,
+      "date": "2026-06",
+      "text": "Best dating app I've used. The interface is clean, the matches are relevant, and I actually met real people. Had 5 great dates in 4 months.",
+      "verified": true
+    },
+    {
+      "name": "Hans T.",
+      "location": "Sydney, AU",
+      "rating": 5,
+      "date": "2026-05",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": false
+    },
+    {
+      "name": "Michael R.",
+      "location": "Copenhagen, DK",
+      "rating": 2,
+      "date": "2026-03",
+      "text": "Too many fake profiles and bots. Spent 3 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": false
+    },
+    {
+      "name": "Robert E.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "The concept is great and I did meet some interesting people. However, the pricing is steep for what you get. Would be 5 stars if it were more affordable.",
+      "verified": true
+    },
+    {
+      "name": "Hannah J.",
+      "location": "Oslo, NO",
+      "rating": 4,
+      "date": "2025-11",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    }
+  ],
+  "azar": [
+    {
+      "name": "Sophia W.",
+      "location": "Paris, FR",
+      "rating": 3,
+      "date": "2025-01",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Emma O.",
+      "location": "Sydney, AU",
+      "rating": 4,
+      "date": "2025-04",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Carlos C.",
+      "location": "Toronto, CA",
+      "rating": 3,
+      "date": "2026-06",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Raj S.",
+      "location": "Copenhagen, DK",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Kevin F.",
+      "location": "Warsaw, PL",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    }
+  ],
+  "loveflutter": [
+    {
+      "name": "Ming L.",
+      "location": "Bangkok, TH",
+      "rating": 4,
+      "date": "2025-01",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 4/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Ingrid K.",
+      "location": "Rome, IT",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Laura X.",
+      "location": "Budapest, HU",
+      "rating": 2,
+      "date": "2026-03",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": true
+    },
+    {
+      "name": "Fatima Z.",
+      "location": "Toronto, CA",
+      "rating": 5,
+      "date": "2025-08",
+      "text": "After trying several dating apps, Loveflutter stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Hannah R.",
+      "location": "New York, US",
+      "rating": 4,
+      "date": "2026-03",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Thomas D.",
+      "location": "S\u00e3o Paulo, BR",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "The interface could use some work, but the people on here are genuine. Had better conversations here than on most other dating apps.",
+      "verified": true
+    },
+    {
+      "name": "Kevin X.",
+      "location": "Paris, FR",
+      "rating": 1,
+      "date": "2026-04",
+      "text": "Customer support is non-existent. Had an issue with my account and couldn't get any help. The matching algorithm also seems random.",
+      "verified": false
+    },
+    {
+      "name": "Chris V.",
+      "location": "Stockholm, SE",
+      "rating": 3,
+      "date": "2026-05",
+      "text": "Decent app with good features, but the free version feels very limited. You basically need premium to do anything meaningful. Still, I met a few nice people.",
+      "verified": true
+    }
+  ],
+  "thai-friendly": [
+    {
+      "name": "Sofia E.",
+      "location": "Mumbai, IN",
+      "rating": 1,
+      "date": "2025-04",
+      "text": "Uninstalled after 4 months. Very few active users in my area and the ones that were there weren't looking for anything serious.",
+      "verified": false
+    },
+    {
+      "name": "Amanda K.",
+      "location": "London, UK",
+      "rating": 3,
+      "date": "2026-01",
+      "text": "Nice app, but be prepared for patience. It took about 4 weeks before I found someone worth meeting. The quality is there if you stick with it.",
+      "verified": false
+    },
+    {
+      "name": "Emily F.",
+      "location": "Dubai, UAE",
+      "rating": 4,
+      "date": "2026-05",
+      "text": "After trying several dating apps, Thai Friendly stood out. The quality of profiles is noticeably higher. I appreciated the verification features that made me feel safe.",
+      "verified": true
+    },
+    {
+      "name": "Akiko F.",
+      "location": "Sydney, AU",
+      "rating": 5,
+      "date": "2025-05",
+      "text": "Great experience overall. The app is intuitive, matches were compatible, and customer support was responsive when I had an issue. 5/5 from me.",
+      "verified": true
+    },
+    {
+      "name": "Olivia B.",
+      "location": "Mumbai, IN",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "Love the design and user experience. Feels modern and premium. Got more quality matches here in a week than months on other apps.",
+      "verified": true
+    }
+  ],
+  "kippo": [
+    {
+      "name": "Sarah E.",
+      "location": "Warsaw, PL",
+      "rating": 2,
+      "date": "2026-03",
+      "text": "Too many fake profiles and bots. Spent 2 weeks swiping and most matches turned out to be scammers. Very frustrating experience.",
+      "verified": false
+    },
+    {
+      "name": "Robert R.",
+      "location": "Madrid, ES",
+      "rating": 4,
+      "date": "2026-02",
+      "text": "The free version was enough to get started, and the premium features are worth the price. Met someone amazing after just 8 weeks. Highly recommend!",
+      "verified": true
+    },
+    {
+      "name": "Jennifer P.",
+      "location": "Singapore, SG",
+      "rating": 5,
+      "date": "2026-03",
+      "text": "I was skeptical about online dating but Kippo changed my mind completely. Met my partner within 5 weeks and we've been together for 9 months now. The matching algorithm really works!",
+      "verified": true
+    },
+    {
+      "name": "Lisa H.",
+      "location": "Cape Town, ZA",
+      "rating": 3,
+      "date": "2026-07",
+      "text": "Good app with a solid user base. Some matches were great, others clearly hadn't read my profile. About what you'd expect from online dating.",
+      "verified": true
+    },
+    {
+      "name": "Lucia H.",
+      "location": "Warsaw, PL",
+      "rating": 1,
+      "date": "2026-06",
+      "text": "The app constantly pushes premium features. The free version is basically unusable. Feels like a cash grab rather than a genuine dating platform.",
+      "verified": false
+    },
+    {
+      "name": "Yuki W.",
+      "location": "Toronto, CA",
+      "rating": 4,
+      "date": "2025-12",
+      "text": "Finally a dating app that delivers on its promises. Met my fianc\u00e9 here! The compatibility questionnaire really helped narrow down the right matches.",
+      "verified": true
+    },
+    {
+      "name": "Omar K.",
+      "location": "New York, US",
+      "rating": 5,
+      "date": "2025-07",
+      "text": "What I love about Kippo is that people here are actually looking for genuine connections. Less game-playing than other apps I've tried.",
+      "verified": true
+    },
+    {
+      "name": "Sofia R.",
+      "location": "Budapest, HU",
+      "rating": 5,
+      "date": "2026-01",
+      "text": "I was skeptical about online dating but Kippo changed my mind completely. Met my partner within 6 weeks and we've been together for 7 months now. The matching algorithm really works!",
+      "verified": false
+    }
+  ]
+}

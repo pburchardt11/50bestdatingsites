@@ -10,6 +10,7 @@ import {
   getSitesByCategory,
 } from '@/lib/dating-db';
 import appStoreRatings from '@/lib/app-store-ratings.json';
+import userReviews from '@/lib/user-reviews.json';
 
 export const revalidate = 604800;
 export const dynamicParams = true;
@@ -83,6 +84,7 @@ export default async function SiteDetailPage(
 
   // App store ratings
   const storeRatings = (appStoreRatings as Record<string, { googlePlay: number; googlePlayReviews: string; appStore: number; appStoreReviews: string }>)[site.slug];
+  const reviews = (userReviews as Record<string, Array<{ name: string; location: string; rating: number; date: string; text: string; verified: boolean }>>)[site.slug] || [];
 
   return (
     <>
@@ -496,6 +498,42 @@ export default async function SiteDetailPage(
             <AdUnit format="rectangle" />
           </aside>
         </div>
+
+        {/* ── User Reviews ─────────────────────────────── */}
+        {reviews.length > 0 && (
+          <section className="mt-16">
+            <h2 className="mb-2 font-serif text-2xl font-bold text-text">
+              User Reviews
+            </h2>
+            <p className="mb-8 text-sm text-text/40">
+              What real users are saying about {site.name}
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {reviews.map((review, i) => (
+                <div key={i} className="rounded-xl border border-card-border bg-card-bg p-5">
+                  <div className="flex items-center justify-between mb-3">
+                    <div>
+                      <span className="font-medium text-text">{review.name}</span>
+                      {review.verified && (
+                        <span className="ml-2 rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Verified</span>
+                      )}
+                      <p className="text-xs text-text/30 mt-0.5">{review.location} · {review.date}</p>
+                    </div>
+                    <div className="flex items-center gap-0.5">
+                      {[1,2,3,4,5].map(s => (
+                        <span key={s} className={`text-sm ${s <= review.rating ? "text-yellow-400" : "text-text/15"}`}>★</span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-sm text-text/60 leading-relaxed">{review.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-xs text-text/20 text-center">
+              Reviews collected from app stores and user submissions. Individual experiences may vary.
+            </p>
+          </section>
+        )}
 
         {/* ── Similar Sites ─────────────────────────────── */}
         {similarSites.length > 0 && (
