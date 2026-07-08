@@ -1,0 +1,182 @@
+{
+  "tinder": {
+    "googlePlay": 3.8,
+    "googlePlayReviews": "12M+",
+    "appStore": 4.0,
+    "appStoreReviews": "1.2M+"
+  },
+  "bumble": {
+    "googlePlay": 3.9,
+    "googlePlayReviews": "4.5M+",
+    "appStore": 4.1,
+    "appStoreReviews": "800K+"
+  },
+  "hinge": {
+    "googlePlay": 3.6,
+    "googlePlayReviews": "2.1M+",
+    "appStore": 4.2,
+    "appStoreReviews": "600K+"
+  },
+  "okcupid": {
+    "googlePlay": 3.5,
+    "googlePlayReviews": "1.8M+",
+    "appStore": 3.8,
+    "appStoreReviews": "300K+"
+  },
+  "match-com": {
+    "googlePlay": 3.4,
+    "googlePlayReviews": "900K+",
+    "appStore": 3.9,
+    "appStoreReviews": "400K+"
+  },
+  "plenty-of-fish": {
+    "googlePlay": 3.3,
+    "googlePlayReviews": "2.5M+",
+    "appStore": 3.5,
+    "appStoreReviews": "350K+"
+  },
+  "badoo": {
+    "googlePlay": 4.0,
+    "googlePlayReviews": "15M+",
+    "appStore": 4.1,
+    "appStoreReviews": "500K+"
+  },
+  "zoosk": {
+    "googlePlay": 3.4,
+    "googlePlayReviews": "600K+",
+    "appStore": 3.6,
+    "appStoreReviews": "200K+"
+  },
+  "coffee-meets-bagel": {
+    "googlePlay": 3.7,
+    "googlePlayReviews": "350K+",
+    "appStore": 4.0,
+    "appStoreReviews": "150K+"
+  },
+  "eharmony": {
+    "googlePlay": 3.3,
+    "googlePlayReviews": "400K+",
+    "appStore": 3.7,
+    "appStoreReviews": "250K+"
+  },
+  "grindr": {
+    "googlePlay": 3.2,
+    "googlePlayReviews": "3M+",
+    "appStore": 3.5,
+    "appStoreReviews": "400K+"
+  },
+  "her": {
+    "googlePlay": 3.4,
+    "googlePlayReviews": "150K+",
+    "appStore": 3.8,
+    "appStoreReviews": "80K+"
+  },
+  "happn": {
+    "googlePlay": 3.9,
+    "googlePlayReviews": "2M+",
+    "appStore": 4.0,
+    "appStoreReviews": "200K+"
+  },
+  "elite-singles": {
+    "googlePlay": 3.1,
+    "googlePlayReviews": "200K+",
+    "appStore": 3.5,
+    "appStoreReviews": "50K+"
+  },
+  "silversingles": {
+    "googlePlay": 3.0,
+    "googlePlayReviews": "80K+",
+    "appStore": 3.3,
+    "appStoreReviews": "20K+"
+  },
+  "muzz": {
+    "googlePlay": 4.2,
+    "googlePlayReviews": "300K+",
+    "appStore": 4.5,
+    "appStoreReviews": "100K+"
+  },
+  "tantan": {
+    "googlePlay": 3.8,
+    "googlePlayReviews": "5M+",
+    "appStore": 3.9,
+    "appStoreReviews": "200K+"
+  },
+  "the-league": {
+    "googlePlay": 3.0,
+    "googlePlayReviews": "50K+",
+    "appStore": 3.2,
+    "appStoreReviews": "30K+"
+  },
+  "feeld": {
+    "googlePlay": 3.3,
+    "googlePlayReviews": "100K+",
+    "appStore": 3.6,
+    "appStoreReviews": "40K+"
+  },
+  "hily": {
+    "googlePlay": 4.0,
+    "googlePlayReviews": "1.5M+",
+    "appStore": 4.1,
+    "appStoreReviews": "300K+"
+  },
+  "jdate": {
+    "googlePlay": 3.1,
+    "googlePlayReviews": "30K+",
+    "appStore": 3.4,
+    "appStoreReviews": "15K+"
+  },
+  "christian-mingle": {
+    "googlePlay": 3.2,
+    "googlePlayReviews": "60K+",
+    "appStore": 3.5,
+    "appStoreReviews": "25K+"
+  },
+  "our-time": {
+    "googlePlay": 3.0,
+    "googlePlayReviews": "40K+",
+    "appStore": 3.2,
+    "appStoreReviews": "15K+"
+  },
+  "the-inner-circle": {
+    "googlePlay": 3.5,
+    "googlePlayReviews": "80K+",
+    "appStore": 3.7,
+    "appStoreReviews": "30K+"
+  },
+  "raya": {
+    "googlePlay": 0,
+    "googlePlayReviews": "N/A",
+    "appStore": 3.8,
+    "appStoreReviews": "10K+"
+  },
+  "thursday": {
+    "googlePlay": 3.4,
+    "googlePlayReviews": "20K+",
+    "appStore": 3.6,
+    "appStoreReviews": "15K+"
+  },
+  "pure": {
+    "googlePlay": 3.6,
+    "googlePlayReviews": "200K+",
+    "appStore": 3.8,
+    "appStoreReviews": "50K+"
+  },
+  "taimi": {
+    "googlePlay": 3.7,
+    "googlePlayReviews": "250K+",
+    "appStore": 4.0,
+    "appStoreReviews": "60K+"
+  },
+  "scruff": {
+    "googlePlay": 3.5,
+    "googlePlayReviews": "180K+",
+    "appStore": 3.7,
+    "appStoreReviews": "40K+"
+  },
+  "ashley-madison": {
+    "googlePlay": 3.6,
+    "googlePlayReviews": "400K+",
+    "appStore": 3.4,
+    "appStoreReviews": "30K+"
+  }
+}

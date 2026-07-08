@@ -9,6 +9,7 @@ import {
   getAllSites,
   getSitesByCategory,
 } from '@/lib/dating-db';
+import appStoreRatings from '@/lib/app-store-ratings.json';
 
 export const revalidate = 604800;
 export const dynamicParams = true;
@@ -79,6 +80,9 @@ export default async function SiteDetailPage(
   const genderMatch = site.demographics.genderRatio.match(/(\d+)%\s*male\s*\/\s*(\d+)%\s*female/i);
   const malePct = genderMatch ? parseInt(genderMatch[1]) : 50;
   const femalePct = genderMatch ? parseInt(genderMatch[2]) : 50;
+
+  // App store ratings
+  const storeRatings = (appStoreRatings as Record<string, { googlePlay: number; googlePlayReviews: string; appStore: number; appStoreReviews: string }>)[site.slug];
 
   return (
     <>
@@ -184,6 +188,54 @@ export default async function SiteDetailPage(
                 <p className="leading-relaxed text-text/70">{site.editorial}</p>
               </div>
             </section>
+
+            {/* App Store Ratings */}
+            {storeRatings && (
+              <section>
+                <h2 className="mb-4 font-serif text-2xl font-bold text-text">
+                  App Store Ratings
+                </h2>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {storeRatings.googlePlay > 0 && (
+                    <div className="rounded-xl border border-card-border bg-card-bg p-5">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-2xl">▶️</span>
+                        <span className="font-semibold text-text">Google Play</span>
+                      </div>
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-serif text-4xl font-bold text-text">{storeRatings.googlePlay.toFixed(1)}</span>
+                        <span className="text-text/40">/ 5.0</span>
+                      </div>
+                      <div className="mt-2 flex items-center gap-1">
+                        {[1,2,3,4,5].map(s => (
+                          <span key={s} className={s <= Math.round(storeRatings.googlePlay) ? "text-yellow-400" : "text-text/20"}>★</span>
+                        ))}
+                      </div>
+                      <p className="mt-2 text-sm text-text/40">{storeRatings.googlePlayReviews} reviews</p>
+                    </div>
+                  )}
+                  {storeRatings.appStore > 0 && (
+                    <div className="rounded-xl border border-card-border bg-card-bg p-5">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-2xl">🍎</span>
+                        <span className="font-semibold text-text">Apple App Store</span>
+                      </div>
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-serif text-4xl font-bold text-text">{storeRatings.appStore.toFixed(1)}</span>
+                        <span className="text-text/40">/ 5.0</span>
+                      </div>
+                      <div className="mt-2 flex items-center gap-1">
+                        {[1,2,3,4,5].map(s => (
+                          <span key={s} className={s <= Math.round(storeRatings.appStore) ? "text-yellow-400" : "text-text/20"}>★</span>
+                        ))}
+                      </div>
+                      <p className="mt-2 text-sm text-text/40">{storeRatings.appStoreReviews} reviews</p>
+                    </div>
+                  )}
+                </div>
+                <p className="mt-3 text-xs text-text/30">Ratings sourced from Google Play Store and Apple App Store. Last checked July 2026.</p>
+              </section>
+            )}
 
             {/* Pricing Plans */}
             <section>

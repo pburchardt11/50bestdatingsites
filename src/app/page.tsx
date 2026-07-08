@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AdUnit from '@/components/AdUnit';
 import SearchBar from '@/components/SearchBar';
 import FAQSection from '@/components/FAQSection';
+import RankingsTable from '@/components/RankingsTable';
 import {
   getTopSitesGlobal,
   getAllCategories,
@@ -16,6 +17,8 @@ export const revalidate = 604800;
 export default function HomePage() {
   const top5 = getTopSitesGlobal(5);
   const top10 = getTopSitesGlobal(10);
+  const top50 = getTopSitesGlobal(50);
+  const allSites = getAllSites().sort((a, b) => b.metrics.overallScore - a.metrics.overallScore);
   const categories = getAllCategories();
   const blogPosts = getAllBlogPosts().slice(0, 6);
   const totalSites = getAllSites().length;
@@ -218,72 +221,18 @@ export default function HomePage() {
 
       <AdUnit format="horizontal" className="mx-auto max-w-4xl px-4" />
 
-      {/* ── Quick Comparison Table ─────────────────────────────── */}
+      {/* ── Top 50 Rankings ─────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
-            Quick Comparison
+            Top 50 Dating Sites
           </h2>
           <p className="mt-3 text-text/50">
-            Top 10 dating sites at a glance -- scores, pricing, and what each does best.
+            Expert-ranked with scores, pricing, and what each does best. Show more to explore all {totalSites.toLocaleString()} sites.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-xl border border-card-border">
-          <table className="w-full min-w-[700px] text-left text-sm">
-            <thead>
-              <tr className="border-b border-card-border bg-card-bg/80">
-                <th className="px-4 py-3 font-semibold text-text/60">#</th>
-                <th className="px-4 py-3 font-semibold text-text/60">Site</th>
-                <th className="px-4 py-3 font-semibold text-text/60">Best For</th>
-                <th className="px-4 py-3 font-semibold text-text/60 text-center">Score</th>
-                <th className="px-4 py-3 font-semibold text-text/60 text-center">Free?</th>
-                <th className="px-4 py-3 font-semibold text-text/60 text-right">Price</th>
-                <th className="px-4 py-3 font-semibold text-text/60 text-center">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {top10.map((site, i) => (
-                <tr key={site.slug} className="border-b border-card-border/50 transition-colors hover:bg-card-bg/60">
-                  <td className="px-4 py-3 font-serif font-bold text-gold">{i + 1}</td>
-                  <td className="px-4 py-3">
-                    <Link href={`/site/${site.slug}`} className="flex items-center gap-2 font-medium text-text hover:text-gold transition-colors">
-                      <span className="text-lg">{site.logo}</span>
-                      {site.name}
-                    </Link>
-                  </td>
-                  <td className="px-4 py-3 text-text/50">{site.bestFor}</td>
-                  <td className="px-4 py-3 text-center">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gold/10 font-serif text-sm font-bold text-gold">
-                      {site.metrics.overallScore.toFixed(1)}
-                    </span>
-                  </td>
-                  <td className="px-4 py-3 text-center">
-                    {site.pricing.free ? (
-                      <span className="text-emerald-400">Yes</span>
-                    ) : (
-                      <span className="text-text/30">No</span>
-                    )}
-                  </td>
-                  <td className="px-4 py-3 text-right text-text/60">
-                    {site.pricing.currency} {site.pricing.premiumMonthly}/mo
-                  </td>
-                  <td className="px-4 py-3 text-center">
-                    <a
-                      href={site.url}
-                      target="_blank"
-                      rel="nofollow sponsored noopener"
-                      className="inline-flex items-center gap-1 rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold text-gold transition-colors hover:bg-gold/20"
-                    >
-                      Visit
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-                    </a>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <RankingsTable sites={allSites} />
       </section>
 
       <AdUnit format="horizontal" className="mx-auto max-w-4xl px-4" />
