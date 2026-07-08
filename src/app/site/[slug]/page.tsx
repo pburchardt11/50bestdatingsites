@@ -9,8 +9,7 @@ import {
   getAllSites,
   getSitesByCategory,
 } from '@/lib/dating-db';
-import appStoreRatings from '@/lib/app-store-ratings.json';
-import userReviews from '@/lib/user-reviews.json';
+import playStoreData from '@/lib/play-store-data.json';
 import scrapedData from '@/lib/scraped-data.json';
 import enrichedEditorials from '@/lib/enriched-editorials.json';
 
@@ -79,22 +78,22 @@ export default async function SiteDetailPage(
     },
   };
 
-  // Parse gender ratio for visualization
+  // Parse gender ratio for visualization (only if real data available)
   const genderMatch = site.demographics.genderRatio.match(/(\d+)%\s*male\s*\/\s*(\d+)%\s*female/i);
-  const malePct = genderMatch ? parseInt(genderMatch[1]) : 50;
-  const femalePct = genderMatch ? parseInt(genderMatch[2]) : 50;
+  const malePct = genderMatch ? parseInt(genderMatch[1]) : null;
+  const femalePct = genderMatch ? parseInt(genderMatch[2]) : null;
+  const hasGenderData = malePct !== null && femalePct !== null;
 
-  // App store ratings
-  const storeRatings = (appStoreRatings as Record<string, { googlePlay: number; googlePlayReviews: string; appStore: number; appStoreReviews: string }>)[site.slug];
-  const fakeReviews = (userReviews as Record<string, Array<{ name: string; location: string; rating: number; date: string; text: string; verified: boolean }>>)[site.slug] || [];
+  // Play Store ratings (real scraped data)
+  const storeRatings = (playStoreData as unknown as Record<string, { googlePlayRating: number; googlePlayReviews: number; googlePlayInstalls: string | null; googlePlayUrl: string; verified: boolean }>)[site.slug];
 
-  // Prefer real scraped reviews over generated ones
+  // Real scraped reviews only — no fake/generated reviews
   type ScrapedSite = { realRating?: { score: number; count: number }; realReviews?: Array<{ author: string; rating: number; text: string; date: string }>; realFeatures?: string[]; realPricing?: { free: boolean; plans: Array<{ name: string; price: string }> }; realDescription?: string };
   const scraped = (scrapedData as Record<string, ScrapedSite>)[site.slug];
   const realReviews = scraped?.realReviews || [];
   const reviews = realReviews.length > 0
     ? realReviews.map(r => ({ name: r.author, location: '', rating: r.rating, date: r.date, text: r.text, verified: true }))
-    : fakeReviews;
+    : [];
 
   return (
     <>
@@ -170,9 +169,10 @@ export default async function SiteDetailPage(
           <div className="lg:col-span-2 space-y-12">
             {/* Metrics dashboard */}
             <section>
-              <h2 className="mb-6 font-serif text-2xl font-bold text-text">
+              <h2 className="mb-2 font-serif text-2xl font-bold text-text">
                 Performance Scores
               </h2>
+              <p className="mb-6 text-xs text-text/40">Editorial scores based on our assessment methodology</p>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-xl border border-card-border bg-card-bg p-5">
                   <ScoreBar label="Safety & Privacy" score={site.metrics.safetyScore} />
@@ -276,51 +276,31 @@ export default async function SiteDetailPage(
               </section>
             )}
 
-            {/* App Store Ratings */}
-            {storeRatings && (
+            {/* Google Play Store Rating */}
+            {storeRatings && storeRatings.verified && storeRatings.googlePlayRating > 0 && (
               <section>
                 <h2 className="mb-4 font-serif text-2xl font-bold text-text">
-                  App Store Ratings
+                  App Store Rating
                 </h2>
                 <div className="grid gap-4 sm:grid-cols-2">
-                  {storeRatings.googlePlay > 0 && (
-                    <div className="rounded-xl border border-card-border bg-card-bg p-5">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-2xl">▶️</span>
-                        <span className="font-semibold text-text">Google Play</span>
-                      </div>
-                      <div className="flex items-baseline gap-2">
-                        <span className="font-serif text-4xl font-bold text-text">{storeRatings.googlePlay.toFixed(1)}</span>
-                        <span className="text-text/40">/ 5.0</span>
-                      </div>
-                      <div className="mt-2 flex items-center gap-1">
-                        {[1,2,3,4,5].map(s => (
-                          <span key={s} className={s <= Math.round(storeRatings.googlePlay) ? "text-yellow-400" : "text-text/20"}>★</span>
-                        ))}
-                      </div>
-                      <p className="mt-2 text-sm text-text/40">{storeRatings.googlePlayReviews} reviews</p>
+                  <div className="rounded-xl border border-card-border bg-card-bg p-5">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-2xl">▶️</span>
+                      <span className="font-semibold text-text">Google Play</span>
                     </div>
-                  )}
-                  {storeRatings.appStore > 0 && (
-                    <div className="rounded-xl border border-card-border bg-card-bg p-5">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-2xl">🍎</span>
-                        <span className="font-semibold text-text">Apple App Store</span>
-                      </div>
-                      <div className="flex items-baseline gap-2">
-                        <span className="font-serif text-4xl font-bold text-text">{storeRatings.appStore.toFixed(1)}</span>
-                        <span className="text-text/40">/ 5.0</span>
-                      </div>
-                      <div className="mt-2 flex items-center gap-1">
-                        {[1,2,3,4,5].map(s => (
-                          <span key={s} className={s <= Math.round(storeRatings.appStore) ? "text-yellow-400" : "text-text/20"}>★</span>
-                        ))}
-                      </div>
-                      <p className="mt-2 text-sm text-text/40">{storeRatings.appStoreReviews} reviews</p>
+                    <div className="flex items-baseline gap-2">
+                      <span className="font-serif text-4xl font-bold text-text">{storeRatings.googlePlayRating.toFixed(1)}</span>
+                      <span className="text-text/40">/ 5.0</span>
                     </div>
-                  )}
+                    <div className="mt-2 flex items-center gap-1">
+                      {[1,2,3,4,5].map(s => (
+                        <span key={s} className={s <= Math.round(storeRatings.googlePlayRating) ? "text-yellow-400" : "text-text/20"}>★</span>
+                      ))}
+                    </div>
+                    <p className="mt-2 text-sm text-text/40">{storeRatings.googlePlayReviews.toLocaleString()} reviews</p>
+                  </div>
                 </div>
-                <p className="mt-3 text-xs text-text/30">Ratings sourced from Google Play Store and Apple App Store. Last checked July 2026.</p>
+                <p className="mt-3 text-xs text-text/30">Source: Google Play Store. Last checked July 2026.</p>
               </section>
             )}
 
@@ -417,27 +397,36 @@ export default async function SiteDetailPage(
                   </div>
                 </div>
 
-                {/* Gender ratio */}
-                <div>
-                  <div className="mb-2 flex items-center justify-between text-sm">
-                    <span className="text-text/60">Gender Ratio</span>
-                    <span className="font-medium text-text/80">{site.demographics.genderRatio}</span>
+                {/* Gender ratio — only show visualization if real data available */}
+                {hasGenderData ? (
+                  <div>
+                    <div className="mb-2 flex items-center justify-between text-sm">
+                      <span className="text-text/60">Gender Ratio</span>
+                      <span className="font-medium text-text/80">{site.demographics.genderRatio}</span>
+                    </div>
+                    <div className="flex h-3 overflow-hidden rounded-full">
+                      <div
+                        className="bg-blue-500/60 transition-all"
+                        style={{ width: `${malePct}%` }}
+                      />
+                      <div
+                        className="bg-pink-500/60 transition-all"
+                        style={{ width: `${femalePct}%` }}
+                      />
+                    </div>
+                    <div className="mt-1 flex justify-between text-[11px] text-text/30">
+                      <span>Male {malePct}%</span>
+                      <span>Female {femalePct}%</span>
+                    </div>
                   </div>
-                  <div className="flex h-3 overflow-hidden rounded-full">
-                    <div
-                      className="bg-blue-500/60 transition-all"
-                      style={{ width: `${malePct}%` }}
-                    />
-                    <div
-                      className="bg-pink-500/60 transition-all"
-                      style={{ width: `${femalePct}%` }}
-                    />
+                ) : (
+                  <div>
+                    <div className="mb-2 flex items-center justify-between text-sm">
+                      <span className="text-text/60">Gender Ratio</span>
+                      <span className="font-medium text-text/80">{site.demographics.genderRatio}</span>
+                    </div>
                   </div>
-                  <div className="mt-1 flex justify-between text-[11px] text-text/30">
-                    <span>Male {malePct}%</span>
-                    <span>Female {femalePct}%</span>
-                  </div>
-                </div>
+                )}
               </div>
             </section>
 
@@ -585,42 +574,46 @@ export default async function SiteDetailPage(
         </div>
 
         {/* ── User Reviews ─────────────────────────────── */}
-        {reviews.length > 0 && (
-          <section className="mt-16">
-            <h2 className="mb-2 font-serif text-2xl font-bold text-text">
-              User Reviews
-            </h2>
-            <p className="mb-8 text-sm text-text/40">
-              What real users are saying about {site.name}
-            </p>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {reviews.map((review, i) => (
-                <div key={i} className="rounded-xl border border-card-border bg-card-bg p-5">
-                  <div className="flex items-center justify-between mb-3">
-                    <div>
-                      <span className="font-medium text-text">{review.name}</span>
-                      {review.verified && (
-                        <span className="ml-2 rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Verified</span>
-                      )}
-                      <p className="text-xs text-text/30 mt-0.5">{review.location} · {review.date}</p>
+        <section className="mt-16">
+          <h2 className="mb-2 font-serif text-2xl font-bold text-text">
+            User Reviews
+          </h2>
+          {reviews.length > 0 ? (
+            <>
+              <p className="mb-8 text-sm text-text/40">
+                What real users are saying about {site.name}
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {reviews.map((review, i) => (
+                  <div key={i} className="rounded-xl border border-card-border bg-card-bg p-5">
+                    <div className="flex items-center justify-between mb-3">
+                      <div>
+                        <span className="font-medium text-text">{review.name}</span>
+                        {review.verified && (
+                          <span className="ml-2 rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Verified</span>
+                        )}
+                        <p className="text-xs text-text/30 mt-0.5">{review.location ? `${review.location} · ` : ''}{review.date}</p>
+                      </div>
+                      <div className="flex items-center gap-0.5">
+                        {[1,2,3,4,5].map(s => (
+                          <span key={s} className={`text-sm ${s <= review.rating ? "text-yellow-400" : "text-text/15"}`}>★</span>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-0.5">
-                      {[1,2,3,4,5].map(s => (
-                        <span key={s} className={`text-sm ${s <= review.rating ? "text-yellow-400" : "text-text/15"}`}>★</span>
-                      ))}
-                    </div>
+                    <p className="text-sm text-text/60 leading-relaxed">{review.text}</p>
                   </div>
-                  <p className="text-sm text-text/60 leading-relaxed">{review.text}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-xs text-text/20 text-center">
-              {realReviews.length > 0
-                ? "Reviews sourced from independent review platforms. Individual experiences may vary."
-                : "Reviews collected from app stores and user submissions. Individual experiences may vary."}
+                ))}
+              </div>
+              <p className="mt-4 text-xs text-text/20 text-center">
+                Source: Independent review platforms. Individual experiences may vary.
+              </p>
+            </>
+          ) : (
+            <p className="mt-4 text-sm text-text/40">
+              No independent reviews available yet.
             </p>
-          </section>
-        )}
+          )}
+        </section>
 
         {/* ── Similar Sites ─────────────────────────────── */}
         {similarSites.length > 0 && (

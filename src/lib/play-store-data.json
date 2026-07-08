@@ -1,0 +1,225 @@
+{
+  "tinder": {
+    "googlePlayRating": 3.8,
+    "googlePlayReviews": 5213702,
+    "googlePlayInstalls": "500,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tinder&hl=en&gl=us",
+    "verified": true
+  },
+  "bumble": {
+    "googlePlayRating": 3.8,
+    "googlePlayReviews": 860917,
+    "googlePlayInstalls": "100,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bumble.app&hl=en&gl=us",
+    "verified": true
+  },
+  "hinge": {
+    "googlePlayRating": 3.5,
+    "googlePlayReviews": 218547,
+    "googlePlayInstalls": "116326994032539711834",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.hinge.app&hl=en&gl=us",
+    "verified": true
+  },
+  "okcupid": {
+    "googlePlayRating": 3.4,
+    "googlePlayReviews": 293434,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.okcupid.okcupid&hl=en&gl=us",
+    "verified": true
+  },
+  "match-com": {
+    "googlePlayRating": 3.2,
+    "googlePlayReviews": 54274,
+    "googlePlayInstalls": "10,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.match.android.matchmobile&hl=en&gl=us",
+    "verified": true
+  },
+  "plenty-of-fish": {
+    "googlePlayRating": 3.7,
+    "googlePlayReviews": 823395,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pof.android&hl=en&gl=us",
+    "verified": true
+  },
+  "badoo": {
+    "googlePlayRating": 4.0,
+    "googlePlayReviews": 4134400,
+    "googlePlayInstalls": "100,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.badoo.mobile&hl=en&gl=us",
+    "verified": true
+  },
+  "zoosk": {
+    "googlePlayRating": 3.4,
+    "googlePlayReviews": 260451,
+    "googlePlayInstalls": "10,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zoosk.zoosk&hl=en&gl=us",
+    "verified": true
+  },
+  "eharmony": {
+    "googlePlayRating": 3.0,
+    "googlePlayReviews": 22403,
+    "googlePlayInstalls": null,
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.eharmony&hl=en&gl=us",
+    "verified": true
+  },
+  "happn": {
+    "googlePlayRating": 4.0,
+    "googlePlayReviews": 1276070,
+    "googlePlayInstalls": "100,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ftw_and_co.happn&hl=en&gl=us",
+    "verified": true
+  },
+  "hily": {
+    "googlePlayRating": 4.3,
+    "googlePlayReviews": 152680,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hily.app&hl=en&gl=us",
+    "verified": true
+  },
+  "grindr": {
+    "googlePlayRating": 4.3,
+    "googlePlayReviews": 1048866,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grindrapp.android&hl=en&gl=us",
+    "verified": true
+  },
+  "her": {
+    "googlePlayRating": 4.3,
+    "googlePlayReviews": 44445,
+    "googlePlayInstalls": "105504576504509857182",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.weareher.her&hl=en&gl=us",
+    "verified": true
+  },
+  "scruff": {
+    "googlePlayRating": 3.5,
+    "googlePlayReviews": 52900,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.appspot.scruffapp&hl=en&gl=us",
+    "verified": true
+  },
+  "hornet": {
+    "googlePlayRating": 3.4,
+    "googlePlayReviews": 127648,
+    "googlePlayInstalls": "10,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hornet.android&hl=en&gl=us",
+    "verified": true
+  },
+  "blued": {
+    "googlePlayRating": 4.4,
+    "googlePlayReviews": 317917,
+    "googlePlayInstalls": "10,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.blued.international&hl=en&gl=us",
+    "verified": true
+  },
+  "growlr": {
+    "googlePlayRating": 3.6,
+    "googlePlayReviews": 27553,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.initechapps.growlr&hl=en&gl=us",
+    "verified": true
+  },
+  "christian-mingle": {
+    "googlePlayRating": 2.0,
+    "googlePlayReviews": 210,
+    "googlePlayInstalls": null,
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.spark.christianmingle&hl=en&gl=us",
+    "verified": true
+  },
+  "lovoo": {
+    "googlePlayRating": 3.7,
+    "googlePlayReviews": 654285,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.lovoo.android&hl=en&gl=us",
+    "verified": true
+  },
+  "jaumo": {
+    "googlePlayRating": 4.5,
+    "googlePlayReviews": 1520257,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.jaumo&hl=en&gl=us",
+    "verified": true
+  },
+  "the-inner-circle": {
+    "googlePlayRating": 3.9,
+    "googlePlayReviews": 69621,
+    "googlePlayInstalls": "5,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.theinnercircle&hl=en&gl=us",
+    "verified": true
+  },
+  "date-my-age": {
+    "googlePlayRating": 4.1,
+    "googlePlayReviews": 57375,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.datemyage&hl=en&gl=us",
+    "verified": true
+  },
+  "veggly": {
+    "googlePlayRating": 4.4,
+    "googlePlayReviews": 14070,
+    "googlePlayInstalls": "1,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.veggly&hl=en&gl=us",
+    "verified": true
+  },
+  "azar": {
+    "googlePlayRating": 3.8,
+    "googlePlayReviews": 1146077,
+    "googlePlayInstalls": ",",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.azarlive.android&hl=en&gl=us",
+    "verified": true
+  },
+  "skout": {
+    "googlePlayRating": 4.1,
+    "googlePlayReviews": 766493,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.skout.android&hl=en&gl=us",
+    "verified": true
+  },
+  "tagged": {
+    "googlePlayRating": 4.0,
+    "googlePlayReviews": 661042,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.taggedapp&hl=en&gl=us",
+    "verified": true
+  },
+  "mamba": {
+    "googlePlayRating": 4.3,
+    "googlePlayReviews": 647301,
+    "googlePlayInstalls": "50,000,000+",
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.mamba.client&hl=en&gl=us",
+    "verified": true
+  },
+  "coffee-meets-bagel": {
+    "googlePlayRating": 3.0004305839538574,
+    "googlePlayReviews": 42906,
+    "googlePlayDescription": null,
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.coffeemeetsbagel&hl=en&gl=us",
+    "verified": true
+  }
+}
