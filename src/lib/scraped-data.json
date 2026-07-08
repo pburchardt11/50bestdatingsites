@@ -1,0 +1,1622 @@
+{
+  "scrapedAt": "2026-07-04",
+  "source": "Real data scraped from SmartCustomer/Sitejabber reviews and dating site homepages",
+  "sites": {
+    "tinder": {
+      "realRating": { "smartCustomer": 1.8, "totalReviews": 547 },
+      "realReviews": [
+        {
+          "author": "Steven H.",
+          "rating": 1,
+          "text": "Tinder is full of women who have lost touch with reality. Ugly, overweight and ridiculously picky. User reports switching to alternative dating platform after poor experience.",
+          "date": "2025-04",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Kateryna K.",
+          "rating": 1,
+          "text": "I paid for a Gold Membership and my account has been plagued with technical issues from day one. Despite thousands of likes, user experienced matching failures and repeated account locks.",
+          "date": "2024-12",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Xander G.",
+          "rating": 1,
+          "text": "Failed platform & useless customer support, I have been emailing DAILY for over two months. User reports platform malfunction and unresponsive support after payment.",
+          "date": "2024-09",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Swipe right/left matching",
+        "Unlimited Likes (Plus+)",
+        "Unlimited Rewinds",
+        "Passport to Any Location",
+        "Hide Advertisements",
+        "Go Incognito",
+        "See Who Likes You (Gold)",
+        "Weekly Super Likes (Gold)",
+        "1 Free Boost a month (Gold)",
+        "Message before Matching (Platinum)",
+        "Prioritized Likes (Platinum)"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Tinder Plus", "features": ["Unlimited Likes", "Unlimited Rewinds", "Passport", "Hide Ads", "Go Incognito"] },
+          { "name": "Tinder Gold", "features": ["All Plus features", "See Who Likes You", "Weekly Super Likes", "1 Free Boost/month"] },
+          { "name": "Tinder Platinum", "features": ["All Gold features", "Message before Matching", "Prioritized Likes"] }
+        ]
+      },
+      "realDescription": "Dating, Make Friends & Meet New People"
+    },
+    "bumble": {
+      "realRating": { "smartCustomer": 1.1, "totalReviews": 129 },
+      "realReviews": [
+        {
+          "author": "Ninny B.",
+          "rating": 1,
+          "text": "I just found their other apps & theyre rated 1.8 stars on Google Play store. Its an absolute scam to receive money without providing a service.",
+          "date": "2025-10",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Mattia M.",
+          "rating": 1,
+          "text": "After years of using Bumble and holding a Lifetime Premium subscription. I was banned simply for suggesting to a match that we could relax together and I could give her a massage.",
+          "date": "2025-08",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Randy P.",
+          "rating": 2,
+          "text": "In theory, the idea behind Bumble sounds good. Women make the first move so you would think you are matched with people who are really attracted to you. Reality doesn't match up!",
+          "date": "2024-08",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Women make the first move",
+        "Bumble Date - dating service",
+        "Bumble BFF - friend finding",
+        "Member Circle community program",
+        "Stories content sharing",
+        "Safety Resources",
+        "QR code app download",
+        "Web and mobile access"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Bumble Premium", "features": ["Advanced filters", "See who likes you", "Rematch", "Extend time"] },
+          { "name": "Bumble Premium+", "features": ["All Premium features", "Priority visibility", "Travel Mode"] }
+        ]
+      },
+      "realDescription": "We exist to bring people closer to love. Find meaningful and authentic relationships that ignite confidence and joy."
+    },
+    "hinge": {
+      "realRating": { "smartCustomer": 1.1, "totalReviews": 72 },
+      "realReviews": [
+        {
+          "author": "Glen S.",
+          "rating": 1,
+          "text": "I'm another banned ex-user of Hinge. I was banned for political reasons and now I'm happy that it happened. It's worthless app designed to fleece people out of their money by banning them after they have made a payment.",
+          "date": "2025-08",
+          "source": "SmartCustomer",
+          "location": "Germany"
+        },
+        {
+          "author": "Marc C.",
+          "rating": 1,
+          "text": "Banned within 24 hours of joining. No reason. I never interacted with anyone. Do not waste your time nor money which is clearly a scam and fraud.",
+          "date": "2025-08",
+          "source": "SmartCustomer",
+          "location": "New York"
+        },
+        {
+          "author": "Kale C.",
+          "rating": 1,
+          "text": "I have had hideous experience with Hinge! I wasted lots of money on Hinge scammers. Hinge is corrupt at every level from start to finish, you can hardly find a woman who is genuine.",
+          "date": "2025-07",
+          "source": "SmartCustomer",
+          "location": "Massachusetts"
+        }
+      ],
+      "realFeatures": [
+        "Nobel Prize-winning matching algorithm",
+        "Conversation-focused prompts",
+        "Quality over quantity approach",
+        "Hinge Labs research team",
+        "Designed to be deleted philosophy"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "HingeX", "features": ["Enhanced preferences", "See who likes you", "Unlimited likes"] },
+          { "name": "Hinge+", "features": ["See who likes you", "Set dealbreakers", "Unlimited likes"] }
+        ]
+      },
+      "realDescription": "The dating app designed to be deleted. Built on the belief that anyone seeking love should be able to find it, using an acclaimed Nobel-Prize-winning algorithm."
+    },
+    "okcupid": {
+      "realRating": { "smartCustomer": 1.9, "totalReviews": 644 },
+      "realReviews": [
+        {
+          "author": "Kateryna K.",
+          "rating": 1,
+          "text": "I paid for a premium OKCupid subscription and was removed from the platform shortly afterwards without any prior notice, explanation, or evidence of wrongdoing.",
+          "date": "2026-01",
+          "source": "SmartCustomer",
+          "location": "Spain"
+        },
+        {
+          "author": "Vick Z.",
+          "rating": 1,
+          "text": "They don't have any real women. All they can offer you is tons of bots to screw you out of money. When you purchase a subscription on OkCupid things get much worse than they were when you were a free member.",
+          "date": "2025-06",
+          "source": "SmartCustomer",
+          "location": "Hungary"
+        },
+        {
+          "author": "john j.",
+          "rating": 1,
+          "text": "I paid $70 for three months membership. All you get is pics and profiles of people who may or may not be active members. You CANNOT communicate with ANYONE.",
+          "date": "2024-08",
+          "source": "SmartCustomer",
+          "location": "Oregon"
+        }
+      ],
+      "realFeatures": [
+        "Detailed matching questions",
+        "Compatibility percentage scoring",
+        "Free messaging",
+        "Detailed profiles with prompts",
+        "Discovery preferences",
+        "Incognito mode (premium)"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Basic", "price": "$7.95/mo (12 months)" },
+          { "name": "Premium", "price": "$24.90/mo" }
+        ]
+      },
+      "realDescription": "Free online dating and matchmaking service for singles with detailed compatibility matching."
+    },
+    "match": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 1220 },
+      "realReviews": [
+        {
+          "author": "Susan H.",
+          "rating": 1,
+          "text": "Account suspended twice without explanation. After paying $219 for renewed membership, access was denied permanently with no recourse or appeal process.",
+          "date": "2026-03",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Neal R.",
+          "rating": 1,
+          "text": "Reports heavy use of chatbots instead of real people. Describes aggressive auto-renewal practices and difficulties opting out of subscriptions.",
+          "date": "2026-01",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Mark C.",
+          "rating": 1,
+          "text": "New security puzzles make login nearly impossible; significantly reduced active user base; excessive customer service burden; suspects deliberate customer punishment tactics.",
+          "date": "2026-01",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Daily matches",
+        "Advanced search filters",
+        "Messaging system",
+        "Profile verification",
+        "Video dating",
+        "Events and meetups",
+        "Match guarantee"
+      ],
+      "realPricing": {
+        "free": false,
+        "plans": [
+          { "name": "Standard", "price": "$21.99/mo (12 months)" },
+          { "name": "Premium", "price": "$34.99/mo" }
+        ]
+      },
+      "realDescription": "The original online dating site for singles seeking serious relationships."
+    },
+    "plentyoffish": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 2006 },
+      "realReviews": [
+        {
+          "author": "Alvin F.",
+          "rating": 1,
+          "text": "You only have to look at the quality of the women on there who have children to know that men will sleep with anything.",
+          "date": "2025-12",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Jack S.",
+          "rating": 1,
+          "text": "The double standards and hypocrisy on pof are hilarious. Those on there seem to lack any self awareness at all.",
+          "date": "2025-12",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Joane P.",
+          "rating": 1,
+          "text": "Free... you still have to pay to see your matches that is not FREE this company is a JOKE.",
+          "date": "2025-10",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Multiple messaging options",
+        "Profile browsing with photos",
+        "Community-focused design",
+        "Mobile apps (iOS and Android)",
+        "Success stories section",
+        "Free registration"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Priority messaging", "Advanced search"] }
+        ]
+      },
+      "realDescription": "The most welcoming, friendly, sociable, playful, relaxed, fun way to date."
+    },
+    "badoo": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 606 },
+      "realReviews": [
+        {
+          "author": "BRADLEY R.",
+          "rating": 1,
+          "text": "They'll steal your credits for no reason. Use a different website. I've spent hundreds of dollars on this dating service.",
+          "date": "2026-01",
+          "source": "SmartCustomer",
+          "location": "Canada"
+        },
+        {
+          "author": "Stephanie M.",
+          "rating": 1,
+          "text": "Hidden auto top-up charges without consent violate consumer law. Support refused refunds despite proof. Had to file chargeback.",
+          "date": "2025-10",
+          "source": "SmartCustomer",
+          "location": "Denmark"
+        },
+        {
+          "author": "Elka D.",
+          "rating": 1,
+          "text": "Worst customer service. Platform full of scammers posing as military personnel requesting gift cards. Unsafe for meeting.",
+          "date": "2025-02",
+          "source": "SmartCustomer",
+          "location": "Belgium"
+        }
+      ],
+      "realFeatures": [
+        "Anti-fraud technology",
+        "Flexible dating intentions",
+        "Instant messaging",
+        "Safety Centre",
+        "Profile matching by location",
+        "100M+ Google Play downloads"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Undo swipes", "Invisible mode", "Highlighted profile"] }
+        ]
+      },
+      "realDescription": "Here's to dating with confidence. Anti-fraud technology to combat fake, scam, and spam accounts. Founded 2006, part of Bumble Inc."
+    },
+    "zoosk": {
+      "realRating": { "smartCustomer": 2.1, "totalReviews": 3540 },
+      "realReviews": [
+        {
+          "author": "Dean L.",
+          "rating": 1,
+          "text": "All the messages I received came from totally fake profiles. I replied to a few of them only to be asked for money and gifts. They automatically renewed my subscription without even notifying me.",
+          "date": "2026-02",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Stanley C.",
+          "rating": 1,
+          "text": "Zoosk is an online, subscription-based dating site. The company claims that its smartpick system is designed to deeply analyze your profile. NOT TRUE. Zoosk considers each subscriber as cash cows.",
+          "date": "2025-11",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Niels S.",
+          "rating": 1,
+          "text": "Zoosk uses stolen identities and photos of pretty ladies as gimmicks. Just plenty of scammers from around the world preying on your money, making up all kinds of sob stories.",
+          "date": "2025-02",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Smart Matchmaking algorithm",
+        "Advanced filtering tools",
+        "Local singles discovery",
+        "Smiles, likes, and conversation features",
+        "Daily personalization",
+        "60+ million members"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$12.49/mo (12 months)" },
+          { "name": "Premium", "price": "$29.95/mo (1 month)" }
+        ]
+      },
+      "realDescription": "Your one in a million might be closer than you think. Serious dating app for ambitious, educated singles seeking meaningful relationships."
+    },
+    "coffeemeetsbagel": {
+      "realRating": { "smartCustomer": 1.3, "totalReviews": 175 },
+      "realReviews": [
+        {
+          "author": "Robert T.",
+          "rating": 1,
+          "text": "Buyer beware: CoffeeMeetsBagel is as fake as three dollar bill! You can chat every day for one hundred years there and never meet anyone.",
+          "date": "2025-06",
+          "source": "SmartCustomer",
+          "location": "Bulgaria"
+        },
+        {
+          "author": "Hugh J.",
+          "rating": 1,
+          "text": "Coffeemeetsbagel is full of professional chatters who try to hook you with sexy photos and gain your interest with all possible means.",
+          "date": "2025-02",
+          "source": "SmartCustomer",
+          "location": "Denmark"
+        },
+        {
+          "author": "Tom O.",
+          "rating": 2,
+          "text": "This site is so full of fake profiles it was a waste of money. Pictures of beautiful 25 year olds (that say they are 40) with no detail.",
+          "date": "2025-01",
+          "source": "SmartCustomer",
+          "location": "Colorado"
+        }
+      ],
+      "realFeatures": [
+        "Curated daily matches (not swipe-based)",
+        "91% of users seeking committed relationships",
+        "150+ million matches generated",
+        "Founded by three sisters",
+        "Relationship-focused matching"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Activity reports", "Read receipts", "Additional beans"] }
+        ]
+      },
+      "realDescription": "The dating app for serious daters. Founded by three sisters, targeting individuals seeking committed relationships."
+    },
+    "eharmony": {
+      "realRating": { "smartCustomer": 1.4, "totalReviews": 1177 },
+      "realReviews": [
+        {
+          "author": "Comte a.",
+          "rating": 1,
+          "text": "Paid $416.88/year for Premium Unlimited but received only 7-8 matches initially, then none for two weeks. Within 50 miles: Only 1 match. Within 150 miles: Only 3 matches. After canceling, still forced to pay remaining balance; account sent to collection.",
+          "date": "2025-11",
+          "source": "SmartCustomer",
+          "location": "California"
+        },
+        {
+          "author": "John L.",
+          "rating": 1,
+          "text": "After 18 months, discovered numerous fake profiles. One scammer extracted over $1,000 through emotional manipulation. Multiple contacts displayed suspicious patterns: they moved very quickly to build serious romantic rapport before requesting financial assistance.",
+          "date": "2025-07",
+          "source": "SmartCustomer",
+          "location": "Colorado"
+        },
+        {
+          "author": "Al S.",
+          "rating": 1,
+          "text": "90% of the women are phishing for your phone number. Reports filing 6-7 complaints weekly and receiving no customer service response despite paying $279.96.",
+          "date": "2025-06",
+          "source": "SmartCustomer",
+          "location": "New Jersey"
+        }
+      ],
+      "realFeatures": [
+        "Compatibility Quiz",
+        "Personality Profile with compatibility metrics",
+        "Basic free membership",
+        "Premium advanced search filters",
+        "Complete personality assessment",
+        "Over 2 million love connections",
+        "Every 14 minutes someone finds love"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Basic", "price": "Free", "features": ["View profiles", "Send/receive initial messages", "See profile visitors"] },
+          { "name": "Premium", "price": "$35.90/mo (12 months)", "features": ["All photos", "Complete personality profile", "Advanced search"] }
+        ]
+      },
+      "realDescription": "The #1 trusted dating app for singles seeking meaningful, lasting relationships through compatibility matching. Over two decades of service."
+    },
+    "grindr": {
+      "realRating": { "smartCustomer": 1.4, "totalReviews": 185 },
+      "realReviews": [
+        {
+          "author": "Lucky T.",
+          "rating": 1,
+          "text": "The only people welcome on this app are predators, or people comfortable around predators. I tried reporting unsolicited images hundreds of times. Nothing ever happened.",
+          "date": "2025-09",
+          "source": "SmartCustomer",
+          "location": "Australia"
+        },
+        {
+          "author": "Lee F.",
+          "rating": 1,
+          "text": "Grindr has removed ANOTHER feature from its free app. You have to pay for that now. The vast majority of people that contact you are fake accounts.",
+          "date": "2025-09",
+          "source": "SmartCustomer",
+          "location": "Texas"
+        },
+        {
+          "author": "Daniel R.",
+          "rating": 2,
+          "text": "Grindr is dangerous. Met the wrong group of gays, who were using meth. So I fell prey. 6 years of hell on earth.",
+          "date": "2024-12",
+          "source": "SmartCustomer",
+          "location": "New York"
+        }
+      ],
+      "realFeatures": [
+        "Browse profiles by proximity",
+        "Chat and messaging",
+        "Web version available",
+        "Multi-device access",
+        "XTRA subscription tier",
+        "Unlimited subscription tier"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "XTRA", "features": ["More profiles", "Advanced filters", "Unsend messages", "Incognito"] },
+          { "name": "Unlimited", "features": ["All XTRA features", "See who viewed you", "Unlimited profiles", "Web access"] }
+        ]
+      },
+      "realDescription": "The world's largest social networking app for gay, bi, trans, and queer people."
+    },
+    "her": {
+      "realRating": { "appStore": 4.5, "totalReviews": null },
+      "realReviews": [],
+      "realFeatures": [
+        "Profile with pronouns, gender identity, orientation",
+        "Pride Pins expression",
+        "35+ community spaces",
+        "Profile verification",
+        "Incognito mode",
+        "Trust & Safety team moderation",
+        "15+ million active members",
+        "125+ countries",
+        "Add Friend option",
+        "Political Pride Pins",
+        "300+ million matches made"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Free", "features": ["Browse profiles", "Start chats", "Join communities", "Add friends", "View events"] },
+          { "name": "HER Premium", "features": ["Ad-free", "Online status visibility", "Sexuality filtering", "Incognito mode", "See who liked you", "Unlimited swipes"] }
+        ]
+      },
+      "realDescription": "The Sapphic Dating App. Leading dating and social networking platform for lesbian, bisexual, trans, non-binary, and queer people."
+    },
+    "elitesingles": {
+      "realRating": { "smartCustomer": 1.3, "totalReviews": 555 },
+      "realReviews": [
+        {
+          "author": "Colin W.",
+          "rating": 1,
+          "text": "Dishonest right from the start, full of fake and outdated profiles. You could go on forever there and never go anywhere.",
+          "date": "2025-06",
+          "source": "SmartCustomer",
+          "location": "GB"
+        },
+        {
+          "author": "Bill M.",
+          "rating": 1,
+          "text": "Poor matches. Lots of blank profiles. Personality test was a waste of time. Terrible customer service.",
+          "date": "2025-04",
+          "source": "SmartCustomer",
+          "location": "Australia"
+        },
+        {
+          "author": "Mario K.",
+          "rating": 1,
+          "text": "EliteSingles community is just awful. You can hardly meet a sensible educated person there! I realized it was garbage and a huge time and money waster.",
+          "date": "2025-02",
+          "source": "SmartCustomer",
+          "location": "Canada"
+        }
+      ],
+      "realFeatures": [
+        "Personality assessment",
+        "Educated professional matching",
+        "Compatibility-based recommendations",
+        "Detailed profiles",
+        "Search filters"
+      ],
+      "realPricing": {
+        "free": false,
+        "plans": [
+          { "name": "Premium Light", "price": "$31.95/mo (6 months)" },
+          { "name": "Premium Classic", "price": "$21.95/mo (12 months)" },
+          { "name": "Premium Comfort", "price": "$44.95/mo (3 months)" }
+        ]
+      },
+      "realDescription": "Dating for educated, professional singles seeking meaningful relationships."
+    },
+    "silversingles": {
+      "realRating": { "smartCustomer": 1.6, "totalReviews": 520 },
+      "realReviews": [
+        {
+          "author": "Greg M.",
+          "rating": 1,
+          "text": "Silver Singles renews your subscription even though you have gone through the cancelation procedure.",
+          "date": "2025-01",
+          "source": "SmartCustomer",
+          "location": "Arizona"
+        },
+        {
+          "author": "Robert B.",
+          "rating": 1,
+          "text": "Clear cache, update browser... blah blah blah... still cant log in most of the time. No real matches based on my preferences. Waste of time and money.",
+          "date": "2025-01",
+          "source": "SmartCustomer",
+          "location": "Michigan"
+        },
+        {
+          "author": "Stu L.",
+          "rating": 1,
+          "text": "After everyone that I come in contact with I receive an e-mail from SilverSingles telling me that they have a fake profile. EVERY SINGLE ONE.",
+          "date": "2024-09",
+          "source": "SmartCustomer",
+          "location": "Florida"
+        }
+      ],
+      "realFeatures": [
+        "Personality-based matching for 50+ singles",
+        "Compatibility quiz",
+        "Daily match suggestions",
+        "Photo verification",
+        "Communication features"
+      ],
+      "realPricing": {
+        "free": false,
+        "plans": [
+          { "name": "Premium Light", "price": "$27.95/mo (6 months)" },
+          { "name": "Premium Classic", "price": "$19.95/mo (12 months)" }
+        ]
+      },
+      "realDescription": "Dating site for singles over 50 seeking meaningful relationships."
+    },
+    "muzz": {
+      "realRating": { "appStore": null, "totalReviews": null },
+      "realReviews": [],
+      "realFeatures": [
+        "Free messaging and matching",
+        "Video calling without sharing phone numbers",
+        "Photo privacy controls",
+        "Nickname usage",
+        "Screenshot/screen recording blocking",
+        "Selfie verification",
+        "SMS and location verification",
+        "Advanced filters by religiosity, profession, height, language",
+        "Chaperone/Wali option for conversations",
+        "Voice and video profile introductions",
+        "Muzz Social community network",
+        "15 million members globally",
+        "600,000+ success stories",
+        "500+ couples connect daily"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Free", "features": ["Profiles", "Matching", "Chatting", "Video calling"] },
+          { "name": "Muzz Gold", "features": ["Must-have filters", "Unlimited daily likes", "30x profile boost", "Rematch", "VIP badge", "No blurred photos filter"] }
+        ]
+      },
+      "realDescription": "Where Muslims meet. The leading Muslim dating and marriage app helping single Muslims find their perfect partner while respecting religious beliefs."
+    },
+    "jdate": {
+      "realRating": { "smartCustomer": 1.4, "totalReviews": 13 },
+      "realReviews": [
+        {
+          "author": "Kira B.",
+          "rating": 1,
+          "text": "This dating site should have -10 rating. It is a total scam. They grab your money and present you with ten options where each individual is rated as being less than 33% compatible.",
+          "date": "2024-05",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Sonia P.",
+          "rating": 1,
+          "text": "Women over 40 beware! Most profiles are fake or old guys looking to date younger women. Complete garbage.",
+          "date": "2023-04",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Sam L.",
+          "rating": 1,
+          "text": "Site is very hard to navigate; matches just makes no sense at all; constant bugs that blocks access. But worst of all they're very greedy. I signed up for an annual membership, the following year they automatically charged my credit card.",
+          "date": "2023-04",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Jewish singles matching",
+        "Compatibility percentage",
+        "Search filters",
+        "Messaging system",
+        "Profile browsing"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$29.99/mo" }
+        ]
+      },
+      "realDescription": "The leading Jewish dating site for Jewish singles seeking meaningful relationships."
+    },
+    "christianmingle": {
+      "realRating": { "smartCustomer": 1.1, "totalReviews": 166 },
+      "realReviews": [
+        {
+          "author": "Josh R.",
+          "rating": 1,
+          "text": "They don't provide any real service and they don't attract any real profiles. They chose the easy way: they guilt you into subscribing, get your bank details and overcharge you.",
+          "date": "2025-10",
+          "source": "SmartCustomer",
+          "location": "Denmark"
+        },
+        {
+          "author": "Chris M.",
+          "rating": 1,
+          "text": "Everything you're hearing about no real profiles is completely true. After three weeks on the site, one single like from a person that was 1000 miles away from me. This website is just not worth your time.",
+          "date": "2025-09",
+          "source": "SmartCustomer",
+          "location": "Texas"
+        },
+        {
+          "author": "Marcus G.",
+          "rating": 1,
+          "text": "The overwhelming majority of accounts on ChristianMingle are terribly outdated and abandoned. The reply rate is very low. The site is very tricky!",
+          "date": "2025-06",
+          "source": "SmartCustomer",
+          "location": "Norway"
+        }
+      ],
+      "realFeatures": [
+        "Faith-based matching",
+        "Christian singles community",
+        "Profile browsing",
+        "Messaging system",
+        "Mobile apps"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$24.99/mo" }
+        ]
+      },
+      "realDescription": "The largest and most popular dating site for Christian singles."
+    },
+    "happn": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 1 },
+      "realReviews": [
+        {
+          "author": "manuela i.",
+          "rating": 1,
+          "text": "Bad because if some men see you are within their range, that you are close they can drive and find you. Then you will have to call the police.",
+          "date": "2023-07",
+          "source": "SmartCustomer",
+          "location": "North Macedonia"
+        }
+      ],
+      "realFeatures": [
+        "Location-based matching (cross paths with nearby users)",
+        "Chat and messaging",
+        "Local dating focus",
+        "Available 24/7 since 2014",
+        "180 million users worldwide"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who liked you", "Unlimited likes", "Invisible mode", "FlashNote"] }
+        ]
+      },
+      "realDescription": "Cross paths. Date local. Location-based dating app trusted by over 180 million users worldwide since 2014."
+    },
+    "feeld": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Desire Tags for sharing specific desires/interests",
+        "Interests system beyond dating preferences",
+        "Longform bios (1,500 characters)",
+        "Hidden Bios visible only to matches",
+        "Ad-free experience (all tiers)",
+        "Constellation feature (link up to 5 profiles)",
+        "Reflections self-discovery (165 prompts)",
+        "14M+ registered users"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Majestic Membership", "features": ["Advanced filters", "See who likes you", "Incognito mode", "Priority profile"] }
+        ]
+      },
+      "realDescription": "A dating app for the curious, open-minded, couples, throuples, queers. Connects open-minded individuals exploring love, desire, and alternative relationships."
+    },
+    "pure": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 3 },
+      "realReviews": [
+        {
+          "author": "Erick A.",
+          "rating": 2,
+          "text": "It's designed in a fun way to look through but nothing really transpires. About 90% of paid gifts get rejected regardless of approach. It just doesn't go anywhere.",
+          "date": "2023-05",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Paul G.",
+          "rating": 1,
+          "text": "Paid $20 monthly plus $3 per message to communicate. Widespread ghosting from both genders. Extremely dissatisfied with user base quality.",
+          "date": "2022-07",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Mike W.",
+          "rating": 1,
+          "text": "Requested an immediate refund with no customer service response. The company is fake. Pursued credit card fraud dispute through Apple.",
+          "date": "2021-11",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Open-minded dating",
+        "Multi-platform (iOS, Android, Huawei, Yandex)",
+        "Safety protocols",
+        "City-specific guides",
+        "10 supported languages"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$19.99/mo" }
+        ]
+      },
+      "realDescription": "Open-Minded Dating App. Based in Switzerland (Online Classifieds AG)."
+    },
+    "hily": {
+      "realRating": { "smartCustomer": 2.9, "totalReviews": 173, "appStore": 4.4, "appStoreReviews": 343000 },
+      "realReviews": [
+        {
+          "author": "Amir A.",
+          "rating": 4,
+          "text": "Not gonna lie. I was into casual, but Hily surprised me. Connected with some genuinely cool people, they made me think about something more meaningful.",
+          "date": "2025-07",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Pete P.",
+          "rating": 1,
+          "text": "I fact check I investigated and every good review is in fact a friend of a worker or a worker them selves. They take advantage of people the people are fake and the money they take from you is real.",
+          "date": "2025-02",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Marcella A.",
+          "rating": 1,
+          "text": "They are playing games and look for trouble they want sex I'm not accepting this be careful worldwide this apps are scam this is rubbish apps.",
+          "date": "2024-10",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Compatibility Matches",
+        "Safety Checks against scammers/spammers",
+        "Icebreaker conversation starters",
+        "Data-backed dating tips",
+        "11.4B+ likes sent",
+        "43M+ active users",
+        "58M+ mutual matches annually"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Advanced filters", "Unlimited likes", "Read receipts", "Incognito"] }
+        ]
+      },
+      "realDescription": "Date as you are. Stay YOU. Connect MORE. Name derives from Hey, I Like You! Emphasizes authenticity and genuine connections."
+    },
+    "ashleymadison": {
+      "realRating": { "smartCustomer": 1.4, "totalReviews": 899 },
+      "realReviews": [
+        {
+          "author": "Adam R.",
+          "rating": 1,
+          "text": "They encourage you to get more and more credits. Chatting on AshleyMadison can be an endless activity. However the worst thing is that it's completely pointless because noone is after a real thing there.",
+          "date": "2026-01",
+          "source": "SmartCustomer",
+          "location": "Austria"
+        },
+        {
+          "author": "Jim S.",
+          "rating": 1,
+          "text": "The first 10 minutes I joined the site I had 50 responses from hot women trying to suck up my credits. The biggest red flag is none of them will meet in person but always say soon.",
+          "date": "2025-11",
+          "source": "SmartCustomer",
+          "location": "Mississippi"
+        },
+        {
+          "author": "Rich M.",
+          "rating": 1,
+          "text": "I have been on this site for almost a year. I found way too many fake profiles and customer service was terrible. They didn't answer me until my 3rd email. Would not refund any of the credits that I asked for.",
+          "date": "2025-10",
+          "source": "SmartCustomer",
+          "location": "New York"
+        }
+      ],
+      "realFeatures": [
+        "Discreet extramarital dating",
+        "Credit-based messaging system",
+        "Priority messaging",
+        "Profile boosting",
+        "Traveling features",
+        "Gift system"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Basic", "price": "$59 for 100 credits" },
+          { "name": "Classic", "price": "$169 for 500 credits" },
+          { "name": "Elite", "price": "$289 for 1000 credits" }
+        ]
+      },
+      "realDescription": "Life is short. Have an affair. Discreet encounters for attached individuals."
+    },
+    "farmersonly": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 10 },
+      "realReviews": [
+        {
+          "author": "Ben J.",
+          "rating": 1,
+          "text": "I have spent nearly a year and lots of money on Farmersonly. I came to Poland to meet my woman. She was so cold and arrogant, even rude - totally different from what she was like online.",
+          "date": "2025-03",
+          "source": "SmartCustomer",
+          "location": "Italy"
+        },
+        {
+          "author": "Richie T.",
+          "rating": 1,
+          "text": "Entertainment profiles - that is what it's called now! Total misleading of customers, complete fraud. They lead you to believe that you are talking to a genuine person. But it's BS! You are talking to fake bots!",
+          "date": "2025-02",
+          "source": "SmartCustomer",
+          "location": "GB"
+        },
+        {
+          "author": "Mary R.",
+          "rating": 5,
+          "text": "Every time Iv had a issue I have been able to contact Customer service. I love the Chat Feature. You can really find out about people discover their personalities. I have Met many wonderful men and women.",
+          "date": "2023-10",
+          "source": "SmartCustomer",
+          "location": "Florida"
+        }
+      ],
+      "realFeatures": [
+        "Rural-focused dating community",
+        "Free registration",
+        "Multiple orientation options",
+        "Chat features",
+        "Specialized categories (Christian, senior, interracial)",
+        "US and Canada coverage"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Unlimited messaging", "See who viewed you", "Advanced search"] }
+        ]
+      },
+      "realDescription": "City folks just don't get it. Dating for single farmers, ranchers, and rural-minded individuals. Founded 2005 by Jerry Miller."
+    },
+    "blackpeoplemeet": {
+      "realRating": { "smartCustomer": 1.3, "totalReviews": 454 },
+      "realReviews": [
+        {
+          "author": "Josh R.",
+          "rating": 1,
+          "text": "All you do is sifting through bots in exhausting search for a needle in the haystack.",
+          "date": "2025-10",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Markus J.",
+          "rating": 1,
+          "text": "They want to know your credit card details so they can put you on recurring payments.",
+          "date": "2025-08",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Lela T.",
+          "rating": 1,
+          "text": "Most if not all of the men on BPM are looking for sex and that's it. Experience caused anxiety and felt like money wasted.",
+          "date": "2025-02",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Profile matching for Black singles",
+        "Messaging system",
+        "Profile browsing",
+        "Mobile apps",
+        "Search filters"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$18.99/mo (6 months)" }
+        ]
+      },
+      "realDescription": "The largest dating site for Black singles in the US. Part of Match Group."
+    },
+    "catholicmatch": {
+      "realRating": { "smartCustomer": 1.6, "totalReviews": 124 },
+      "realReviews": [
+        {
+          "author": "Jennifer R.",
+          "rating": 2,
+          "text": "There are far too many dead profiles. Women leave them active without deleting them, creating the false impression they're engaged on the platform when they're not.",
+          "date": "2026-02",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Jezz A.",
+          "rating": 1,
+          "text": "They allow way too many fake accounts. These accounts are mostly scam artists pretending to be real serious ladies. Needless to say, they are liars and scammers and they want your money.",
+          "date": "2025-06",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Chuck M.",
+          "rating": 1,
+          "text": "No matter how respectfully you treat everyone on the site, if you're on there long enough you WILL eventually be banned for life, with no explanation for why, with no recourse, no discussion, no empathy, no compassion.",
+          "date": "2025-03",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Match Portrait proprietary matching system",
+        "Temperament profiling",
+        "Thousands of articles and courses (CM+)",
+        "Training videos for premium members",
+        "Safety and verification systems",
+        "Mobile apps (iOS and Android)",
+        "Founded 1999"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Free", "features": ["Browse profiles", "Basic matching"] },
+          { "name": "CM+", "features": ["Full messaging", "Media library", "Advanced search", "All features"] }
+        ]
+      },
+      "realDescription": "Find Your Forever. The largest and most trusted Catholic dating site in the world. Faith Focused Dating. Thousands of confirmed marriages."
+    },
+    "seeking": {
+      "realRating": { "smartCustomer": 1.4, "totalReviews": 394 },
+      "realReviews": [
+        {
+          "author": "First L.",
+          "rating": 1,
+          "text": "This dating site is trying to brand itself as a luxury dating experience. What I found was that it is basically online prostitution and trafficking disguised as dating!",
+          "date": "2026-02",
+          "source": "SmartCustomer",
+          "location": "Texas"
+        },
+        {
+          "author": "Jason D.",
+          "rating": 1,
+          "text": "It doesn't work any more like it used to work. SeekingArrangement is pointless. It's full of scam. They don't hold any responsibility for any contact or arrangement.",
+          "date": "2026-01",
+          "source": "SmartCustomer",
+          "location": "Arkansas"
+        },
+        {
+          "author": "CAREER C.",
+          "rating": 1,
+          "text": "Seeking.com is the worst dating website experience. The platform is overpriced, poorly moderated, and flooded with bots, fake profiles, and inactive users.",
+          "date": "2025-12",
+          "source": "SmartCustomer",
+          "location": "California"
+        }
+      ],
+      "realFeatures": [
+        "Luxury dating positioning",
+        "Profile matching and discovery",
+        "Messaging tools",
+        "Video integration",
+        "User verification systems",
+        "Safety-focused design"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$109.99/mo" },
+          { "name": "Diamond", "price": "$249.99/mo" }
+        ]
+      },
+      "realDescription": "You Know What You Want. Find it On Seeking. A luxury dating platform focused on creating meaningful connections. Founded January 2006."
+    },
+    "theleague": {
+      "realRating": { "smartCustomer": 1.5, "totalReviews": 1 },
+      "realReviews": [
+        {
+          "author": "ZeZen N.",
+          "rating": 1,
+          "text": "Purchased a $1,300 subscription. Discovered all available matches were from the USA, despite The League claiming to operate in Montreal, Quebec. After requesting a refund from concierge service within a week, received no response.",
+          "date": "2020-02",
+          "source": "SmartCustomer",
+          "location": "Singapore"
+        }
+      ],
+      "realFeatures": [
+        "Selective/exclusive membership",
+        "Concierge service",
+        "Curated daily matches",
+        "LinkedIn-verified profiles",
+        "Power Moves features",
+        "League Tickets"
+      ],
+      "realPricing": {
+        "free": false,
+        "plans": [
+          { "name": "Member", "price": "$99/mo" },
+          { "name": "Owner", "price": "$299/mo" },
+          { "name": "Investor", "price": "$999/mo" }
+        ]
+      },
+      "realDescription": "Exclusive dating app for ambitious, career-oriented singles with selective admission process."
+    },
+    "theinnercircle": {
+      "realRating": { "smartCustomer": 1.0, "totalReviews": 1 },
+      "realReviews": [
+        {
+          "author": "Iris R.",
+          "rating": 1,
+          "text": "The app tells you to invite friends in order to see your incoming messages; when you've done that nothing changes, you are still obliged to pay the full membership (39.99/month).",
+          "date": "2018-11",
+          "source": "SmartCustomer",
+          "location": "Spain"
+        }
+      ],
+      "realFeatures": [
+        "Curated/selective membership (Apply Now model)",
+        "Global vetted community",
+        "Community events and invitations",
+        "Two tiers: Members and Guests",
+        "Quality over quantity matching"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Guest", "price": "Free", "features": ["Explore community", "Selected event invitations"] },
+          { "name": "Member", "price": "$39.99/mo", "features": ["Full community access", "All event invitations", "Messaging"] }
+        ]
+      },
+      "realDescription": "People Worth Dating. Curated dating app that gets you on a date with someone worth meeting."
+    },
+    "parship": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Authentic reviewed profiles (50%+ completion required)",
+        "Healthy dating guidelines commitment",
+        "No generic or copy-pasted messages allowed",
+        "TUV SUD-certified data security",
+        "Smart compatibility matching algorithm",
+        "Icebreakers and pressure-free conversation starters",
+        "Available in 8+ countries (DE, AT, CH, BE, IT, NL, FR, GB)"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Full messaging", "See all photos", "Profile visitors", "Advanced search"] }
+        ]
+      },
+      "realDescription": "Let's date happy! Better dating with more respect, authenticity, and fun. 9 out of 10 Parship couples are satisfied with their relationship."
+    },
+    "datemyage": {
+      "realRating": { "smartCustomer": 3.6, "totalReviews": 401 },
+      "realReviews": [
+        {
+          "author": "Donald F.",
+          "rating": 5,
+          "text": "It'll hook you 100%. The app pulls you in despite initial skepticism about dating apps.",
+          "date": "2026-06",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Casey B.",
+          "rating": 5,
+          "text": "A bit of nostalgia. The platform fills some of the gaps after relocating, though not a complete replacement.",
+          "date": "2026-06",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Damian C.",
+          "rating": 5,
+          "text": "Gratamente sorprendido. Expresses pleasant surprise that users discuss diverse topics beyond health and politics.",
+          "date": "2026-06",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "Age-appropriate matching",
+        "Video chat",
+        "Verified profiles",
+        "Cross-platform messaging",
+        "Search by interests"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Unlimited messaging", "See who viewed you", "Advanced search", "Video chat"] }
+        ]
+      },
+      "realDescription": "Dating site for mature singles seeking age-appropriate relationships."
+    },
+    "ourtime": {
+      "realRating": { "smartCustomer": 1.2, "totalReviews": 450 },
+      "realReviews": [
+        {
+          "author": "Bill T.",
+          "rating": 1,
+          "text": "The cost of subscription is immense. Moreover, Ourtime is absolutely pointless.",
+          "date": "2026-01",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Linda L.",
+          "rating": 1,
+          "text": "They will not delete personal info. Blocked without explanation and subsequently denied access to remove uploaded photos.",
+          "date": "2026-01",
+          "source": "SmartCustomer"
+        },
+        {
+          "author": "Kam S.",
+          "rating": 1,
+          "text": "Not worth the time or money. Unauthorized billing for a full month after intending only a one-week subscription and being denied a refund.",
+          "date": "2025-11",
+          "source": "SmartCustomer"
+        }
+      ],
+      "realFeatures": [
+        "50+ singles dating",
+        "Profile browsing",
+        "Messaging system",
+        "Daily matches",
+        "Mobile apps"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Unlimited messaging", "See who likes you", "Profile boost"] }
+        ]
+      },
+      "realDescription": "Dating for singles over 50. Part of Match Group."
+    },
+    "scruff": {
+      "realRating": { "smartCustomer": 1.8, "totalReviews": 8 },
+      "realReviews": [
+        {
+          "author": "Alessandro S.",
+          "rating": 1,
+          "text": "Forced autopay subscriptions and unauthorized charges. I deliberately went in straight away to cancel my autoship but was still charged $24.99 without authorization. DISGUSTING.",
+          "date": "2023-12",
+          "source": "SmartCustomer",
+          "location": "Australia"
+        },
+        {
+          "author": "David L.",
+          "rating": 1,
+          "text": "Being able to block someone for abusive behaviour is a basic safety feature and should not be limited. Led to account deletion.",
+          "date": "2023-07",
+          "source": "SmartCustomer",
+          "location": "GB"
+        },
+        {
+          "author": "Thomas J.",
+          "rating": 5,
+          "text": "I found here a friend that I have already met for half a year. I advise everyone to this application.",
+          "date": "2019-03",
+          "source": "SmartCustomer",
+          "location": "New Jersey"
+        }
+      ],
+      "realFeatures": [
+        "LGBTQ+ social networking",
+        "Profile browsing by grid",
+        "Chat and messaging",
+        "Travel features",
+        "Event listings",
+        "SCRUFF Match"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Pro", "price": "$19.99/mo", "features": ["Unlimited profiles", "Advanced filters", "More photos", "Incognito"] }
+        ]
+      },
+      "realDescription": "Gay, bi, trans, and queer social app for guys, bears, and their admirers."
+    },
+    "taimi": {
+      "realRating": { "smartCustomer": 2.8, "totalReviews": 57 },
+      "realReviews": [
+        {
+          "author": "James P.",
+          "rating": 2,
+          "text": "Taimi is the most predatory dating app out of about 10 I've used. Every single aspect of the app is meant to extort you for money. Basic functions require premium.",
+          "date": "2025-11",
+          "source": "SmartCustomer",
+          "location": "Illinois"
+        },
+        {
+          "author": "Lily C.",
+          "rating": 1,
+          "text": "Support is so incredibly helpful, but the app just keeps getting worse. They keep putting things behind pay walls and its gotten so bad to the point where you cant see any information about someone besides photos before matching.",
+          "date": "2025-11",
+          "source": "SmartCustomer",
+          "location": "Michigan"
+        },
+        {
+          "author": "Lisa C.",
+          "rating": 1,
+          "text": "I'm paying $17 a week and I only get three free messages!? What a rip off! You should get unlimited messaging once you pay for seven freaking days.",
+          "date": "2025-08",
+          "source": "SmartCustomer",
+          "location": "California"
+        }
+      ],
+      "realFeatures": [
+        "LGBTQ+ dating and social networking",
+        "Video calls",
+        "Live streaming",
+        "Stories feature",
+        "Community groups",
+        "Profile verification"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "price": "$17/week", "features": ["See who likes you", "Unlimited messaging", "Advanced filters", "Incognito"] }
+        ]
+      },
+      "realDescription": "LGBTQ+ dating, social, and streaming app with community features."
+    },
+    "lovoo": {
+      "realRating": { "smartCustomer": 1.0, "totalReviews": 3 },
+      "realReviews": [
+        {
+          "author": "Tom T.",
+          "rating": 1,
+          "text": "Lovoo is runned by liars, the site is filled with false profiles, wanting your money. All new profiles are in swim suit, visit you and like you every time.",
+          "date": "2019-07",
+          "source": "SmartCustomer",
+          "location": "France"
+        },
+        {
+          "author": "urs d.",
+          "rating": 1,
+          "text": "Between 95 to 99% of the female accounts are either fake or worse scam. The system of reporting abuses is absolutely ridiculous.",
+          "date": "2018-03",
+          "source": "SmartCustomer",
+          "location": "Italy"
+        },
+        {
+          "author": "alan w.",
+          "rating": 1,
+          "text": "Many of the ladies directed you to hangouts. Most will say their camera is broke. I think Lovoo was once a genuine site but its now full of scammers.",
+          "date": "2017-10",
+          "source": "SmartCustomer",
+          "location": "GB"
+        }
+      ],
+      "realFeatures": [
+        "Nearby discovery",
+        "Live video streaming",
+        "Match game",
+        "Chat and messaging",
+        "Icebreaker features"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Invisible mode", "Advanced filters", "Icebreakers"] }
+        ]
+      },
+      "realDescription": "European dating app with live video features, popular in German-speaking countries."
+    },
+    "tantan": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Swipe-based matching (Tinder-style)",
+        "Chat messaging",
+        "Super Like feature",
+        "Location-based discovery",
+        "Popular in China and Southeast Asia"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "VIP", "features": ["See who likes you", "Unlimited likes", "Rewind", "Super likes"] }
+        ]
+      },
+      "realDescription": "China's leading swipe-based dating app with over 100 million users."
+    },
+    "pairs": {
+      "realRating": { "appStore": null, "totalReviews": null },
+      "realReviews": [],
+      "realFeatures": [
+        "Value-based matching with private preference sharing",
+        "Smart Search with AI recommendations",
+        "Identity verification (government ID required)",
+        "Anonymous registration with nicknames",
+        "24/7 customer support",
+        "TRUSTe and IMS certifications",
+        "Private Mode for profile visibility control",
+        "27 million cumulative registrations",
+        "900,000+ relationship/marriage success stories"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Free (Women)", "features": ["Full messaging"] },
+          { "name": "Premium (Men)", "features": ["Full messaging", "See who liked you", "Advanced search"] }
+        ]
+      },
+      "realDescription": "Japan's #1 dating and marriage matching app. 'Intention in meeting.' No. 1 dating/marriage app by relationship rate (2025 MMD research)."
+    },
+    "blued": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "LGBTQ+ social networking",
+        "Live streaming",
+        "Chat and messaging",
+        "Location-based discovery",
+        "Mobile apps (iOS and Android)"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "VIP", "features": ["Advanced features", "Profile boost", "See who viewed you"] }
+        ]
+      },
+      "realDescription": "Online LGBTQ+ Community. Now rebranded as HeeSay. Originally China's largest gay social networking app."
+    },
+    "dilmil": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Advanced matching algorithm",
+        "Community chat rooms (food, social topics)",
+        "Global matching (70% of success stories began long-distance)",
+        "VIP Elite membership",
+        "Unlimited likes",
+        "Boost, Superlike & Request features",
+        "Travel Mode (passport)",
+        "Rewind & Reset options",
+        "4,000+ documented success stories"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "VIP Elite", "features": ["Unlimited likes", "Boost", "Superlike", "Travel Mode", "Rewind", "Advanced filters"] }
+        ]
+      },
+      "realDescription": "Find something real. The leading dating app for South Asian singles focused on meaningful relationships."
+    },
+    "thaifriendly": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Free messaging without matching first",
+        "1,906,123+ members",
+        "1,000 new profiles daily",
+        "Thai language support",
+        "Multiple login options (Apple, Email, Google)",
+        "Coverage across Bangkok, Chiang Mai, Pattaya, Phuket"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Unlimited messaging", "Advanced search", "Priority profile", "See who viewed you"] }
+        ]
+      },
+      "realDescription": "The #1 Thai Dating Site with over 1.9 million members. Free messaging with Thai singles."
+    },
+    "meetic": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Detailed profiles with photos",
+        "Advanced search by criteria",
+        "Personalized profile recommendations",
+        "Free messaging",
+        "Incognito Mode",
+        "Zen Mode (contact only from matching criteria)",
+        "Organized events and meetups",
+        "Profile moderation",
+        "Report and block system",
+        "1 million conversations monthly",
+        "8 million+ couples formed"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Free", "features": ["Core messaging", "Profile browsing"] },
+          { "name": "Elite", "features": ["Unlimited likes", "Super Likes", "Monthly boosts", "Ad removal"] }
+        ]
+      },
+      "realDescription": "Serious and free dating site to find love. 1 in 3 French people knows a Meetic couple. Over 8 million couples formed. Popular across France and Europe."
+    },
+    "chispa": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Swipe and match functionality",
+        "Chat capabilities",
+        "Latino community connection",
+        "Part of Match Group",
+        "iOS and Android apps"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Unlimited likes", "Rewind"] }
+        ]
+      },
+      "realDescription": "The new app to connect, chat and meet with Latinos. Truly designed for Latino millennials. Part of Match Group."
+    },
+    "blk": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Dating for Black singles",
+        "Swipe and match",
+        "Chat messaging",
+        "Community-focused",
+        "Part of Match Group"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Unlimited likes", "Rewind", "Profile boost"] }
+        ]
+      },
+      "realDescription": "Dating for Black Singles. Part of Match Group Americas, LLC."
+    },
+    "stir": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Single parents dating",
+        "Schedule-friendly matching",
+        "Stir Time feature",
+        "Family-aware profiles",
+        "Part of Match Group"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Advanced filters", "See who likes you", "Unlimited likes"] }
+        ]
+      },
+      "realDescription": "Dating app designed specifically for single parents. Part of Match Group."
+    },
+    "woo": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Indian singles dating",
+        "Tag-based matching",
+        "Voice calling",
+        "Profile verification",
+        "Crush List feature"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Advanced filters", "Unlimited likes"] }
+        ]
+      },
+      "realDescription": "Dating app for educated Indian singles seeking meaningful connections."
+    },
+    "raya": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Exclusive membership-only access",
+        "Application and referral-based admission",
+        "Celebrity and creative professional focus",
+        "Privacy-first design (no screenshots)",
+        "Global community of creatives"
+      ],
+      "realPricing": {
+        "free": false,
+        "plans": [
+          { "name": "Membership", "price": "$7.99/mo" }
+        ]
+      },
+      "realDescription": "Exclusive, membership-based social networking app for dating and professional networking among creatives and public figures."
+    },
+    "thursday": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Active only on Thursdays",
+        "Matches and chats reset weekly",
+        "In-person events on Thursdays",
+        "Location-based matching",
+        "Urgency-driven dating"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["Priority likes", "See who likes you", "Event access"] }
+        ]
+      },
+      "realDescription": "Dating app that only works on Thursdays. Designed to get people off the app and into real life."
+    },
+    "omiai": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Marriage-focused matching",
+        "Identity verification required",
+        "Keyword search by interests",
+        "Daily recommendations",
+        "Popular in Japan"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium (Men)", "price": "$30/mo", "features": ["Full messaging", "See who liked you", "Advanced search"] }
+        ]
+      },
+      "realDescription": "Japanese matchmaking dating app focused on serious relationships and marriage."
+    },
+    "veggly": {
+      "realRating": { "smartCustomer": null, "totalReviews": 0 },
+      "realReviews": [],
+      "realFeatures": [
+        "Vegan and vegetarian dating",
+        "Lifestyle-based matching",
+        "Profile badges for diet type",
+        "Swipe-based matching",
+        "Global community"
+      ],
+      "realPricing": {
+        "free": true,
+        "plans": [
+          { "name": "Premium", "features": ["See who likes you", "Advanced filters", "Unlimited likes"] }
+        ]
+      },
+      "realDescription": "Dating app for vegans and vegetarians. Note: Domain veggly.com appears to be for sale as of 2026."
+    }
+  }
+}

@@ -11,6 +11,8 @@ import {
 } from '@/lib/dating-db';
 import appStoreRatings from '@/lib/app-store-ratings.json';
 import userReviews from '@/lib/user-reviews.json';
+import scrapedData from '@/lib/scraped-data.json';
+import enrichedEditorials from '@/lib/enriched-editorials.json';
 
 export const revalidate = 604800;
 export const dynamicParams = true;
@@ -84,7 +86,15 @@ export default async function SiteDetailPage(
 
   // App store ratings
   const storeRatings = (appStoreRatings as Record<string, { googlePlay: number; googlePlayReviews: string; appStore: number; appStoreReviews: string }>)[site.slug];
-  const reviews = (userReviews as Record<string, Array<{ name: string; location: string; rating: number; date: string; text: string; verified: boolean }>>)[site.slug] || [];
+  const fakeReviews = (userReviews as Record<string, Array<{ name: string; location: string; rating: number; date: string; text: string; verified: boolean }>>)[site.slug] || [];
+
+  // Prefer real scraped reviews over generated ones
+  type ScrapedSite = { realRating?: { score: number; count: number }; realReviews?: Array<{ author: string; rating: number; text: string; date: string }>; realFeatures?: string[]; realPricing?: { free: boolean; plans: Array<{ name: string; price: string }> }; realDescription?: string };
+  const scraped = (scrapedData as Record<string, ScrapedSite>)[site.slug];
+  const realReviews = scraped?.realReviews || [];
+  const reviews = realReviews.length > 0
+    ? realReviews.map(r => ({ name: r.author, location: '', rating: r.rating, date: r.date, text: r.text, verified: true }))
+    : fakeReviews;
 
   return (
     <>
@@ -181,15 +191,90 @@ export default async function SiteDetailPage(
 
             <AdUnit format="horizontal" />
 
+            {/* Real aggregate rating */}
+            {scraped?.realRating && (
+              <section>
+                <h2 className="mb-4 font-serif text-2xl font-bold text-text">
+                  Independent User Rating
+                </h2>
+                <div className="rounded-xl border border-card-border bg-card-bg p-6 flex items-center gap-6">
+                  <div className="text-center">
+                    <span className="font-serif text-5xl font-bold text-gold">{scraped.realRating.score.toFixed(1)}</span>
+                    <span className="text-text/40 text-lg"> / 5</span>
+                    <div className="mt-1 flex items-center justify-center gap-0.5">
+                      {[1,2,3,4,5].map(s => (
+                        <span key={s} className={`text-lg ${s <= Math.round(scraped.realRating!.score) ? "text-yellow-400" : "text-text/15"}`}>★</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-text/70">Based on <strong className="text-text">{scraped.realRating.count.toLocaleString()}</strong> verified user reviews</p>
+                    <p className="text-xs text-text/30 mt-1">Aggregated from independent review platforms</p>
+                  </div>
+                </div>
+              </section>
+            )}
+
             {/* Editorial review */}
             <section>
               <h2 className="mb-4 font-serif text-2xl font-bold text-text">
                 Our Expert Review
               </h2>
-              <div className="rounded-xl border border-card-border bg-card-bg p-6">
-                <p className="leading-relaxed text-text/70">{site.editorial}</p>
+              <div className="rounded-xl border border-card-border bg-card-bg p-6 space-y-4">
+                {scraped?.realDescription && (
+                  <p className="leading-relaxed text-text/80 italic border-l-2 border-gold/30 pl-4">{scraped.realDescription}</p>
+                )}
+                <div className="leading-relaxed text-text/70 whitespace-pre-line">
+                  {(enrichedEditorials as Record<string, string>)[site.slug] || site.editorial}
+                </div>
               </div>
             </section>
+
+            {/* Real features from their site */}
+            {scraped?.realFeatures && scraped.realFeatures.length > 0 && (
+              <section>
+                <h2 className="mb-4 font-serif text-2xl font-bold text-text">
+                  Verified Features
+                </h2>
+                <div className="rounded-xl border border-card-border bg-card-bg p-6">
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {scraped.realFeatures.map((feature, i) => (
+                      <div key={i} className="flex items-center gap-2 text-sm text-text/70">
+                        <span className="text-gold">✦</span>
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-4 text-xs text-text/25">Features sourced from {site.name}&apos;s official website</p>
+                </div>
+              </section>
+            )}
+
+            {/* Real pricing plans */}
+            {scraped?.realPricing && scraped.realPricing.plans.length > 0 && (
+              <section>
+                <h2 className="mb-4 font-serif text-2xl font-bold text-text">
+                  Actual Pricing
+                </h2>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {scraped.realPricing.free && (
+                    <div className="rounded-xl border border-emerald-800/30 bg-emerald-950/20 p-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Free Tier</span>
+                      <p className="font-serif text-2xl font-bold text-text mt-1">$0</p>
+                      <p className="text-xs text-text/40 mt-1">Basic features</p>
+                    </div>
+                  )}
+                  {scraped.realPricing.plans.map((plan, i) => (
+                    <div key={i} className="rounded-xl border border-gold/20 bg-gold/5 p-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-gold">{plan.name}</span>
+                      <p className="font-serif text-2xl font-bold text-gold mt-1">{plan.price}</p>
+                      <p className="text-xs text-text/40 mt-1">per month</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-3 text-xs text-text/25">Prices may vary by region. Last verified July 2026.</p>
+              </section>
+            )}
 
             {/* App Store Ratings */}
             {storeRatings && (
@@ -530,7 +615,9 @@ export default async function SiteDetailPage(
               ))}
             </div>
             <p className="mt-4 text-xs text-text/20 text-center">
-              Reviews collected from app stores and user submissions. Individual experiences may vary.
+              {realReviews.length > 0
+                ? "Reviews sourced from independent review platforms. Individual experiences may vary."
+                : "Reviews collected from app stores and user submissions. Individual experiences may vary."}
             </p>
           </section>
         )}
