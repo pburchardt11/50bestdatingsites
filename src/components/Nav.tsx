@@ -33,6 +33,7 @@ export default function Nav() {
   const secondaryLinks = [
     { href: '/blog', label: 'Blog' },
     { href: '/about', label: 'About' },
+    { href: '/submit', label: 'Submit a Site' },
   ];
 
   return (
