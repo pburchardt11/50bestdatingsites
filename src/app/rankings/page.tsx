@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { getAllSites, getAllCategories, type DatingSite } from '@/lib/dating-db';
+import { getAllSites, getAllCategories, getAllCountries, type DatingSite } from '@/lib/dating-db';
 import AdUnit from '@/components/AdUnit';
 
 type SortKey = 'overallScore' | 'safetyScore' | 'valueForMoney' | 'name';
@@ -12,9 +12,11 @@ const SITES_PER_PAGE = 50;
 export default function RankingsPage() {
   const allSites = useMemo(() => getAllSites(), []);
   const categories = useMemo(() => getAllCategories(), []);
+  const countries = useMemo(() => getAllCountries().sort((a, b) => a.name.localeCompare(b.name)), []);
 
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [priceFilter, setPriceFilter] = useState('all');
+  const [countryFilter, setCountryFilter] = useState('all');
   const [sortBy, setSortBy] = useState<SortKey>('overallScore');
   const [page, setPage] = useState(1);
 
@@ -23,6 +25,12 @@ export default function RankingsPage() {
 
     if (categoryFilter !== 'all') {
       result = result.filter((s) => s.category === categoryFilter);
+    }
+
+    if (countryFilter !== 'all') {
+      result = result.filter((s) =>
+        s.countries.some((c) => c.toLowerCase() === countryFilter.toLowerCase())
+      );
     }
 
     if (priceFilter === 'free') {
@@ -41,7 +49,7 @@ export default function RankingsPage() {
     });
 
     return result;
-  }, [allSites, categoryFilter, priceFilter, sortBy]);
+  }, [allSites, categoryFilter, countryFilter, priceFilter, sortBy]);
 
   const totalPages = Math.ceil(filtered.length / SITES_PER_PAGE);
   const paginated = filtered.slice((page - 1) * SITES_PER_PAGE, page * SITES_PER_PAGE);
@@ -80,6 +88,21 @@ export default function RankingsPage() {
               <option value="all">All Categories</option>
               {categories.map((cat) => (
                 <option key={cat} value={cat}>{cat}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <label htmlFor="country-filter" className="text-sm text-text/50">Country:</label>
+            <select
+              id="country-filter"
+              value={countryFilter}
+              onChange={(e) => handleFilterChange(setCountryFilter)(e.target.value)}
+              className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+            >
+              <option value="all">All Countries</option>
+              {countries.map((c) => (
+                <option key={c.slug} value={c.slug}>{c.emoji} {c.name}</option>
               ))}
             </select>
           </div>
