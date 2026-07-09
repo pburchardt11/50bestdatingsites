@@ -8,6 +8,7 @@ import {
   getSiteBySlug,
   getAllSites,
   getSitesByCategory,
+  isVerified,
 } from '@/lib/dating-db';
 import playStoreData from '@/lib/play-store-data.json';
 import scrapedData from '@/lib/scraped-data.json';
@@ -123,10 +124,20 @@ export default async function SiteDetailPage(
                 {site.logo}
               </div>
               <div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 flex-wrap">
                   <h1 className="font-serif text-4xl font-bold text-text sm:text-5xl">
                     {site.name}
                   </h1>
+                  {isVerified(site) ? (
+                    <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400 flex items-center gap-1">
+                      <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                      Verified
+                    </span>
+                  ) : (
+                    <span className="rounded-full bg-amber-900/20 px-3 py-1 text-xs font-semibold text-amber-400/80">
+                      Unverified
+                    </span>
+                  )}
                   <span className="rounded-full bg-gold/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gold/80">
                     {site.category}
                   </span>
@@ -162,6 +173,25 @@ export default async function SiteDetailPage(
           </div>
         </div>
       </section>
+
+      {/* Unverified notice */}
+      {!isVerified(site) && (
+        <div className="mx-auto max-w-5xl px-4 pt-6 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-amber-800/30 bg-amber-950/20 px-5 py-4 flex items-start gap-3">
+            <span className="text-amber-400 text-lg mt-0.5">⚠</span>
+            <div>
+              <p className="text-sm font-medium text-amber-300">Unverified Listing</p>
+              <p className="text-xs text-text/50 mt-1">
+                This listing has not been independently verified by our editorial team. Scores are editorial estimates.
+                Data may be incomplete or outdated.{' '}
+                <Link href="/submit" className="text-gold hover:text-gold-light underline">
+                  Are you the owner? Submit updated information →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-3">

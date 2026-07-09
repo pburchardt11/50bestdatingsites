@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { DatingSite } from '@/lib/dating-db';
+import { type DatingSite, isVerified } from '@/lib/dating-db';
 
 function Stars({ score }: { score: number }) {
   const full = Math.floor(score / 2);
@@ -56,10 +56,15 @@ export default function SiteCard({ site, rank }: SiteCardProps) {
 
           <div className="min-w-0 flex-1">
             {/* Name and category */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <h3 className="truncate font-serif text-lg font-bold text-text group-hover:text-gold transition-colors">
                 {site.name}
               </h3>
+              {isVerified(site) ? (
+                <span className="shrink-0 rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">✓</span>
+              ) : (
+                <span className="shrink-0 rounded-full bg-amber-900/20 px-2 py-0.5 text-[10px] font-medium text-amber-400/60">Unverified</span>
+              )}
               <span className="shrink-0 rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
                 {site.category}
               </span>

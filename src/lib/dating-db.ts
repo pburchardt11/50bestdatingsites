@@ -146,6 +146,27 @@ export function hasDetailedReview(site: DatingSite): boolean {
   return site.globalRank <= 500 && site.prosAndCons.pros.length >= 3;
 }
 
+// Verified = has real scraped data (Play Store, Sitejabber, or homepage scrape)
+// The top 48 curated sites + any with Play Store data are verified
+const VERIFIED_SLUGS = new Set([
+  // Top curated sites with real scraped data
+  "tinder","bumble","hinge","okcupid","match-com","plenty-of-fish","badoo","zoosk",
+  "coffee-meets-bagel","eharmony","grindr","her","elite-singles","silversingles",
+  "the-league","muzz","jdate","christian-mingle","tantan","happn","feeld","pure",
+  "thursday","taimi","scruff","our-time","the-inner-circle","raya","hily",
+  "ashley-madison","farmers-only","veggly","date-my-age","parship","seeking",
+  "pairs","omiai","blued","dil-mil","thai-friendly","meetic","lovoo",
+  "black-people-meet","chispa","blk","stir","catholic-match","kippo",
+  // Play Store verified
+  "hornet","growlr","jaumo","azar","skout","tagged","mamba",
+  "international-cupid","latin-american-cupid","asian-dating","russian-cupid",
+  "filipino-cupid","thai-cupid","afrointroductions",
+]);
+
+export function isVerified(site: DatingSite): boolean {
+  return VERIFIED_SLUGS.has(site.slug);
+}
+
 export function getDetailedSites(): DatingSite[] {
   return datingSites.filter(hasDetailedReview);
 }

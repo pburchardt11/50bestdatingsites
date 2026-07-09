@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import type { DatingSite } from '@/lib/dating-db';
+import { type DatingSite, isVerified } from '@/lib/dating-db';
 
 const BATCH_SIZE = 50;
 
@@ -35,6 +35,11 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
                   <Link href={`/site/${site.slug}`} className="flex items-center gap-2 font-medium text-[#f5f0e8] hover:text-[#c4a87c] transition-colors">
                     <span className="text-lg">{site.logo}</span>
                     <span>{site.name}</span>
+                    {isVerified(site) ? (
+                      <span className="hidden sm:inline rounded-full bg-emerald-900/30 px-1.5 py-0.5 text-[9px] font-semibold text-emerald-400">✓</span>
+                    ) : (
+                      <span className="hidden sm:inline rounded-full bg-amber-900/20 px-1.5 py-0.5 text-[9px] font-medium text-amber-400/50">?</span>
+                    )}
                     <span className="hidden sm:inline rounded-full bg-[#c4a87c]/10 px-2 py-0.5 text-[10px] font-medium text-[#c4a87c]/70">{site.category}</span>
                   </Link>
                 </td>
