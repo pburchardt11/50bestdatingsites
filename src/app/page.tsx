@@ -40,6 +40,7 @@ export default function HomePage() {
     '@type': 'WebSite',
     name: '50 Best Dating Sites',
     url: 'https://50bestdatingsites.com',
+    dateModified: '2026-07-01',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://50bestdatingsites.com/?q={search_term_string}',
@@ -82,47 +83,85 @@ export default function HomePage() {
     },
   ];
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Top 50 Best Dating Sites 2026',
+    numberOfItems: top50.length,
+    itemListElement: top50.map((site, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: site.name,
+      url: `https://50bestdatingsites.com/site/${site.slug}`,
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(196,168,124,0.08)_0%,transparent_70%)]" />
+      <section className="relative overflow-hidden border-b border-card-border bg-gradient-to-b from-[#0d0b08] via-[#080808] to-[#080808]">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(196,168,124,0.12)_0%,transparent_70%)]" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 sm:py-28 lg:px-8 lg:py-36">
-          <h1 className="font-serif text-5xl font-bold leading-tight tracking-tight text-text sm:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-5xl font-bold leading-tight tracking-tighter text-text sm:text-6xl lg:text-7xl">
             Find Your Perfect Dating Site
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text/60">
             Expert reviews of {totalSites.toLocaleString()}+ dating sites across 200 countries.
             Independently researched, rigorously scored, regularly updated.
           </p>
+          <p className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5 text-xs font-medium text-gold/80">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            Last updated: July 2026
+          </p>
 
           <SearchBar className="mx-auto mt-10 max-w-xl" />
 
           {/* Trust stats */}
-          <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-text/50">
+          <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-base text-text/60">
             <div className="flex items-center gap-2">
-              <span className="font-serif text-xl font-bold text-gold">{totalSites.toLocaleString()}+</span>
+              <span className="font-serif text-2xl font-bold text-gold">{totalSites.toLocaleString()}+</span>
               <span>Sites Reviewed</span>
             </div>
             <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-xl font-bold text-gold">200</span>
+              <span className="font-serif text-2xl font-bold text-gold">200</span>
               <span>Countries</span>
             </div>
             <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-xl font-bold text-gold">July 2026</span>
+              <span className="font-serif text-2xl font-bold text-gold">July 2026</span>
               <span>Updated</span>
             </div>
             <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-xl font-bold text-gold">Expert</span>
+              <span className="font-serif text-2xl font-bold text-gold">Expert</span>
               <span>Ratings</span>
             </div>
           </div>
@@ -211,7 +250,7 @@ export default function HomePage() {
         <div className="mt-8 text-center">
           <Link
             href="/rankings"
-            className="inline-flex items-center gap-2 rounded-full border border-gold/20 px-6 py-3 text-sm font-medium text-gold transition-colors hover:bg-gold/10"
+            className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all hover:bg-amber-600 hover:shadow-xl"
           >
             View All Rankings
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
@@ -342,10 +381,10 @@ export default function HomePage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-              <article className="overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-300 hover:border-gold/30">
+              <article className="overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-200 hover:border-gold/30 hover:-translate-y-1">
                 <div className="p-6">
                   <div className="mb-3 flex items-center gap-3">
-                    <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
+                    <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
                       {post.category}
                     </span>
                     <span className="text-xs text-text/30">{post.readTime}</span>
@@ -358,8 +397,8 @@ export default function HomePage() {
                   </p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-xs text-text/30">{post.date}</span>
-                    <span className="text-sm font-medium text-gold/70 group-hover:text-gold transition-colors">
-                      Read more &rarr;
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
+                      Read article &rarr;
                     </span>
                   </div>
                 </div>
@@ -380,6 +419,35 @@ export default function HomePage() {
       </section>
 
       <AdUnit format="horizontal" className="mx-auto max-w-4xl px-4" />
+
+      {/* ── 50 Best Trust Bar ──────────────────────────────────── */}
+      <section className="border-t border-card-border bg-[#0a0a0a]">
+        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold/60 mb-4">
+            Part of the 50 Best family
+          </p>
+          <p className="text-lg text-text/60 max-w-2xl mx-auto mb-6">
+            Trusted curators of the world&apos;s finest experiences
+          </p>
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-5 py-2">
+            <span className="font-serif text-2xl font-bold text-gold">1,018</span>
+            <span className="text-sm text-text/50">dating sites rated across</span>
+            <span className="font-serif text-2xl font-bold text-gold">200</span>
+            <span className="text-sm text-text/50">countries</span>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a href="https://www.50besthotels.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Hotels</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestspa.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Spas</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Museums</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestrestaurants.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Restaurants</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestmatchmaker.com" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-gold-light">50 Best Matchmakers</a>
+          </div>
+        </div>
+      </section>
 
       {/* ── FAQ ─────────────────────────────────────────────────── */}
       <section className="border-t border-card-border bg-[#0a0a0a]">

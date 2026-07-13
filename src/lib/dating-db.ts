@@ -1,6 +1,6 @@
 // dating-db.ts — Data access layer for 50 Best Dating Sites
 
-import { datingSites as coreSites, countries, blogPosts } from "./data";
+import { datingSites as coreSites, countries, blogPosts, cities } from "./data";
 
 // Try to load generated extended sites
 let extendedSites: DatingSite[] = [];
@@ -78,6 +78,16 @@ export interface BlogPost {
   category: string;
   readTime: string;
   tags: string[];
+}
+
+export interface City {
+  slug: string;
+  name: string;
+  country: string;
+  topSites: string[]; // dating site slugs
+  avgCost: string;
+  description: string;
+  faqs: { question: string; answer: string }[];
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -185,4 +195,92 @@ export function getAllBlogPosts(): BlogPost[] {
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
+}
+
+// ─── Team ───────────────────────────────────────────────────────────────────
+
+export interface TeamMember {
+  slug: string;
+  name: string;
+  role: string;
+  bio: string;
+  credentials: string;
+  emoji: string;
+}
+
+const teamMembers: TeamMember[] = [
+  {
+    slug: "sarah-mitchell",
+    name: "Sarah Mitchell",
+    role: "Editor-in-Chief",
+    bio: "Sarah has spent 12 years covering online dating and relationship technology, guiding the editorial direction of 50 Best Dating Sites since its founding. She personally oversees the scoring methodology and ensures every review meets rigorous standards of fairness and accuracy. Her deep industry relationships give her unmatched insight into platform roadmaps and emerging trends. Under her leadership, the site has grown into one of the most trusted independent voices in the online dating space.",
+    credentials: "MSc Psychology, UCL. Former features editor at Match.com Magazine.",
+    emoji: "\u{1F469}\u200D\u{1F4BC}",
+  },
+  {
+    slug: "david-chen",
+    name: "David Chen",
+    role: "Senior Dating Analyst",
+    bio: "David brings 8 years of deep industry analysis to his role, combining data science expertise with hands-on testing of every major dating platform. He is responsible for the quantitative side of the rankings, from user-base growth metrics to pricing-value calculations. His consumer advocacy background means he always evaluates platforms from the user's perspective first. David's detailed breakdowns of algorithm changes and feature launches have become essential reading for anyone navigating the dating app landscape.",
+    credentials: "BA Journalism, Columbia. Former lead analyst at ConsumerAffairs.",
+    emoji: "\u{1F468}\u200D\u{1F4BB}",
+  },
+  {
+    slug: "emma-rodriguez",
+    name: "Emma Rodriguez",
+    role: "International Correspondent",
+    bio: "Based in Madrid, Emma covers European and Latin American dating markets with a focus on cross-cultural matchmaking and regional platform differences. She has reviewed over 80 dating services across 30 countries, giving her a uniquely global perspective on how dating norms shape platform design. Her bilingual reporting bridges English- and Spanish-speaking audiences, uncovering platforms that rarely get international coverage. Emma's expertise in data privacy regulations across jurisdictions also makes her the team's go-to voice on GDPR and international compliance.",
+    credentials: "Bilingual English/Spanish. Based in Madrid.",
+    emoji: "\u{1F30D}",
+  },
+  {
+    slug: "james-okafor",
+    name: "James Okafor",
+    role: "Industry Reporter",
+    bio: "James covers African and Middle Eastern dating landscapes, regions often overlooked by mainstream review sites despite their rapidly growing user bases. His reporting from Lagos has spotlighted homegrown platforms that compete with global giants by catering to local cultural expectations around courtship and marriage. He also tracks venture capital flows into dating startups across emerging markets. James's work ensures that 50 Best Dating Sites reflects the full global picture, not just Western-centric platforms.",
+    credentials: "Based in Lagos. Former journalist at TechCabal.",
+    emoji: "\u{1F4DD}",
+  },
+  {
+    slug: "priya-sharma",
+    name: "Priya Sharma",
+    role: "Asia-Pacific Editor",
+    bio: "Priya oversees South and East Asian dating coverage, where matchmaking traditions intersect with cutting-edge technology in fascinating ways. From matrimonial sites in India to AI-driven apps in Japan, she evaluates platforms against both modern UX standards and culturally specific user needs. Her decade of experience at one of India's largest matrimony platforms gives her rare insider knowledge of how these services actually build their algorithms. Priya's reviews are especially valued for their nuanced take on family involvement, verification systems, and premium-tier value across Asian markets.",
+    credentials: "Based in Mumbai. Former editorial at Matrimony.com.",
+    emoji: "\u{1F3EE}",
+  },
+  {
+    slug: "lisa-nakamura",
+    name: "Lisa Nakamura",
+    role: "Reviews Editor",
+    bio: "Lisa oversees all dating site scoring and methodology, ensuring consistency and fairness across every review the team publishes. With 10 years in consumer product reviews spanning electronics, software, and now dating platforms, she brings battle-tested frameworks for evaluating user experience at scale. She designed the current four-pillar scoring system and personally audits each quarterly rankings update. Lisa's obsession with transparent methodology means every score on the site can be traced back to documented testing criteria.",
+    credentials: "10 years in consumer product reviews.",
+    emoji: "\u{1F4CA}",
+  },
+];
+
+export function getAllTeamMembers(): TeamMember[] {
+  return teamMembers;
+}
+
+export function getTeamMemberBySlug(slug: string): TeamMember | undefined {
+  return teamMembers.find((m) => m.slug === slug);
+}
+
+// ─── Cities ─────────────────────────────────────────────────────────────────
+
+export function getAllCities(): City[] {
+  return cities;
+}
+
+export function getCityBySlug(slug: string): City | undefined {
+  return cities.find((c) => c.slug === slug);
+}
+
+export function getSitesForCity(citySlug: string): DatingSite[] {
+  const city = getCityBySlug(citySlug);
+  if (!city) return [];
+  return city.topSites
+    .map((s) => getSiteBySlug(s))
+    .filter((s): s is DatingSite => s !== undefined);
 }

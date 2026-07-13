@@ -77,6 +77,18 @@ export default async function SiteDetailPage(
       '@type': 'Organization',
       name: '50 Best Dating Sites',
     },
+    dateModified: '2026-07-01',
+    reviewBody: site.editorial,
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://50bestdatingsites.com' },
+      { '@type': 'ListItem', position: 2, name: 'Dating Sites', item: 'https://50bestdatingsites.com/rankings' },
+      { '@type': 'ListItem', position: 3, name: site.name, item: `https://50bestdatingsites.com/site/${site.slug}` },
+    ],
   };
 
   // Parse gender ratio for visualization (only if real data available)
@@ -101,6 +113,10 @@ export default async function SiteDetailPage(
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* ── Hero ────────────────────────────────────────────── */}

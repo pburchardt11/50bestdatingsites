@@ -69,8 +69,40 @@ export default async function CountryPage(
     datingCultureTexts[slug] ||
     `${country.name} has a growing online dating market with increasing adoption of mobile dating platforms. Local preferences and cultural factors shape which sites and apps are most popular in the region.`;
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `Best Dating Sites in ${country.name} 2026`,
+    numberOfItems: sites.length,
+    itemListElement: sites.map((site, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: site.name,
+      url: `https://50bestdatingsites.com/site/${site.slug}`,
+    })),
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://50bestdatingsites.com' },
+      { '@type': 'ListItem', position: 2, name: 'Countries', item: 'https://50bestdatingsites.com/#countries' },
+      { '@type': 'ListItem', position: 3, name: country.name, item: `https://50bestdatingsites.com/country/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="relative border-b border-card-border">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />

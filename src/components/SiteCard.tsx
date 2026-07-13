@@ -40,7 +40,7 @@ interface SiteCardProps {
 export default function SiteCard({ site, rank }: SiteCardProps) {
   return (
     <Link href={`/site/${site.slug}`} className="group block">
-      <div className="relative overflow-hidden rounded-xl border border-card-border bg-card-bg p-5 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(196,168,124,0.08)]">
+      <div className="relative cursor-pointer overflow-hidden rounded-xl border border-card-border bg-card-bg p-5 transition-all duration-200 hover:border-amber-500/30 hover:shadow-lg hover:shadow-amber-500/5">
         {/* Rank badge */}
         {rank && (
           <div className="absolute top-0 left-0 flex h-8 w-8 items-center justify-center rounded-br-xl bg-gold/20 font-serif text-sm font-bold text-gold">
@@ -75,7 +75,7 @@ export default function SiteCard({ site, rank }: SiteCardProps) {
 
             {/* Score and stars */}
             <div className="mt-3 flex items-center gap-3">
-              <span className="font-serif text-2xl font-bold text-gold">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold/30 bg-gold/5 font-serif text-lg font-bold text-gold shadow-[0_0_12px_rgba(196,168,124,0.15)]">
                 {site.metrics.overallScore.toFixed(1)}
               </span>
               <Stars score={site.metrics.overallScore} />
@@ -88,7 +88,7 @@ export default function SiteCard({ site, rank }: SiteCardProps) {
                   Free
                 </span>
               )}
-              <span className="text-xs text-text/40">
+              <span className="text-xs text-amber-400 font-medium">
                 {site.pricing.currency} {site.pricing.premiumMonthly}/mo premium
               </span>
             </div>

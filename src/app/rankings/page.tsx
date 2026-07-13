@@ -60,8 +60,26 @@ export default function RankingsPage() {
     setPage(1);
   };
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Top 50 Best Dating Sites 2026',
+    numberOfItems: Math.min(allSites.length, 50),
+    itemListElement: allSites.slice(0, 50).map((site, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: site.name,
+      url: `https://50bestdatingsites.com/site/${site.slug}`,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+
       {/* Hero */}
       <section className="border-b border-card-border">
         <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
@@ -70,6 +88,10 @@ export default function RankingsPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-text/50">
             All {allSites.length.toLocaleString()} dating sites ranked by our editorial team. Filter, sort, and find the perfect platform for you.
+          </p>
+          <p className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5 text-xs font-medium text-gold/80">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            Last updated: July 2026
           </p>
         </div>
       </section>

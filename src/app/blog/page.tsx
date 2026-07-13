@@ -54,7 +54,7 @@ export default function BlogIndexPage() {
                 <span className="rounded-full bg-gold/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-gold/80">
                   Featured
                 </span>
-                <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
+                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
                   {featured.category}
                 </span>
                 <span className="text-xs text-text/30">
@@ -75,7 +75,7 @@ export default function BlogIndexPage() {
                   <span className="text-text/20">|</span>
                   <span className="text-sm text-text/40">{featured.date}</span>
                 </div>
-                <span className="text-sm font-medium text-gold/70 group-hover:text-gold transition-colors">
+                <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
                   Read article &rarr;
                 </span>
               </div>
@@ -93,10 +93,10 @@ export default function BlogIndexPage() {
               href={`/blog/${post.slug}`}
               className="group block"
             >
-              <article className="h-full overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-300 hover:border-gold/30">
+              <article className="h-full overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-200 hover:border-gold/30 hover:-translate-y-1">
                 <div className="p-6">
                   <div className="mb-3 flex items-center gap-3">
-                    <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
+                    <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
                       {post.category}
                     </span>
                     <span className="text-xs text-text/30">
@@ -111,8 +111,8 @@ export default function BlogIndexPage() {
                   </p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-xs text-text/30">{post.date}</span>
-                    <span className="text-sm font-medium text-gold/70 group-hover:text-gold transition-colors">
-                      Read more &rarr;
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
+                      Read article &rarr;
                     </span>
                   </div>
                 </div>

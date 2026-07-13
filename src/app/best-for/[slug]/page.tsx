@@ -284,8 +284,59 @@ export default async function BestForPage(
     .sort((a, b) => b.metrics.overallScore - a.metrics.overallScore)
     .slice(0, 20);
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: topic.title,
+    numberOfItems: matchingSites.length,
+    itemListElement: matchingSites.map((site, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: site.name,
+      url: `https://50bestdatingsites.com/site/${site.slug}`,
+    })),
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://50bestdatingsites.com' },
+      { '@type': 'ListItem', position: 2, name: 'Best For', item: 'https://50bestdatingsites.com/best-for' },
+      { '@type': 'ListItem', position: 3, name: topic.h1, item: `https://50bestdatingsites.com/best-for/${slug}` },
+    ],
+  };
+
+  const faqJsonLd = topic.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: topic.faq.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+
       {/* Hero */}
       <section className="border-b border-card-border">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

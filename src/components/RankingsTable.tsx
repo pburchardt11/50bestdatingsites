@@ -15,7 +15,7 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
   return (
     <>
       <div className="overflow-x-auto rounded-xl border border-[rgba(196,168,124,0.1)]">
-        <table className="w-full min-w-[700px] text-left text-sm">
+        <table className="w-full min-w-[700px] text-left text-[15px]">
           <thead>
             <tr className="border-b border-[rgba(196,168,124,0.1)] bg-[#111111]/80">
               <th className="px-4 py-3 font-semibold text-[#f5f0e8]/60 w-12">#</th>
@@ -29,7 +29,7 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
           </thead>
           <tbody>
             {visible.map((site, i) => (
-              <tr key={site.slug} className="border-b border-[rgba(196,168,124,0.05)] transition-colors hover:bg-[#111111]/60">
+              <tr key={site.slug} className={`border-b border-[rgba(196,168,124,0.05)] transition-colors hover:bg-white/5 ${i % 2 === 1 ? 'bg-[#0c0c0c]' : ''}`}>
                 <td className="px-4 py-3 font-serif font-bold text-[#c4a87c]">{i + 1}</td>
                 <td className="px-4 py-3">
                   <Link href={`/site/${site.slug}`} className="flex items-center gap-2 font-medium text-[#f5f0e8] hover:text-[#c4a87c] transition-colors">
@@ -43,7 +43,7 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
                     <span className="hidden sm:inline rounded-full bg-[#c4a87c]/10 px-2 py-0.5 text-[10px] font-medium text-[#c4a87c]/70">{site.category}</span>
                   </Link>
                 </td>
-                <td className="px-4 py-3 text-[#f5f0e8]/50 max-w-[180px] truncate text-sm">{site.bestFor}</td>
+                <td className="px-4 py-3 text-[#f5f0e8]/50 max-w-[180px] truncate">{site.bestFor}</td>
                 <td className="px-4 py-3 text-center">
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#c4a87c]/10 font-serif text-sm font-bold text-[#c4a87c]">
                     {site.metrics.overallScore.toFixed(1)}
@@ -56,7 +56,7 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
                     <span className="text-[#f5f0e8]/30 text-xs">No</span>
                   )}
                 </td>
-                <td className="px-4 py-3 text-right text-[#f5f0e8]/60 text-sm">
+                <td className="px-4 py-3 text-right text-[#f5f0e8]/60">
                   ${site.pricing.premiumMonthly}/mo
                 </td>
                 <td className="px-4 py-3 text-center">
@@ -64,9 +64,9 @@ export default function RankingsTable({ sites }: { sites: DatingSite[] }) {
                     href={site.url}
                     target="_blank"
                     rel="nofollow sponsored noopener"
-                    className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-[#c4a87c] to-[#d4bc8e] px-3 py-1 text-xs font-bold text-[#080808] transition-opacity hover:opacity-80"
+                    className="inline-flex items-center gap-1 rounded-md bg-amber-500 px-3 py-1 text-sm font-medium text-black transition-colors hover:bg-amber-600"
                   >
-                    Visit
+                    Review
                   </a>
                 </td>
               </tr>

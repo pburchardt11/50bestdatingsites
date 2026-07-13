@@ -15,9 +15,18 @@ const footerLinks = {
     { href: '/country/australia', label: 'Australia' },
     { href: '/country/germany', label: 'Germany' },
   ],
+  Cities: [
+    { href: '/city/new-york', label: 'New York' },
+    { href: '/city/los-angeles', label: 'Los Angeles' },
+    { href: '/city/london', label: 'London' },
+    { href: '/city/chicago', label: 'Chicago' },
+    { href: '/city/miami', label: 'Miami' },
+  ],
   Company: [
     { href: '/about', label: 'About Us' },
+    { href: '/team', label: 'Our Team' },
     { href: '/contact', label: 'Contact' },
+    { href: '/quiz', label: 'Find a Dating Site Quiz' },
     { href: '/submit', label: 'Submit a Site' },
     { href: '/privacy-policy', label: 'Privacy Policy' },
     { href: '/terms', label: 'Terms of Use' },
@@ -28,7 +37,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-card-border bg-[#050505]">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:divide-x lg:divide-card-border [&>div]:lg:pl-8 [&>div:first-child]:lg:pl-0">
           {/* Branding */}
           <div>
             <Link href="/" className="inline-flex items-center gap-2">
@@ -87,18 +96,20 @@ export default function Footer() {
               { name: '50 Best Bar', url: 'https://www.50bestbar.com' },
               { name: '50 Best Bakeries', url: 'https://www.50bestbakeries.com' },
               { name: '50 Best Charms', url: 'https://www.50bestcharms.com' },
+              { name: '50 Best Restaurants', url: 'https://www.50bestrestaurants.com' },
+              { name: '50 Best Matchmakers', url: 'https://www.50bestmatchmaker.com' },
             ].map((site) => (
               <a
                 key={site.url}
                 href={site.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-text/40 transition-colors hover:text-gold"
+                className="text-sm font-medium text-text/50 transition-colors hover:text-gold"
               >
                 {site.name}
               </a>
             ))}
-            <span className="text-xs font-semibold text-gold/70">
+            <span className="text-sm font-bold text-gold">
               50 Best Dating Sites
             </span>
           </div>
@@ -108,6 +119,10 @@ export default function Footer() {
         <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-card-border pt-6 sm:flex-row">
           <p className="text-xs text-text/30">
             &copy; 2026 50 Best Limited. All rights reserved.
+          </p>
+          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-3 py-1 text-xs font-medium text-emerald-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            Updated: July 2026
           </p>
           <p className="text-xs text-text/30">
             Rankings are based on independent research. We may earn a commission

@@ -40,7 +40,31 @@ export default async function sitemap({ id }: { id: number }): Promise<MetadataR
       { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
       { url: `${baseUrl}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
       { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+      { url: `${baseUrl}/quiz`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+      { url: `${baseUrl}/team`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+      { url: `${baseUrl}/team/sarah-mitchell`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+      { url: `${baseUrl}/team/david-chen`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+      { url: `${baseUrl}/team/emma-rodriguez`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+      { url: `${baseUrl}/team/james-okafor`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+      { url: `${baseUrl}/team/priya-sharma`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+      { url: `${baseUrl}/team/lisa-nakamura`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     ];
+
+    const citySlugs = [
+      'new-york', 'los-angeles', 'london', 'chicago', 'miami',
+      'san-francisco', 'toronto', 'sydney', 'paris', 'berlin',
+      'tokyo', 'singapore', 'dubai', 'mumbai', 'hong-kong',
+      'seattle', 'boston', 'austin', 'denver', 'portland',
+      'barcelona', 'amsterdam', 'melbourne', 'vancouver', 'atlanta',
+      'dallas', 'houston', 'philadelphia', 'washington-dc', 'san-diego',
+    ];
+
+    const cityPages: MetadataRoute.Sitemap = citySlugs.map((slug) => ({
+      url: `${baseUrl}/city/${slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+    }));
 
     const bestForPages: MetadataRoute.Sitemap = bestForSlugs.map((slug) => ({
       url: `${baseUrl}/best-for/${slug}`,
@@ -63,7 +87,7 @@ export default async function sitemap({ id }: { id: number }): Promise<MetadataR
       priority: 0.7,
     }));
 
-    return [...staticPages, ...bestForPages, ...categoryPages, ...blogPages];
+    return [...staticPages, ...bestForPages, ...categoryPages, ...blogPages, ...cityPages];
   }
 
   if (id === 1) {

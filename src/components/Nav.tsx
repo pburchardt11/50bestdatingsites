@@ -9,6 +9,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [catOpen, setCatOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const catRef = useRef<HTMLDivElement>(null);
 
   const categories = getAllCategories();
@@ -24,10 +25,20 @@ export default function Nav() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
+  // Track scroll for shadow
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 10);
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const mainLinks = [
     { href: '/', label: 'Home' },
     { href: '/rankings', label: 'Rankings' },
     { href: '/reviews', label: 'Reviews' },
+    { href: '/cities', label: 'Cities' },
   ];
 
   const secondaryLinks = [
@@ -37,7 +48,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-card-border bg-[#080808]/90 backdrop-blur-md">
+    <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-card-border bg-[#080808]/90 backdrop-blur-md transition-shadow duration-300 ${scrolled ? 'shadow-lg shadow-black/30' : ''}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -104,6 +115,17 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Quiz link with highlighted pill */}
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-3.5 py-1.5 text-xs font-bold text-[#080808] transition-opacity hover:opacity-90"
+            >
+              Quiz
+              <span className="bg-amber-500 text-black text-xs font-bold px-2 py-0.5 rounded-full">
+                !
+              </span>
+            </Link>
 
             {/* Search icon */}
             <button
@@ -185,6 +207,14 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+
+            <Link
+              href="/quiz"
+              onClick={() => setMenuOpen(false)}
+              className="mx-3 mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold to-gold-light px-4 py-2.5 text-sm font-bold text-[#080808]"
+            >
+              Find Your Dating Site Quiz
+            </Link>
 
             <div className="mt-3 px-3">
               <SearchBar />
