@@ -442,8 +442,6 @@ export default function HomePage() {
             <span className="text-card-border">|</span>
             <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Museums</a>
             <span className="text-card-border">|</span>
-            <a href="https://www.50bestrestaurants.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Restaurants</a>
-            <span className="text-card-border">|</span>
             <a href="https://www.50bestmatchmaker.com" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-gold-light">50 Best Matchmakers</a>
           </div>
         </div>

@@ -87,12 +87,11 @@ export default function AboutPage() {
               Our sister publications include{' '}
               <a href="https://www.50besthotels.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Hotels</a>,{' '}
               <a href="https://www.50bestspa.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Spas</a>,{' '}
-              <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Museums</a>,{' '}
-              <a href="https://www.50bestrestaurants.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Restaurants</a>, and{' '}
+              <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Museums</a>, and{' '}
               <a href="https://www.50bestmatchmaker.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">50 Best Matchmakers</a>.
             </p>
             <p>
-              From spas and hotels to museums, restaurants, and dating platforms, 50 Best Limited is dedicated to providing honest, research-driven rankings across categories that matter.
+              From spas and hotels to museums and dating platforms, 50 Best Limited is dedicated to providing honest, research-driven rankings across categories that matter.
             </p>
           </div>
         </section>

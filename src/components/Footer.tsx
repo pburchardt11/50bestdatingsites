@@ -96,7 +96,6 @@ export default function Footer() {
               { name: '50 Best Bar', url: 'https://www.50bestbar.com' },
               { name: '50 Best Bakeries', url: 'https://www.50bestbakeries.com' },
               { name: '50 Best Charms', url: 'https://www.50bestcharms.com' },
-              { name: '50 Best Restaurants', url: 'https://www.50bestrestaurants.com' },
               { name: '50 Best Matchmakers', url: 'https://www.50bestmatchmaker.com' },
             ].map((site) => (
               <a
