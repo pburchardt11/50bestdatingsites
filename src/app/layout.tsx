@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: '50 Best Dating Sites',
+    images: [{ url: 'https://50bestdatingsites.com/images/og-image.png', width: 1200, height: 630 }],
   },
 };
 

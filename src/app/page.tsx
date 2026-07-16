@@ -23,13 +23,13 @@ export default function HomePage() {
   const blogPosts = getAllBlogPosts().slice(0, 6);
   const totalSites = getAllSites().length;
 
-  const categoryMeta: Record<string, { icon: string; description: string }> = {
+  const categoryMeta: Record<string, { icon: string; description: string; image?: string }> = {
     'General Dating': { icon: '💑', description: 'Mainstream apps for all types of dating and relationships' },
-    'Serious Relationships': { icon: '💍', description: 'Platforms focused on long-term commitment and marriage' },
-    'Over 50': { icon: '🌹', description: 'Dating sites designed for mature singles over 50' },
-    'LGBTQ+': { icon: '🏳️‍🌈', description: 'Inclusive platforms for the LGBTQ+ community' },
+    'Serious Relationships': { icon: '💍', description: 'Platforms focused on long-term commitment and marriage', image: '/images/cat-serious.png' },
+    'Over 50': { icon: '🌹', description: 'Dating sites designed for mature singles over 50', image: '/images/cat-senior.png' },
+    'LGBTQ+': { icon: '🏳️‍🌈', description: 'Inclusive platforms for the LGBTQ+ community', image: '/images/cat-lgbtq.png' },
     'International / Cultural': { icon: '🌍', description: 'Cross-border dating and culturally-specific matchmaking' },
-    'Hook-up / Casual': { icon: '🔥', description: 'Apps optimized for casual encounters and no-strings dating' },
+    'Hook-up / Casual': { icon: '🔥', description: 'Apps optimized for casual encounters and no-strings dating', image: '/images/cat-casual.png' },
     'Niche': { icon: '🎯', description: 'Specialized sites for unique interests and communities' },
     'Asian Market': { icon: '🏮', description: 'Leading dating platforms across Asian markets' },
     'Video Dating': { icon: '📹', description: 'Video-first platforms for face-to-face connections' },
@@ -125,7 +125,8 @@ export default function HomePage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-amber-50 via-white to-white">
+      <section className="relative overflow-hidden border-b border-slate-200" style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 sm:py-28 lg:px-8 lg:py-36">
           <h1 className="font-serif text-5xl font-bold leading-tight tracking-tighter text-slate-900 sm:text-6xl lg:text-7xl">
             Find Your Perfect Dating Site
@@ -293,17 +294,24 @@ export default function HomePage() {
               <Link
                 key={cat}
                 href={`/category/${toSlug(cat)}`}
-                className="group flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-amber-300 hover:shadow-md"
+                className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-amber-300 hover:shadow-md"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-2xl">
-                  {meta.icon}
-                </span>
-                <div>
-                  <h3 className="font-serif text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
-                    {cat}
-                  </h3>
-                  <p className="mt-0.5 text-xs font-medium text-amber-600">{count} sites</p>
-                  <p className="mt-1 text-sm text-slate-500">{meta.description}</p>
+                {meta.image && (
+                  <div className="relative h-32 w-full overflow-hidden bg-amber-50">
+                    <img src={meta.image} alt={`${cat} dating category`} className="h-full w-full object-cover" />
+                  </div>
+                )}
+                <div className="flex items-start gap-4 p-5">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-2xl">
+                    {meta.icon}
+                  </span>
+                  <div>
+                    <h3 className="font-serif text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
+                      {cat}
+                    </h3>
+                    <p className="mt-0.5 text-xs font-medium text-amber-600">{count} sites</p>
+                    <p className="mt-1 text-sm text-slate-500">{meta.description}</p>
+                  </div>
                 </div>
               </Link>
             );
