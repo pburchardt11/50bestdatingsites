@@ -48,20 +48,20 @@ export default function Nav() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-card-border bg-[#080808]/90 backdrop-blur-md transition-shadow duration-300 ${scrolled ? 'shadow-lg shadow-black/30' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md transition-shadow duration-300 ${scrolled ? 'shadow-sm' : ''}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-serif text-2xl font-bold text-gold sm:text-3xl" style={{ letterSpacing: -1, lineHeight: 1 }}>
+            <span className="font-serif text-2xl font-bold text-amber-600 sm:text-3xl" style={{ letterSpacing: -1, lineHeight: 1 }}>
               50
             </span>
-            <span className="h-5 w-px bg-gold/40" />
+            <span className="h-5 w-px bg-amber-600/40" />
             <span className="flex flex-col">
-              <span className="text-[8px] font-semibold uppercase tracking-[3px] text-gold/80" style={{ fontFamily: 'var(--font-sans)' }}>
+              <span className="text-[8px] font-semibold uppercase tracking-[3px] text-amber-600/80" style={{ fontFamily: 'var(--font-sans)' }}>
                 Best
               </span>
-              <span className="font-serif text-base font-normal italic text-text sm:text-lg" style={{ letterSpacing: 1, lineHeight: 1.1 }}>
+              <span className="font-serif text-base font-normal italic text-slate-900 sm:text-lg" style={{ letterSpacing: 1, lineHeight: 1.1 }}>
                 Dating Sites
               </span>
             </span>
@@ -73,7 +73,7 @@ export default function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-wide text-text/70 transition-colors hover:text-gold"
+                className="text-sm tracking-wide text-slate-600 transition-colors hover:text-amber-600"
               >
                 {link.label}
               </Link>
@@ -83,7 +83,7 @@ export default function Nav() {
             <div ref={catRef} className="relative">
               <button
                 onClick={() => setCatOpen(!catOpen)}
-                className="flex items-center gap-1 text-sm tracking-wide text-text/70 transition-colors hover:text-gold"
+                className="flex items-center gap-1 text-sm tracking-wide text-slate-600 transition-colors hover:text-amber-600"
               >
                 Categories
                 <svg xmlns="http://www.w3.org/2000/svg" className={`h-3.5 w-3.5 transition-transform ${catOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -91,13 +91,13 @@ export default function Nav() {
                 </svg>
               </button>
               {catOpen && (
-                <div className="absolute right-0 top-full z-50 mt-2 w-56 overflow-hidden rounded-xl border border-card-border bg-[#111] shadow-2xl">
+                <div className="absolute right-0 top-full z-50 mt-2 w-56 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg">
                   {categories.map((cat) => (
                     <Link
                       key={cat}
                       href={`/category/${toSlug(cat)}`}
                       onClick={() => setCatOpen(false)}
-                      className="block px-4 py-2.5 text-sm text-text/70 transition-colors hover:bg-gold/10 hover:text-gold"
+                      className="block px-4 py-2.5 text-sm text-slate-600 transition-colors hover:bg-amber-50 hover:text-amber-600"
                     >
                       {cat}
                     </Link>
@@ -110,7 +110,7 @@ export default function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-wide text-text/70 transition-colors hover:text-gold"
+                className="text-sm tracking-wide text-slate-600 transition-colors hover:text-amber-600"
               >
                 {link.label}
               </Link>
@@ -119,10 +119,10 @@ export default function Nav() {
             {/* Quiz link with highlighted pill */}
             <Link
               href="/quiz"
-              className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-3.5 py-1.5 text-xs font-bold text-[#080808] transition-opacity hover:opacity-90"
+              className="inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-3.5 py-1.5 text-xs font-bold text-white transition-colors hover:bg-amber-600"
             >
               Quiz
-              <span className="bg-amber-500 text-black text-xs font-bold px-2 py-0.5 rounded-full">
+              <span className="bg-white text-amber-600 text-xs font-bold px-2 py-0.5 rounded-full">
                 !
               </span>
             </Link>
@@ -130,7 +130,7 @@ export default function Nav() {
             {/* Search icon */}
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className="text-text/70 transition-colors hover:text-gold"
+              className="text-slate-500 transition-colors hover:text-amber-600"
               aria-label="Search"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -142,7 +142,7 @@ export default function Nav() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-text/70 transition-colors hover:text-gold md:hidden"
+            className="text-slate-500 transition-colors hover:text-amber-600 md:hidden"
             aria-label="Toggle menu"
           >
             {menuOpen ? (
@@ -159,7 +159,7 @@ export default function Nav() {
 
         {/* Expandable search bar */}
         {searchOpen && (
-          <div className="border-t border-card-border py-3">
+          <div className="border-t border-slate-200 py-3">
             <SearchBar />
           </div>
         )}
@@ -167,14 +167,14 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t border-card-border bg-[#080808] md:hidden">
+        <div className="border-t border-slate-200 bg-white md:hidden">
           <div className="space-y-1 px-4 py-4">
             {mainLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-text/70 transition-colors hover:bg-card-bg hover:text-gold"
+                className="block rounded-lg px-3 py-2 text-slate-600 transition-colors hover:bg-amber-50 hover:text-amber-600"
               >
                 {link.label}
               </Link>
@@ -182,14 +182,14 @@ export default function Nav() {
 
             {/* Categories (expanded in mobile) */}
             <div className="px-3 py-2">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-text/30">Categories</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">Categories</p>
               <div className="space-y-1 pl-2">
                 {categories.map((cat) => (
                   <Link
                     key={cat}
                     href={`/category/${toSlug(cat)}`}
                     onClick={() => setMenuOpen(false)}
-                    className="block rounded-lg px-3 py-1.5 text-sm text-text/50 transition-colors hover:bg-card-bg hover:text-gold"
+                    className="block rounded-lg px-3 py-1.5 text-sm text-slate-500 transition-colors hover:bg-amber-50 hover:text-amber-600"
                   >
                     {cat}
                   </Link>
@@ -202,7 +202,7 @@ export default function Nav() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-3 py-2 text-text/70 transition-colors hover:bg-card-bg hover:text-gold"
+                className="block rounded-lg px-3 py-2 text-slate-600 transition-colors hover:bg-amber-50 hover:text-amber-600"
               >
                 {link.label}
               </Link>
@@ -211,7 +211,7 @@ export default function Nav() {
             <Link
               href="/quiz"
               onClick={() => setMenuOpen(false)}
-              className="mx-3 mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold to-gold-light px-4 py-2.5 text-sm font-bold text-[#080808]"
+              className="mx-3 mt-2 flex items-center justify-center gap-2 rounded-full bg-amber-500 px-4 py-2.5 text-sm font-bold text-white hover:bg-amber-600"
             >
               Find Your Dating Site Quiz
             </Link>

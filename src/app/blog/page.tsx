@@ -25,7 +25,7 @@ export default function BlogIndexPage() {
     <>
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">
@@ -49,12 +49,12 @@ export default function BlogIndexPage() {
         {/* ── Featured post ─────────────────────────────── */}
         {featured && (
           <Link href={`/blog/${featured.slug}`} className="group mb-12 block">
-            <article className="overflow-hidden rounded-xl border border-card-border bg-card-bg p-8 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_40px_rgba(196,168,124,0.06)]">
+            <article className="overflow-hidden rounded-xl border border-card-border bg-card-bg p-8 transition-all duration-300 hover:border-gold/30 hover:shadow-md">
               <div className="mb-4 flex items-center gap-3">
                 <span className="rounded-full bg-gold/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-gold/80">
                   Featured
                 </span>
-                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
+                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-600">
                   {featured.category}
                 </span>
                 <span className="text-xs text-text/30">
@@ -75,7 +75,7 @@ export default function BlogIndexPage() {
                   <span className="text-text/20">|</span>
                   <span className="text-sm text-text/40">{featured.date}</span>
                 </div>
-                <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
+                <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-600 transition-colors group-hover:bg-amber-500 group-hover:text-white">
                   Read article &rarr;
                 </span>
               </div>
@@ -96,7 +96,7 @@ export default function BlogIndexPage() {
               <article className="h-full overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-200 hover:border-gold/30 hover:-translate-y-1">
                 <div className="p-6">
                   <div className="mb-3 flex items-center gap-3">
-                    <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
+                    <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-600">
                       {post.category}
                     </span>
                     <span className="text-xs text-text/30">
@@ -111,7 +111,7 @@ export default function BlogIndexPage() {
                   </p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-xs text-text/30">{post.date}</span>
-                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-600 transition-colors group-hover:bg-amber-500 group-hover:text-white">
                       Read article &rarr;
                     </span>
                   </div>

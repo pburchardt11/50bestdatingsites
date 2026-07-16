@@ -11,7 +11,7 @@ export default function SubmitPage() {
   return (
     <>
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
@@ -259,7 +259,7 @@ export default function SubmitPage() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-8 py-3.5 text-sm font-bold tracking-wide uppercase text-[#080808] transition-opacity hover:opacity-90"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-8 py-3.5 text-sm font-bold tracking-wide uppercase text-white transition-opacity hover:opacity-90"
                 >
                   Submit for Review
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -298,23 +298,23 @@ export default function SubmitPage() {
               <h3 className="font-serif text-lg font-bold text-text mb-3">Listing Criteria</h3>
               <ul className="space-y-2 text-sm text-text/60">
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-emerald-400">✓</span>
+                  <span className="mt-0.5 text-emerald-600">✓</span>
                   Active, functioning website or app
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-emerald-400">✓</span>
+                  <span className="mt-0.5 text-emerald-600">✓</span>
                   Legitimate dating or matchmaking service
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-emerald-400">✓</span>
+                  <span className="mt-0.5 text-emerald-600">✓</span>
                   Clear privacy policy and terms of service
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-emerald-400">✓</span>
+                  <span className="mt-0.5 text-emerald-600">✓</span>
                   No history of fraud or scam reports
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-emerald-400">✓</span>
+                  <span className="mt-0.5 text-emerald-600">✓</span>
                   Available to users in at least one country
                 </li>
               </ul>

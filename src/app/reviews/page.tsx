@@ -37,7 +37,7 @@ export default function ReviewsPage() {
             id="review-cat"
             value={catFilter}
             onChange={(e) => setCatFilter(e.target.value)}
-            className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+            className="rounded-lg border border-card-border bg-white px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
           >
             <option value="all">All Categories</option>
             {categories.map((cat) => (
@@ -53,7 +53,7 @@ export default function ReviewsPage() {
             <Link
               key={site.slug}
               href={`/site/${site.slug}`}
-              className="group flex flex-col rounded-xl border border-card-border bg-card-bg p-5 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(196,168,124,0.06)]"
+              className="group flex flex-col rounded-xl border border-card-border bg-card-bg p-5 transition-all duration-300 hover:border-gold/30 hover:shadow-md"
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gold/5 text-2xl">

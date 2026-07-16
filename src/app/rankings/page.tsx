@@ -105,7 +105,7 @@ export default function RankingsPage() {
               id="cat-filter"
               value={categoryFilter}
               onChange={(e) => handleFilterChange(setCategoryFilter)(e.target.value)}
-              className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+              className="rounded-lg border border-card-border bg-white px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
             >
               <option value="all">All Categories</option>
               {categories.map((cat) => (
@@ -120,7 +120,7 @@ export default function RankingsPage() {
               id="country-filter"
               value={countryFilter}
               onChange={(e) => handleFilterChange(setCountryFilter)(e.target.value)}
-              className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+              className="rounded-lg border border-card-border bg-white px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
             >
               <option value="all">All Countries</option>
               {countries.map((c) => (
@@ -135,7 +135,7 @@ export default function RankingsPage() {
               id="price-filter"
               value={priceFilter}
               onChange={(e) => handleFilterChange(setPriceFilter)(e.target.value)}
-              className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+              className="rounded-lg border border-card-border bg-white px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
             >
               <option value="all">All Prices</option>
               <option value="free">Free Only</option>
@@ -150,7 +150,7 @@ export default function RankingsPage() {
               id="sort-by"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortKey)}
-              className="rounded-lg border border-card-border bg-[#080808] px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
+              className="rounded-lg border border-card-border bg-white px-3 py-2 text-sm text-text outline-none focus:border-gold/40"
             >
               <option value="overallScore">Overall Score</option>
               <option value="safetyScore">Safety Score</option>
@@ -200,7 +200,7 @@ export default function RankingsPage() {
                   </td>
                   <td className="px-4 py-3 text-text/50 max-w-[200px] truncate">{site.bestFor}</td>
                   <td className="px-4 py-3 text-right text-text/60">
-                    {site.pricing.free && <span className="mr-1 text-emerald-400 text-xs">Free /</span>}
+                    {site.pricing.free && <span className="mr-1 text-emerald-600 text-xs">Free /</span>}
                     ${site.pricing.premiumMonthly}/mo
                   </td>
                   <td className="px-4 py-3 text-center">
@@ -244,7 +244,7 @@ export default function RankingsPage() {
                   onClick={() => setPage(pageNum)}
                   className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                     page === pageNum
-                      ? 'bg-gold text-[#080808]'
+                      ? 'bg-gold text-white'
                       : 'border border-card-border text-text/60 hover:border-gold/30'
                   }`}
                 >

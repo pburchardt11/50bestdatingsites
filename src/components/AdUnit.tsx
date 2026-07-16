@@ -35,7 +35,7 @@ export default function AdUnit({ slot = '', format = 'horizontal', className = '
     };
     return (
       <div
-        className={`flex items-center justify-center rounded-lg border border-dashed border-card-border bg-card-bg/50 text-xs text-text/20 ${sizeClasses[format]} ${className}`}
+        className={`flex items-center justify-center rounded-lg border border-dashed border-slate-200 bg-slate-50 text-xs text-slate-300 ${sizeClasses[format]} ${className}`}
       >
         Ad Space
       </div>

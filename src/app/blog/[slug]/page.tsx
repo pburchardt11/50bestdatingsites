@@ -142,7 +142,7 @@ function formatInline(text: string): string {
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong class="text-text font-semibold">$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/`(.+?)`/g, '<code class="rounded bg-card-bg px-1.5 py-0.5 text-gold/80 text-sm">$1</code>');
+    .replace(/`(.+?)`/g, '<code class="rounded bg-slate-100 px-1.5 py-0.5 text-amber-700 text-sm">$1</code>');
 }
 
 export default async function BlogPostPage(
@@ -221,7 +221,7 @@ export default async function BlogPostPage(
 
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">

@@ -33,7 +33,7 @@ export default function TeamPage() {
       />
 
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
@@ -55,7 +55,7 @@ export default function TeamPage() {
             <Link
               key={member.slug}
               href={`/team/${member.slug}`}
-              className="group rounded-xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(196,168,124,0.06)]"
+              className="group rounded-xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-md"
             >
               <div className="mb-4 flex items-center gap-4">
                 <span className="flex h-14 w-14 items-center justify-center rounded-full bg-gold/5 text-3xl">

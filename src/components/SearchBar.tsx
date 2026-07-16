@@ -134,10 +134,10 @@ export default function SearchBar({ className = '' }: { className?: string }) {
 
   return (
     <div ref={containerRef} className={`relative ${className}`}>
-      <div className="flex items-center overflow-hidden rounded-full border border-card-border bg-card-bg transition-colors focus-within:border-gold/40">
+      <div className="flex items-center overflow-hidden rounded-full border border-slate-300 bg-white transition-colors focus-within:border-amber-500 focus-within:ring-2 focus-within:ring-amber-100">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="ml-4 h-4 w-4 shrink-0 text-text/30"
+          className="ml-4 h-4 w-4 shrink-0 text-slate-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -159,16 +159,16 @@ export default function SearchBar({ className = '' }: { className?: string }) {
             if (results.length > 0) setIsOpen(true);
           }}
           placeholder="Search sites, countries, categories, or articles..."
-          className="flex-1 bg-transparent px-3 py-3 text-sm text-text placeholder-text/40 outline-none"
+          className="flex-1 bg-transparent px-3 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none"
         />
       </div>
 
       {/* Results dropdown */}
       {isOpen && results.length > 0 && (
-        <div className="absolute left-0 right-0 top-full z-50 mt-2 max-h-[70vh] overflow-y-auto rounded-xl border border-card-border bg-[#111] shadow-2xl">
+        <div className="absolute left-0 right-0 top-full z-50 mt-2 max-h-[70vh] overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-lg">
           {siteResults.length > 0 && (
             <div>
-              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-text/30">
+              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                 Dating Sites
               </div>
               {siteResults.map((r) => {
@@ -183,25 +183,25 @@ export default function SearchBar({ className = '' }: { className?: string }) {
                       setIsOpen(false);
                       setQuery('');
                     }}
-                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gold/10 ${
-                      idx === activeIndex ? 'bg-gold/10' : ''
+                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-amber-50 ${
+                      idx === activeIndex ? 'bg-amber-50' : ''
                     }`}
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold/5 text-xl">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 text-xl">
                       {site.logo}
                     </span>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
-                        <span className="truncate text-sm font-medium text-text">
+                        <span className="truncate text-sm font-medium text-slate-800">
                           {site.name}
                         </span>
-                        <span className="shrink-0 rounded-full bg-gold/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-gold/70">
+                        <span className="shrink-0 rounded-full bg-violet-50 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-violet-600">
                           {site.category}
                         </span>
                       </div>
-                      <span className="text-xs text-text/40">{site.bestFor}</span>
+                      <span className="text-xs text-slate-400">{site.bestFor}</span>
                     </div>
-                    <span className="shrink-0 font-serif text-sm font-bold text-gold">
+                    <span className="shrink-0 font-serif text-sm font-bold text-amber-600">
                       {site.metrics.overallScore.toFixed(1)}
                     </span>
                   </Link>
@@ -212,7 +212,7 @@ export default function SearchBar({ className = '' }: { className?: string }) {
 
           {countryResults.length > 0 && (
             <div>
-              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-text/30">
+              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                 Countries
               </div>
               {countryResults.map((r) => {
@@ -227,12 +227,12 @@ export default function SearchBar({ className = '' }: { className?: string }) {
                       setIsOpen(false);
                       setQuery('');
                     }}
-                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gold/10 ${
-                      idx === activeIndex ? 'bg-gold/10' : ''
+                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-amber-50 ${
+                      idx === activeIndex ? 'bg-amber-50' : ''
                     }`}
                   >
                     <span className="text-2xl">{country.emoji}</span>
-                    <span className="text-sm font-medium text-text">
+                    <span className="text-sm font-medium text-slate-800">
                       {country.name}
                     </span>
                   </Link>
@@ -243,7 +243,7 @@ export default function SearchBar({ className = '' }: { className?: string }) {
 
           {categoryResults.length > 0 && (
             <div>
-              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-text/30">
+              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                 Categories
               </div>
               {categoryResults.map((r) => {
@@ -257,14 +257,14 @@ export default function SearchBar({ className = '' }: { className?: string }) {
                       setIsOpen(false);
                       setQuery('');
                     }}
-                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gold/10 ${
-                      idx === activeIndex ? 'bg-gold/10' : ''
+                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-amber-50 ${
+                      idx === activeIndex ? 'bg-amber-50' : ''
                     }`}
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold/5 text-lg">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 text-lg">
                       📂
                     </span>
-                    <span className="text-sm font-medium text-text">
+                    <span className="text-sm font-medium text-slate-800">
                       {r.category}
                     </span>
                   </Link>
@@ -275,7 +275,7 @@ export default function SearchBar({ className = '' }: { className?: string }) {
 
           {blogResults.length > 0 && (
             <div>
-              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-text/30">
+              <div className="px-4 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                 Articles
               </div>
               {blogResults.map((r) => {
@@ -290,18 +290,18 @@ export default function SearchBar({ className = '' }: { className?: string }) {
                       setIsOpen(false);
                       setQuery('');
                     }}
-                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gold/10 ${
-                      idx === activeIndex ? 'bg-gold/10' : ''
+                    className={`flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-amber-50 ${
+                      idx === activeIndex ? 'bg-amber-50' : ''
                     }`}
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold/5 text-lg">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 text-lg">
                       📝
                     </span>
                     <div className="min-w-0 flex-1">
-                      <span className="block truncate text-sm font-medium text-text">
+                      <span className="block truncate text-sm font-medium text-slate-800">
                         {post.title}
                       </span>
-                      <span className="text-xs text-text/40">{post.category}</span>
+                      <span className="text-xs text-slate-400">{post.category}</span>
                     </div>
                   </Link>
                 );

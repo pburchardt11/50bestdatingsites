@@ -168,7 +168,7 @@ export default function QuizPage() {
     return (
       <>
         <section className="relative border-b border-card-border">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
           <div className="relative mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-gold/70">Quiz Results</p>
             <h1 className="font-serif text-4xl font-bold text-text sm:text-5xl">
@@ -185,10 +185,10 @@ export default function QuizPage() {
             {results.map((site, i) => (
               <div
                 key={site.slug}
-                className="relative overflow-hidden rounded-2xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_40px_rgba(196,168,124,0.08)] sm:p-8"
+                className="relative overflow-hidden rounded-2xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-md sm:p-8"
               >
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-2xl font-bold text-[#080808]">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-2xl font-bold text-white">
                     {i + 1}
                   </div>
 
@@ -215,7 +215,7 @@ export default function QuizPage() {
 
                   <div className="flex shrink-0 flex-col items-end gap-3">
                     {site.pricing.free ? (
-                      <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400">
+                      <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">
                         Free
                       </span>
                     ) : (
@@ -227,7 +227,7 @@ export default function QuizPage() {
                       href={site.url}
                       target="_blank"
                       rel="nofollow sponsored noopener"
-                      className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-5 py-2.5 text-sm font-bold text-[#080808] transition-opacity hover:opacity-90"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
                     >
                       Visit Site
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
@@ -267,7 +267,7 @@ export default function QuizPage() {
   return (
     <>
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>

@@ -116,7 +116,7 @@ export default async function CityPage(
 
       {/* Hero */}
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
@@ -199,7 +199,7 @@ export default async function CityPage(
                           <td className="py-3 pr-4 text-text/50">{site.category}</td>
                           <td className="py-3 text-right text-text/70">
                             {site.pricing.free && (
-                              <span className="mr-2 rounded bg-emerald-900/30 px-1.5 py-0.5 text-[10px] font-medium text-emerald-400">
+                              <span className="mr-2 rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-medium text-emerald-600">
                                 Free tier
                               </span>
                             )}
