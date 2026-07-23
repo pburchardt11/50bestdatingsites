@@ -11,6 +11,7 @@ import {
   getSitesByCategory,
   toSlug,
 } from '@/lib/dating-db';
+import { getSearchIndex } from '@/lib/search-index';
 
 export const revalidate = 604800;
 
@@ -141,7 +142,7 @@ export default function HomePage() {
             Last updated: July 2026
           </p>
 
-          <SearchBar className="mx-auto mt-10 max-w-xl" />
+          <SearchBar className="mx-auto mt-10 max-w-xl" searchData={getSearchIndex()} />
 
           {/* Trust stats */}
           <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-base text-text/60">
@@ -271,7 +272,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <RankingsTable sites={allSites} />
+        <RankingsTable sites={allSites.slice(0, 50)} />
       </section>
 
       <AdUnit format="horizontal" className="mx-auto max-w-4xl px-4" />
