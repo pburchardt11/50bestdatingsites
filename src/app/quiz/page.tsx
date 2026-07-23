@@ -23,6 +23,25 @@ const questions: Question[] = [
     ],
   },
   {
+    id: 'country',
+    label: 'Which country are you searching in?',
+    options: [
+      { value: 'any', label: 'Anywhere / No preference' },
+      { value: 'USA', label: '🇺🇸 United States' },
+      { value: 'UK', label: '🇬🇧 United Kingdom' },
+      { value: 'Canada', label: '🇨🇦 Canada' },
+      { value: 'Australia', label: '🇦🇺 Australia' },
+      { value: 'Germany', label: '🇩🇪 Germany' },
+      { value: 'France', label: '🇫🇷 France' },
+      { value: 'India', label: '🇮🇳 India' },
+      { value: 'Brazil', label: '🇧🇷 Brazil' },
+      { value: 'UAE', label: '🇦🇪 UAE / Dubai' },
+      { value: 'Singapore', label: '🇸🇬 Singapore' },
+      { value: 'Japan', label: '🇯🇵 Japan' },
+      { value: 'other', label: '🌍 Other country' },
+    ],
+  },
+  {
     id: 'goal',
     label: 'What are you looking for?',
     options: [
@@ -81,6 +100,13 @@ const questions: Question[] = [
 
 function scoreSite(site: DatingSite, answers: Record<string, string>): number {
   let score = site.metrics.overallScore * 10; // base score 0-100
+
+  // Country
+  const country = answers.country;
+  if (country && country !== 'any' && country !== 'other') {
+    if (site.countries.some(c => c.toLowerCase() === country.toLowerCase())) score += 25;
+    else score -= 15;
+  }
 
   // Budget
   const budget = answers.budget;
