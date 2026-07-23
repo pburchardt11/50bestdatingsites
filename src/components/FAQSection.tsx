@@ -17,19 +17,19 @@ export default function FAQSection({ items }: { items: FAQItem[] }) {
         return (
           <div
             key={i}
-            className="rounded-xl border border-slate-200 bg-white overflow-hidden transition-all duration-300"
+            className="rounded-xl border border-card-border bg-card-bg overflow-hidden transition-all duration-300"
           >
             <button
               onClick={() => setOpenIndex(isOpen ? null : i)}
-              className="flex w-full items-center justify-between gap-4 px-6 py-4 text-left transition-colors hover:bg-amber-50/50"
+              className="flex w-full items-center justify-between gap-4 px-6 py-4 text-left transition-colors hover:bg-gold/5"
               aria-expanded={isOpen}
             >
-              <span className="font-serif text-base font-bold text-slate-900 sm:text-lg">
+              <span className="font-serif text-base font-bold text-text sm:text-lg">
                 {item.question}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-5 w-5 shrink-0 text-amber-500 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                className={`h-5 w-5 shrink-0 text-gold/60 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -39,8 +39,8 @@ export default function FAQSection({ items }: { items: FAQItem[] }) {
               </svg>
             </button>
             {isOpen && (
-              <div className="border-t border-slate-200 px-6 py-4">
-                <p className="text-sm leading-relaxed text-slate-600">{item.answer}</p>
+              <div className="border-t border-card-border px-6 py-4">
+                <p className="text-sm leading-relaxed text-text/60">{item.answer}</p>
               </div>
             )}
           </div>

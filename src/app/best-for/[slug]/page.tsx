@@ -363,7 +363,7 @@ export default async function BestForPage(
               key={site.slug}
               className="flex flex-col gap-4 rounded-xl border border-card-border bg-card-bg p-5 transition-all hover:border-gold/30 sm:flex-row sm:items-center sm:p-6"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-lg font-bold text-white">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-lg font-bold text-[#080808]">
                 {i + 1}
               </div>
 
@@ -384,7 +384,7 @@ export default async function BestForPage(
 
               <div className="flex shrink-0 flex-col gap-2 sm:items-end">
                 {site.pricing.free ? (
-                  <span className="rounded-full bg-emerald-50 px-3 py-0.5 text-xs font-semibold text-emerald-600">Free</span>
+                  <span className="rounded-full bg-emerald-900/30 px-3 py-0.5 text-xs font-semibold text-emerald-400">Free</span>
                 ) : (
                   <span className="text-xs text-text/40">${site.pricing.premiumMonthly}/mo</span>
                 )}
@@ -392,7 +392,7 @@ export default async function BestForPage(
                   href={site.url}
                   target="_blank"
                   rel="nofollow sponsored noopener"
-                  className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-gold to-gold-light px-4 py-2 text-xs font-bold text-white transition-opacity hover:opacity-90"
+                  className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-gold to-gold-light px-4 py-2 text-xs font-bold text-[#080808] transition-opacity hover:opacity-90"
                 >
                   Visit Site
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>

@@ -121,7 +121,7 @@ export default async function SiteDetailPage(
 
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="mb-6 text-sm text-text/40">
@@ -145,12 +145,12 @@ export default async function SiteDetailPage(
                     {site.name}
                   </h1>
                   {isVerified(site) ? (
-                    <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                    <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400 flex items-center gap-1">
                       <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                       Verified
                     </span>
                   ) : (
-                    <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-600/80">
+                    <span className="rounded-full bg-amber-900/20 px-3 py-1 text-xs font-semibold text-amber-400/80">
                       Unverified
                     </span>
                   )}
@@ -181,7 +181,7 @@ export default async function SiteDetailPage(
               href={site.url}
               target="_blank"
               rel="nofollow sponsored noopener"
-              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-8 py-4 font-serif text-lg font-bold text-white transition-opacity hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-8 py-4 font-serif text-lg font-bold text-[#080808] transition-opacity hover:opacity-90"
             >
               Visit {site.name}
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
@@ -193,10 +193,10 @@ export default async function SiteDetailPage(
       {/* Unverified notice */}
       {!isVerified(site) && (
         <div className="mx-auto max-w-5xl px-4 pt-6 sm:px-6 lg:px-8">
-          <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 flex items-start gap-3">
-            <span className="text-amber-600 text-lg mt-0.5">⚠</span>
+          <div className="rounded-xl border border-amber-800/30 bg-amber-950/20 px-5 py-4 flex items-start gap-3">
+            <span className="text-amber-400 text-lg mt-0.5">⚠</span>
             <div>
-              <p className="text-sm font-medium text-amber-600">Unverified Listing</p>
+              <p className="text-sm font-medium text-amber-300">Unverified Listing</p>
               <p className="text-xs text-text/50 mt-1">
                 This listing has not been independently verified by our editorial team. Scores are editorial estimates.
                 Data may be incomplete or outdated.{' '}
@@ -249,7 +249,7 @@ export default async function SiteDetailPage(
                     <span className="text-text/40 text-lg"> / 5</span>
                     <div className="mt-1 flex items-center justify-center gap-0.5">
                       {[1,2,3,4,5].map(s => (
-                        <span key={s} className={`text-lg ${s <= Math.round(scraped.realRating!.score) ? "text-yellow-500" : "text-text/15"}`}>★</span>
+                        <span key={s} className={`text-lg ${s <= Math.round(scraped.realRating!.score) ? "text-yellow-400" : "text-text/15"}`}>★</span>
                       ))}
                     </div>
                   </div>
@@ -304,8 +304,8 @@ export default async function SiteDetailPage(
                 </h2>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {scraped.realPricing.free && (
-                    <div className="rounded-xl border border-emerald-800/30 bg-emerald-50 p-4">
-                      <span className="text-xs font-semibold uppercase tracking-wider text-emerald-600">Free Tier</span>
+                    <div className="rounded-xl border border-emerald-800/30 bg-emerald-950/20 p-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Free Tier</span>
                       <p className="font-serif text-2xl font-bold text-text mt-1">$0</p>
                       <p className="text-xs text-text/40 mt-1">Basic features</p>
                     </div>
@@ -340,7 +340,7 @@ export default async function SiteDetailPage(
                     </div>
                     <div className="mt-2 flex items-center gap-1">
                       {[1,2,3,4,5].map(s => (
-                        <span key={s} className={s <= Math.round(storeRatings.googlePlayRating) ? "text-yellow-500" : "text-text/20"}>★</span>
+                        <span key={s} className={s <= Math.round(storeRatings.googlePlayRating) ? "text-yellow-400" : "text-text/20"}>★</span>
                       ))}
                     </div>
                     <p className="mt-2 text-sm text-text/40">{storeRatings.googlePlayReviews.toLocaleString()} reviews</p>
@@ -360,19 +360,19 @@ export default async function SiteDetailPage(
                 {site.pricing.free && (
                   <div className="rounded-xl border border-card-border bg-card-bg p-6">
                     <div className="mb-2 flex items-center gap-2">
-                      <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-600">Free</span>
+                      <span className="rounded-full bg-emerald-900/30 px-2.5 py-0.5 text-xs font-semibold text-emerald-400">Free</span>
                     </div>
                     <p className="font-serif text-3xl font-bold text-text">{site.pricing.currency} 0</p>
                     <p className="mt-1 text-sm text-text/40">Basic features included</p>
                     <ul className="mt-4 space-y-2 text-sm text-text/60">
                       <li className="flex items-center gap-2">
-                        <span className="text-emerald-600">&#10003;</span> Create profile
+                        <span className="text-emerald-400">&#10003;</span> Create profile
                       </li>
                       <li className="flex items-center gap-2">
-                        <span className="text-emerald-600">&#10003;</span> Browse matches
+                        <span className="text-emerald-400">&#10003;</span> Browse matches
                       </li>
                       <li className="flex items-center gap-2">
-                        <span className="text-emerald-600">&#10003;</span> Limited messaging
+                        <span className="text-emerald-400">&#10003;</span> Limited messaging
                       </li>
                     </ul>
                   </div>
@@ -406,7 +406,7 @@ export default async function SiteDetailPage(
                     href={site.url}
                     target="_blank"
                     rel="nofollow sponsored noopener"
-                    className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-gold to-gold-light px-4 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+                    className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-gold to-gold-light px-4 py-2.5 text-sm font-bold text-[#080808] transition-opacity hover:opacity-90"
                   >
                     Get Premium
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
@@ -482,14 +482,14 @@ export default async function SiteDetailPage(
                 Pros &amp; Cons
               </h2>
               <div className="grid gap-6 sm:grid-cols-2">
-                <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-6">
-                  <h3 className="mb-4 font-serif text-lg font-bold text-emerald-600">
+                <div className="rounded-xl border border-emerald-900/30 bg-emerald-950/20 p-6">
+                  <h3 className="mb-4 font-serif text-lg font-bold text-emerald-400">
                     Pros
                   </h3>
                   <ul className="space-y-3">
                     {site.prosAndCons.pros.map((pro) => (
                       <li key={pro} className="flex items-start gap-3">
-                        <svg className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                         <span className="text-sm text-text/70">{pro}</span>
@@ -498,7 +498,7 @@ export default async function SiteDetailPage(
                   </ul>
                 </div>
 
-                <div className="rounded-xl border border-red-200 bg-red-50 p-6">
+                <div className="rounded-xl border border-red-900/30 bg-red-950/20 p-6">
                   <h3 className="mb-4 font-serif text-lg font-bold text-red-400">
                     Cons
                   </h3>
@@ -558,7 +558,7 @@ export default async function SiteDetailPage(
               href={site.url}
               target="_blank"
               rel="nofollow sponsored noopener"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-6 py-4 font-serif text-lg font-bold text-white transition-opacity hover:opacity-90"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-6 py-4 font-serif text-lg font-bold text-[#080808] transition-opacity hover:opacity-90"
             >
               Visit {site.name}
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -636,13 +636,13 @@ export default async function SiteDetailPage(
                       <div>
                         <span className="font-medium text-text">{review.name}</span>
                         {review.verified && (
-                          <span className="ml-2 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-600">Verified</span>
+                          <span className="ml-2 rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Verified</span>
                         )}
                         <p className="text-xs text-text/30 mt-0.5">{review.location ? `${review.location} · ` : ''}{review.date}</p>
                       </div>
                       <div className="flex items-center gap-0.5">
                         {[1,2,3,4,5].map(s => (
-                          <span key={s} className={`text-sm ${s <= review.rating ? "text-yellow-500" : "text-text/15"}`}>★</span>
+                          <span key={s} className={`text-sm ${s <= review.rating ? "text-yellow-400" : "text-text/15"}`}>★</span>
                         ))}
                       </div>
                     </div>

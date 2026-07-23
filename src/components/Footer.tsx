@@ -35,26 +35,26 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50">
+    <footer className="border-t border-card-border bg-[#050505]">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:divide-x lg:divide-slate-200 [&>div]:lg:pl-8 [&>div:first-child]:lg:pl-0">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:divide-x lg:divide-card-border [&>div]:lg:pl-8 [&>div:first-child]:lg:pl-0">
           {/* Branding */}
           <div>
             <Link href="/" className="inline-flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold text-amber-600" style={{ letterSpacing: -1, lineHeight: 1 }}>
+              <span className="font-serif text-2xl font-bold text-gold" style={{ letterSpacing: -1, lineHeight: 1 }}>
                 50
               </span>
-              <span className="h-5 w-px bg-amber-600/40" />
+              <span className="h-5 w-px bg-gold/40" />
               <span className="flex flex-col">
-                <span className="text-[8px] font-semibold uppercase tracking-[3px] text-amber-600/80">
+                <span className="text-[8px] font-semibold uppercase tracking-[3px] text-gold/80">
                   Best
                 </span>
-                <span className="font-serif text-base font-normal italic text-slate-900" style={{ letterSpacing: 1, lineHeight: 1.1 }}>
+                <span className="font-serif text-base font-normal italic text-text" style={{ letterSpacing: 1, lineHeight: 1.1 }}>
                   Dating Sites
                 </span>
               </span>
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-slate-500">
+            <p className="mt-4 text-sm leading-relaxed text-text/50">
               Expert rankings and in-depth reviews of the world&apos;s top dating
               platforms. Independently researched and regularly updated.
             </p>
@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([heading, links]) => (
             <div key={heading}>
-              <h3 className="mb-4 font-serif text-sm font-semibold uppercase tracking-widest text-amber-700">
+              <h3 className="mb-4 font-serif text-sm font-semibold uppercase tracking-widest text-gold/80">
                 {heading}
               </h3>
               <ul className="space-y-2">
@@ -71,7 +71,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-slate-500 transition-colors hover:text-amber-600"
+                      className="text-sm text-text/50 transition-colors hover:text-gold"
                     >
                       {link.label}
                     </Link>
@@ -83,8 +83,8 @@ export default function Footer() {
         </div>
 
         {/* 50 Best Network */}
-        <div className="mt-12 border-t border-slate-200 pt-8 text-center">
-          <h3 className="mb-3 text-[10px] font-semibold uppercase tracking-[1.5px] text-amber-700">
+        <div className="mt-12 border-t border-card-border pt-8 text-center">
+          <h3 className="mb-3 text-[10px] font-semibold uppercase tracking-[1.5px] text-gold">
             50 Best Network
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
@@ -108,27 +108,27 @@ export default function Footer() {
                 href={site.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-slate-500 transition-colors hover:text-amber-600"
+                className="text-sm font-medium text-text/50 transition-colors hover:text-gold"
               >
                 {site.name}
               </a>
             ))}
-            <span className="text-sm font-bold text-amber-600">
+            <span className="text-sm font-bold text-gold">
               50 Best Dating Sites
             </span>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 sm:flex-row">
-          <p className="text-xs text-slate-400">
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-card-border pt-6 sm:flex-row">
+          <p className="text-xs text-text/30">
             &copy; 2026 50 Best Limited. All rights reserved.
           </p>
-          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-600">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-3 py-1 text-xs font-medium text-emerald-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Updated: July 2026
           </p>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-text/30">
             Rankings are based on independent research. We may earn a commission
             from partner links.
           </p>

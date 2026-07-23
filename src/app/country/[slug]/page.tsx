@@ -35,9 +35,9 @@ export async function generateMetadata(
 }
 
 const popularityColors: Record<string, { bg: string; text: string; label: string }> = {
-  high: { bg: 'bg-emerald-50', text: 'text-emerald-600', label: 'High' },
-  medium: { bg: 'bg-yellow-50', text: 'text-yellow-500', label: 'Medium' },
-  low: { bg: 'bg-red-50', text: 'text-red-400', label: 'Low' },
+  high: { bg: 'bg-emerald-900/30', text: 'text-emerald-400', label: 'High' },
+  medium: { bg: 'bg-yellow-900/30', text: 'text-yellow-400', label: 'Medium' },
+  low: { bg: 'bg-red-900/30', text: 'text-red-400', label: 'Low' },
 };
 
 const datingCultureTexts: Record<string, string> = {
@@ -105,7 +105,7 @@ export default async function CountryPage(
 
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="relative border-b border-card-border">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(217,119,6,0.04)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(196,168,124,0.06)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <nav className="mb-6 text-sm text-text/40">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
@@ -201,8 +201,8 @@ export default async function CountryPage(
 
             {/* Legal notes */}
             {country.legalNotes && (
-              <div className="rounded-xl border border-yellow-200 bg-yellow-50 p-6">
-                <h3 className="mb-3 font-serif text-lg font-bold text-yellow-500">
+              <div className="rounded-xl border border-yellow-900/30 bg-yellow-950/20 p-6">
+                <h3 className="mb-3 font-serif text-lg font-bold text-yellow-400">
                   Legal &amp; Cultural Notes
                 </h3>
                 <p className="text-sm leading-relaxed text-text/60">

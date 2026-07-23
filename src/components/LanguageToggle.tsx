@@ -89,8 +89,8 @@ export default function LanguageToggle() {
     <div ref={panelRef} className="fixed bottom-6 right-6 z-[9999]">
       {/* Language selector panel */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 mb-2 w-72 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
+        <div className="absolute bottom-16 right-0 mb-2 w-72 rounded-xl border border-card-border bg-[#111] p-4 shadow-2xl">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-text/40">
             Select Language
           </h3>
           <div className="grid grid-cols-2 gap-1.5">
@@ -98,10 +98,10 @@ export default function LanguageToggle() {
               <button
                 key={lang.code}
                 onClick={() => switchLanguage(lang.code)}
-                className={`flex items-center gap-2 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-amber-50 ${
+                className={`flex items-center gap-2 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-gold/10 ${
                   lang.code === currentLang
-                    ? 'bg-amber-50 text-amber-700'
-                    : 'text-slate-600'
+                    ? 'bg-gold/10 text-gold'
+                    : 'text-text/70'
                 }`}
               >
                 <span className="text-base">{lang.flag}</span>
@@ -115,7 +115,7 @@ export default function LanguageToggle() {
       {/* Toggle button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-xl shadow-lg transition-all hover:border-amber-300 hover:shadow-xl"
+        className="flex h-12 w-12 items-center justify-center rounded-full border border-card-border bg-[#111] text-xl shadow-lg transition-all hover:border-gold/40 hover:shadow-gold/10"
         aria-label="Change language"
         title="Change language"
       >

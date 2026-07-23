@@ -23,13 +23,13 @@ export default function HomePage() {
   const blogPosts = getAllBlogPosts().slice(0, 6);
   const totalSites = getAllSites().length;
 
-  const categoryMeta: Record<string, { icon: string; description: string; image?: string }> = {
+  const categoryMeta: Record<string, { icon: string; description: string }> = {
     'General Dating': { icon: '💑', description: 'Mainstream apps for all types of dating and relationships' },
-    'Serious Relationships': { icon: '💍', description: 'Platforms focused on long-term commitment and marriage', image: '/images/cat-serious.png' },
-    'Over 50': { icon: '🌹', description: 'Dating sites designed for mature singles over 50', image: '/images/cat-senior.png' },
-    'LGBTQ+': { icon: '🏳️‍🌈', description: 'Inclusive platforms for the LGBTQ+ community', image: '/images/cat-lgbtq.png' },
+    'Serious Relationships': { icon: '💍', description: 'Platforms focused on long-term commitment and marriage' },
+    'Over 50': { icon: '🌹', description: 'Dating sites designed for mature singles over 50' },
+    'LGBTQ+': { icon: '🏳️‍🌈', description: 'Inclusive platforms for the LGBTQ+ community' },
     'International / Cultural': { icon: '🌍', description: 'Cross-border dating and culturally-specific matchmaking' },
-    'Hook-up / Casual': { icon: '🔥', description: 'Apps optimized for casual encounters and no-strings dating', image: '/images/cat-casual.png' },
+    'Hook-up / Casual': { icon: '🔥', description: 'Apps optimized for casual encounters and no-strings dating' },
     'Niche': { icon: '🎯', description: 'Specialized sites for unique interests and communities' },
     'Asian Market': { icon: '🏮', description: 'Leading dating platforms across Asian markets' },
     'Video Dating': { icon: '📹', description: 'Video-first platforms for face-to-face connections' },
@@ -125,42 +125,43 @@ export default function HomePage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-slate-200" style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white" />
+      <section className="relative overflow-hidden border-b border-card-border bg-gradient-to-b from-[#0d0b08] via-[#080808] to-[#080808]">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(196,168,124,0.12)_0%,transparent_70%)]" />
+
         <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 sm:py-28 lg:px-8 lg:py-36">
-          <h1 className="font-serif text-5xl font-bold leading-tight tracking-tighter text-slate-900 sm:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-5xl font-bold leading-tight tracking-tighter text-text sm:text-6xl lg:text-7xl">
             Find Your Perfect Dating Site
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-500">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text/60">
             Expert reviews of {totalSites.toLocaleString()}+ dating sites across 200 countries.
             Independently researched, rigorously scored, regularly updated.
           </p>
-          <p className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-xs font-medium text-emerald-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+          <p className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5 text-xs font-medium text-gold/80">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             Last updated: July 2026
           </p>
 
           <SearchBar className="mx-auto mt-10 max-w-xl" />
 
           {/* Trust stats */}
-          <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-base text-slate-500">
+          <div className="mx-auto mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-base text-text/60">
             <div className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold text-amber-600">{totalSites.toLocaleString()}+</span>
+              <span className="font-serif text-2xl font-bold text-gold">{totalSites.toLocaleString()}+</span>
               <span>Sites Reviewed</span>
             </div>
-            <span className="hidden text-slate-300 sm:inline">|</span>
+            <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold text-amber-600">200</span>
+              <span className="font-serif text-2xl font-bold text-gold">200</span>
               <span>Countries</span>
             </div>
-            <span className="hidden text-slate-300 sm:inline">|</span>
+            <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold text-amber-600">July 2026</span>
+              <span className="font-serif text-2xl font-bold text-gold">July 2026</span>
               <span>Updated</span>
             </div>
-            <span className="hidden text-slate-300 sm:inline">|</span>
+            <span className="hidden text-card-border sm:inline">|</span>
             <div className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold text-amber-600">Expert</span>
+              <span className="font-serif text-2xl font-bold text-gold">Expert</span>
               <span>Ratings</span>
             </div>
           </div>
@@ -170,11 +171,11 @@ export default function HomePage() {
       {/* ── Editor's Top Picks ────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-600">Editor&apos;s Choice</p>
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-gold/70">Editor&apos;s Choice</p>
+          <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
             Top 5 Dating Sites of 2026
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-3 text-text/50">
             Hand-picked by our editorial team based on rigorous, independent testing.
           </p>
         </div>
@@ -183,17 +184,17 @@ export default function HomePage() {
           {top5.map((site, i) => (
             <div
               key={site.slug}
-              className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-amber-300 hover:shadow-md sm:p-8"
+              className="relative overflow-hidden rounded-2xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_40px_rgba(196,168,124,0.08)] sm:p-8"
             >
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
                 {/* Rank badge */}
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-amber-500 font-serif text-2xl font-bold text-white">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-2xl font-bold text-[#080808]">
                   {i + 1}
                 </div>
 
                 {/* Score circle */}
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-amber-300 bg-amber-50">
-                  <span className="font-serif text-2xl font-bold text-amber-700">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gold/30 bg-gold/5">
+                  <span className="font-serif text-2xl font-bold text-gold">
                     {site.metrics.overallScore.toFixed(1)}
                   </span>
                 </div>
@@ -202,14 +203,14 @@ export default function HomePage() {
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="text-2xl">{site.logo}</span>
-                    <h3 className="font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+                    <h3 className="font-serif text-xl font-bold text-text sm:text-2xl">
                       {site.name}
                     </h3>
-                    <span className="rounded-full bg-violet-50 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-violet-700">
+                    <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
                       {site.category}
                     </span>
                   </div>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-500">
+                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-text/50">
                     {site.editorial}
                   </p>
                 </div>
@@ -217,11 +218,11 @@ export default function HomePage() {
                 {/* Pricing + CTAs */}
                 <div className="flex shrink-0 flex-col items-end gap-3">
                   {site.pricing.free ? (
-                    <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">
+                    <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400">
                       Free
                     </span>
                   ) : (
-                    <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
+                    <span className="rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold/80">
                       From {site.pricing.currency} {site.pricing.premiumMonthly}/mo
                     </span>
                   )}
@@ -229,14 +230,14 @@ export default function HomePage() {
                     href={site.url}
                     target="_blank"
                     rel="nofollow sponsored noopener"
-                    className="inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-amber-600"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold to-gold-light px-5 py-2.5 text-sm font-bold text-[#080808] transition-opacity hover:opacity-90"
                   >
                     Visit Site
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                   </a>
                   <Link
                     href={`/site/${site.slug}`}
-                    className="text-sm font-medium text-slate-500 transition-colors hover:text-amber-600"
+                    className="text-sm font-medium text-text/50 transition-colors hover:text-gold"
                   >
                     Read Review &rarr;
                   </Link>
@@ -249,7 +250,7 @@ export default function HomePage() {
         <div className="mt-8 text-center">
           <Link
             href="/rankings"
-            className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-amber-600 hover:shadow-xl"
+            className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all hover:bg-amber-600 hover:shadow-xl"
           >
             View All Rankings
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
@@ -262,10 +263,10 @@ export default function HomePage() {
       {/* ── Top 50 Rankings ─────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+          <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
             Top 50 Dating Sites
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-3 text-text/50">
             Expert-ranked with scores, pricing, and what each does best. Show more to explore all {totalSites.toLocaleString()} sites.
           </p>
         </div>
@@ -278,10 +279,10 @@ export default function HomePage() {
       {/* ── Browse by Category ─────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+          <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
             Browse by Category
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-3 text-text/50">
             Find the best dating sites tailored to your specific needs.
           </p>
         </div>
@@ -294,24 +295,17 @@ export default function HomePage() {
               <Link
                 key={cat}
                 href={`/category/${toSlug(cat)}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-amber-300 hover:shadow-md"
+                className="group flex items-start gap-4 rounded-xl border border-card-border bg-card-bg p-5 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(196,168,124,0.06)]"
               >
-                {meta.image && (
-                  <div className="relative h-32 w-full overflow-hidden bg-amber-50">
-                    <img src={meta.image} alt={`${cat} dating category`} className="h-full w-full object-cover" />
-                  </div>
-                )}
-                <div className="flex items-start gap-4 p-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-2xl">
-                    {meta.icon}
-                  </span>
-                  <div>
-                    <h3 className="font-serif text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
-                      {cat}
-                    </h3>
-                    <p className="mt-0.5 text-xs font-medium text-amber-600">{count} sites</p>
-                    <p className="mt-1 text-sm text-slate-500">{meta.description}</p>
-                  </div>
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gold/5 text-2xl">
+                  {meta.icon}
+                </span>
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-text group-hover:text-gold transition-colors">
+                    {cat}
+                  </h3>
+                  <p className="mt-0.5 text-xs font-medium text-gold/60">{count} sites</p>
+                  <p className="mt-1 text-sm text-text/40">{meta.description}</p>
                 </div>
               </Link>
             );
@@ -320,13 +314,13 @@ export default function HomePage() {
       </section>
 
       {/* ── How We Rate ─────────────────────────────────────────── */}
-      <section className="border-t border-slate-200 bg-slate-50">
+      <section className="border-t border-card-border bg-[#0a0a0a]">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+            <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
               How We Rate Dating Sites
             </h2>
-            <p className="mt-3 text-slate-500">
+            <p className="mt-3 text-text/50">
               Our rigorous methodology ensures every recommendation is backed by data.
             </p>
           </div>
@@ -356,15 +350,15 @@ export default function HomePage() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-amber-200 hover:shadow-md"
+                className="rounded-xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/20"
               >
-                <span className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-amber-50 text-2xl">
+                <span className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gold/5 text-2xl">
                   {card.icon}
                 </span>
-                <h3 className="mb-2 font-serif text-lg font-bold text-slate-900">
+                <h3 className="mb-2 font-serif text-lg font-bold text-text">
                   {card.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-500">
+                <p className="text-sm leading-relaxed text-text/50">
                   {card.description}
                 </p>
               </div>
@@ -376,10 +370,10 @@ export default function HomePage() {
       {/* ── Latest from the Blog ────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+          <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
             Latest from the Blog
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-3 text-text/50">
             Expert advice, industry analysis, and dating tips from our editorial team.
           </p>
         </div>
@@ -387,23 +381,23 @@ export default function HomePage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-              <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 hover:border-amber-300 hover:-translate-y-1 hover:shadow-md">
+              <article className="overflow-hidden rounded-xl border border-card-border bg-card-bg transition-all duration-200 hover:border-gold/30 hover:-translate-y-1">
                 <div className="p-6">
                   <div className="mb-3 flex items-center gap-3">
-                    <span className="rounded-full bg-violet-50 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-violet-700">
+                    <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-amber-400">
                       {post.category}
                     </span>
-                    <span className="text-xs text-slate-400">{post.readTime}</span>
+                    <span className="text-xs text-text/30">{post.readTime}</span>
                   </div>
-                  <h3 className="font-serif text-xl font-bold leading-snug text-slate-900 group-hover:text-amber-600 transition-colors">
+                  <h3 className="font-serif text-xl font-bold leading-snug text-text group-hover:text-gold transition-colors">
                     {post.title}
                   </h3>
-                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-500">
+                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-text/50">
                     {post.excerpt}
                   </p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-xs text-slate-400">{post.date}</span>
-                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 transition-colors group-hover:bg-amber-500 group-hover:text-white">
+                    <span className="text-xs text-text/30">{post.date}</span>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400 transition-colors group-hover:bg-amber-500 group-hover:text-black">
                       Read article &rarr;
                     </span>
                   </div>
@@ -416,7 +410,7 @@ export default function HomePage() {
         <div className="mt-8 text-center">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 rounded-full border border-amber-300 px-6 py-3 text-sm font-medium text-amber-700 transition-colors hover:bg-amber-50"
+            className="inline-flex items-center gap-2 rounded-full border border-gold/20 px-6 py-3 text-sm font-medium text-gold transition-colors hover:bg-gold/10"
           >
             View All Articles
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
@@ -427,40 +421,40 @@ export default function HomePage() {
       <AdUnit format="horizontal" className="mx-auto max-w-4xl px-4" />
 
       {/* ── 50 Best Trust Bar ──────────────────────────────────── */}
-      <section className="border-t border-slate-200 bg-slate-50">
+      <section className="border-t border-card-border bg-[#0a0a0a]">
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 mb-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold/60 mb-4">
             Part of the 50 Best family
           </p>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-6">
+          <p className="text-lg text-text/60 max-w-2xl mx-auto mb-6">
             Trusted curators of the world&apos;s finest experiences
           </p>
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-5 py-2">
-            <span className="font-serif text-2xl font-bold text-amber-600">1,018</span>
-            <span className="text-sm text-slate-500">dating sites rated across</span>
-            <span className="font-serif text-2xl font-bold text-amber-600">200</span>
-            <span className="text-sm text-slate-500">countries</span>
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-5 py-2">
+            <span className="font-serif text-2xl font-bold text-gold">1,018</span>
+            <span className="text-sm text-text/50">dating sites rated across</span>
+            <span className="font-serif text-2xl font-bold text-gold">200</span>
+            <span className="text-sm text-text/50">countries</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            <a href="https://www.50besthotels.com" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 transition-colors hover:text-amber-600">50 Best Hotels</a>
-            <span className="text-slate-300">|</span>
-            <a href="https://www.50bestspa.com" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 transition-colors hover:text-amber-600">50 Best Spas</a>
-            <span className="text-slate-300">|</span>
-            <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 transition-colors hover:text-amber-600">50 Best Museums</a>
-            <span className="text-slate-300">|</span>
-            <a href="https://www.50bestmatchmaker.com" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-amber-600 transition-colors hover:text-amber-700">50 Best Matchmakers</a>
+            <a href="https://www.50besthotels.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Hotels</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestspa.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Spas</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestmuseums.com" target="_blank" rel="noopener noreferrer" className="text-sm text-text/50 transition-colors hover:text-gold">50 Best Museums</a>
+            <span className="text-card-border">|</span>
+            <a href="https://www.50bestmatchmaker.com" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-gold transition-colors hover:text-gold-light">50 Best Matchmakers</a>
           </div>
         </div>
       </section>
 
       {/* ── FAQ ─────────────────────────────────────────────────── */}
-      <section className="border-t border-slate-200 bg-white">
+      <section className="border-t border-card-border bg-[#0a0a0a]">
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+            <h2 className="font-serif text-3xl font-bold text-text sm:text-4xl">
               Frequently Asked Questions
             </h2>
-            <p className="mt-3 text-slate-500">
+            <p className="mt-3 text-text/50">
               Everything you need to know about choosing the right dating platform.
             </p>
           </div>
@@ -471,10 +465,10 @@ export default function HomePage() {
 
       {/* ── SEO Content ────────────────────────────────────────── */}
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="mb-6 font-serif text-2xl font-bold text-slate-900">
+        <h2 className="mb-6 font-serif text-2xl font-bold text-text">
           Online Dating in 2026: A Comprehensive Guide
         </h2>
-        <div className="space-y-4 text-sm leading-relaxed text-slate-500">
+        <div className="space-y-4 text-sm leading-relaxed text-text/50">
           <p>
             The online dating landscape in 2026 has evolved far beyond the simple swipe. Today&apos;s platforms leverage advanced AI matching, video-first profiles, and sophisticated compatibility scoring to help singles find meaningful connections. With over 350 million people worldwide using dating apps, the industry has matured into a nuanced ecosystem where niche platforms coexist alongside mainstream giants, each serving distinct demographics and relationship goals.
           </p>
