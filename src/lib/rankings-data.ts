@@ -12,23 +12,33 @@ export const siteRankings: Record<string, ExternalRanking[]> = {
     { label: '#1 Top Grossing Dating App', source: 'Sensor Tower 2024', type: 'ranking' },
     { label: 'Best Mobile Dating App', source: 'iDate Awards', type: 'award' },
     { label: 'Available in 190+ Countries', source: 'Tinder official', type: 'milestone' },
+    { label: 'Most Innovative Company — Social Media', source: 'Fast Company 2022', type: 'award' },
+    { label: '$1.94B Annual Revenue', source: 'Match Group / Business of Apps 2024', type: 'milestone' },
   ],
   bumble: [
     { label: '#2 Most Downloaded Dating App', source: 'AppTweak 2025', type: 'ranking' },
     { label: '4.3★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: "Apple 'Trend of the Year' Winner", source: 'App Store Awards 2021', type: 'award' },
     { label: 'Best Marketing Campaign', source: 'iDate Awards 2019', type: 'award' },
+    { label: 'NASDAQ Listed (BMBL) — $2.15B IPO', source: 'CNBC / Bloomberg 2021', type: 'milestone' },
+    { label: 'Youngest Female Founder to Take US Company Public', source: 'Forbes 2021', type: 'recognition' },
+    { label: 'Google Play Users Choice Award — Best for Fun', source: 'Google Play 2023', type: 'award' },
   ],
   hinge: [
     { label: '#3 Most Downloaded Dating App', source: 'AppTweak 2025', type: 'ranking' },
     { label: '4.4★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: 'Fastest-Growing Dating App by Revenue', source: 'Match Group 2022–2024', type: 'recognition' },
     { label: '#1 App for Marriages (35% of couples)', source: 'The Knot 2024', type: 'ranking' },
+    { label: '#1 Dating App in UK, Australia, Canada & Nordics', source: 'Business of Apps / AppTweak 2024', type: 'ranking' },
+    { label: 'Sets Up a Date Every 2 Seconds', source: 'Hinge / Fortune 2023', type: 'milestone' },
+    { label: '$550M Revenue — 39% YoY Growth', source: 'Match Group 2024', type: 'milestone' },
   ],
   okcupid: [
     { label: '4.3★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: 'Top 10 Dating Sites', source: 'Time Magazine 2007', type: 'recognition' },
     { label: 'First App with 22 Gender Options', source: 'OkCupid/GLAAD 2014', type: 'recognition' },
+    { label: '#1 Rated Dating Site', source: 'Consumer Reports 2016', type: 'ranking' },
+    { label: 'GLAAD & HRC Partner for LGBTQ+ Inclusion', source: 'OkCupid / GLAAD', type: 'recognition' },
   ],
   'match-com': [
     { label: "World's First Commercial Dating Website 1995", source: 'Fox Business', type: 'recognition' },
@@ -51,6 +61,7 @@ export const siteRankings: Record<string, ExternalRanking[]> = {
     { label: '4.2★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: 'Available in 80+ Countries & 25 Languages', source: 'Zoosk official', type: 'milestone' },
     { label: 'Best Dating Site', source: 'iDate Awards 2015', type: 'award' },
+    { label: 'Featured on Sex and the City & And Just Like That', source: 'HBO / Zoosk', type: 'recognition' },
   ],
   'coffee-meets-bagel': [
     { label: 'Featured on Shark Tank', source: 'ABC 2015', type: 'recognition' },
@@ -61,6 +72,7 @@ export const siteRankings: Record<string, ExternalRanking[]> = {
     { label: '4.1★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: 'BBB A Rating', source: 'Better Business Bureau', type: 'recognition' },
     { label: '2M+ US Marriages Facilitated', source: 'Harris Interactive study', type: 'milestone' },
+    { label: '4% of US Marriages — 438 Per Day', source: 'eHarmony / Harris Interactive 2012', type: 'milestone' },
   ],
   parship: [
     { label: '#1 Dating Site in Germany', source: 'Statista 2022', type: 'ranking' },
@@ -71,6 +83,8 @@ export const siteRankings: Record<string, ExternalRanking[]> = {
     { label: "World's First Location-Based Dating App", source: 'HBS', type: 'recognition' },
     { label: '#1 Gay Dating App Worldwide', source: 'Business of Apps 2024', type: 'ranking' },
     { label: '#4 Highest-Grossing Dating App', source: 'Sensor Tower 2024', type: 'ranking' },
+    { label: 'Best Dating App', source: 'Shorty Awards 2018', type: 'award' },
+    { label: 'NYSE Listed (GRND) — First Major LGBTQ+ Public Company', source: 'NYSE / CNBC 2022', type: 'milestone' },
   ],
   her: [
     { label: '4.4★ App Store Rating', source: 'Apple', type: 'rating' },
@@ -94,6 +108,8 @@ export const siteRankings: Record<string, ExternalRanking[]> = {
     { label: '4.3★ App Store Rating', source: 'Apple', type: 'rating' },
     { label: '#1 App for Ethical Non-Monogamy', source: 'Industry consensus', type: 'ranking' },
     { label: '30% Year-over-Year Growth', source: 'The Guardian 2024', type: 'recognition' },
+    { label: 'Innovation by Design Award — Graphic Design', source: 'Fast Company 2024', type: 'award' },
+    { label: 'Best Real-Time Response Campaign', source: 'Webby Awards 2024', type: 'award' },
   ],
   happn: [
     { label: '4.3★ App Store Rating', source: 'Apple', type: 'rating' },
