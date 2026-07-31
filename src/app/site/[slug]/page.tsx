@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import ScoreBar from '@/components/ScoreBar';
 import SiteCard from '@/components/SiteCard';
 import AdUnit from '@/components/AdUnit';
+import RankingBadges from '@/components/RankingBadges';
+import { siteRankings } from '@/lib/rankings-data';
 import {
   getSiteBySlug,
   getAllSites,
@@ -515,6 +517,16 @@ export default async function SiteDetailPage(
                 </div>
               </div>
             </section>
+
+            {/* Awards & Rankings */}
+            {siteRankings[site.slug] && siteRankings[site.slug].length > 0 && (
+              <section>
+                <h2 className="mb-4 font-serif text-2xl font-bold text-text">
+                  Awards &amp; Rankings
+                </h2>
+                <RankingBadges slug={site.slug} variant="full" />
+              </section>
+            )}
 
             {/* Features */}
             <section>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { type DatingSite, isVerified } from '@/lib/dating-db';
+import RankingBadges from '@/components/RankingBadges';
 
 function Stars({ score }: { score: number }) {
   const full = Math.floor(score / 2);
@@ -92,6 +93,9 @@ export default function SiteCard({ site, rank }: SiteCardProps) {
                 {site.pricing.currency} {site.pricing.premiumMonthly}/mo premium
               </span>
             </div>
+
+            {/* External rankings / badges */}
+            <RankingBadges slug={site.slug} variant="compact" className="mt-3" />
           </div>
         </div>
       </div>
