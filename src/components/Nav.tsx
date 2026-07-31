@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import SearchBar from '@/components/SearchBar';
 import { getAllCategories, toSlug } from '@/lib/dating-db';
+import { getSearchIndex } from '@/lib/search-index';
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function Nav() {
   const catRef = useRef<HTMLDivElement>(null);
 
   const categories = getAllCategories();
+  const searchData = getSearchIndex();
 
   // Close category dropdown on outside click
   useEffect(() => {
@@ -160,7 +162,7 @@ export default function Nav() {
         {/* Expandable search bar */}
         {searchOpen && (
           <div className="border-t border-card-border py-3">
-            <SearchBar />
+            <SearchBar searchData={searchData} />
           </div>
         )}
       </div>
@@ -217,7 +219,7 @@ export default function Nav() {
             </Link>
 
             <div className="mt-3 px-3">
-              <SearchBar />
+              <SearchBar searchData={searchData} />
             </div>
           </div>
         </div>
