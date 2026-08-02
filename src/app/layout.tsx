@@ -100,18 +100,25 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1 pt-16">
           {/* Book Promotion - All Pages */}
-          <div style={{ background: 'linear-gradient(135deg, rgba(20,16,10,0.95), rgba(15,12,8,0.98))', padding: '14px 0', borderBottom: '1px solid rgba(196,168,124,0.12)' }}>
-            <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
+          <div style={{ background: 'linear-gradient(135deg, #1a1408, #0f0c06)', padding: '24px 0', borderBottom: '2px solid rgba(196,168,124,0.2)' }}>
+            <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 24px' }}>
               <a
                 href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none', flexWrap: 'wrap', justifyContent: 'center' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '24px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,24,16,0.95), rgba(20,16,10,0.98))', border: '1px solid rgba(212,175,55,0.3)', borderRadius: '14px', padding: '20px 28px', flexWrap: 'wrap' }}
               >
-                <img src="https://peterburchardt.com/covers/designed-to-feel.jpg" alt="Designed to Feel" style={{ width: '32px', height: '48px', objectFit: 'cover', borderRadius: '3px', flexShrink: 0 }} />
-                <span style={{ fontSize: '0.78rem', color: '#c4a87c', fontWeight: 600, fontFamily: 'Georgia, serif' }}>Designed to Feel</span>
-                <span style={{ fontSize: '0.7rem', color: '#7a6e62' }}>— Why Evolution Built Your Emotions</span>
-                <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: '4px', flexShrink: 0 }}>Get Book &rarr;</span>
+                <img src="https://peterburchardt.com/covers/designed-to-feel.jpg" alt="Designed to Feel" style={{ width: '64px', height: '96px', objectFit: 'cover', borderRadius: '6px', flexShrink: 0, boxShadow: '0 4px 20px rgba(0,0,0,0.6)' }} />
+                <div style={{ flex: 1, minWidth: '200px' }}>
+                  <div style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', color: '#d4af37', marginBottom: '6px' }}>Bestseller by Peter Burchardt</div>
+                  <div style={{ fontSize: '1.15rem', fontWeight: 700, color: '#f5f0e8', fontFamily: 'Georgia, serif', marginBottom: '6px', lineHeight: 1.3 }}>Designed to Feel</div>
+                  <div style={{ fontSize: '0.82rem', color: '#a09888', marginBottom: '8px', lineHeight: 1.5 }}>Your anxiety, jealousy, and anger aren&apos;t broken — they&apos;re ancient software running in a world they weren&apos;t built for. This book is the missing manual.</div>
+                  <div style={{ fontSize: '0.72rem', color: '#7a6e62', fontStyle: 'italic' }}>&ldquo;The most eye-opening book on emotions I&apos;ve ever read.&rdquo;</div>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+                  <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '10px 20px', borderRadius: '8px', whiteSpace: 'nowrap' }}>Get It on Amazon &rarr;</span>
+                  <span style={{ fontSize: '0.62rem', color: '#5a5550' }}>Available in paperback &amp; Kindle</span>
+                </div>
               </a>
             </div>
           </div>
@@ -127,19 +134,21 @@ export default function RootLayout({
           href="https://www.amazon.com/s?k=The+Happiness+Blueprint+Peter+Burchardt"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ position: 'fixed', right: '16px', top: '50%', transform: 'translateY(-50%)', zIndex: 40, display: 'none', flexDirection: 'column', alignItems: 'center', gap: '10px', textDecoration: 'none', background: 'linear-gradient(180deg, #1a1408, #0f0c06)', border: '1px solid rgba(196,168,124,0.25)', borderRadius: '12px', padding: '16px 12px', width: '120px', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
+          style={{ position: 'fixed', right: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 40, display: 'none', flexDirection: 'column', alignItems: 'center', gap: '12px', textDecoration: 'none', background: 'linear-gradient(180deg, #1a1408, #0f0c06)', border: '1px solid rgba(212,175,55,0.3)', borderRadius: '14px', padding: '20px 16px', width: '160px', boxShadow: '0 8px 40px rgba(0,0,0,0.5)' }}
         >
-            <div style={{ fontSize: '7px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', color: '#c4a87c', textAlign: 'center' }}>New Book</div>
+            <div style={{ fontSize: '8px', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', color: '#d4af37', textAlign: 'center' }}>New Release</div>
             <img
               src="https://peterburchardt.com/covers/happiness-blueprint.jpg"
               alt="The Happiness Blueprint by Peter Burchardt"
-              style={{ width: '90px', height: '135px', objectFit: 'cover', borderRadius: '4px', boxShadow: '0 4px 16px rgba(0,0,0,0.5)' }}
+              style={{ width: '120px', height: '180px', objectFit: 'cover', borderRadius: '6px', boxShadow: '0 6px 24px rgba(0,0,0,0.6)' }}
             />
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 600, color: '#f5f0e8', fontFamily: 'Georgia, serif', lineHeight: 1.3, marginBottom: '4px' }}>The Happiness Blueprint</div>
-              <div style={{ fontSize: '0.55rem', color: '#7a6e62', lineHeight: 1.4 }}>What Evolution Built Your Joy For</div>
+              <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#f5f0e8', fontFamily: 'Georgia, serif', lineHeight: 1.3, marginBottom: '6px' }}>The Happiness Blueprint</div>
+              <div style={{ fontSize: '0.65rem', color: '#a09888', lineHeight: 1.5, marginBottom: '4px' }}>Stop chasing happiness. Start understanding it.</div>
+              <div style={{ fontSize: '0.58rem', color: '#7a6e62', fontStyle: 'italic', lineHeight: 1.4 }}>The practical sequel to Designed to Feel</div>
             </div>
-            <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.58rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', padding: '5px 10px', borderRadius: '5px', whiteSpace: 'nowrap' }}>Amazon &rarr;</span>
+            <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '8px 16px', borderRadius: '6px', whiteSpace: 'nowrap' }}>Get Book &rarr;</span>
+            <div style={{ fontSize: '0.55rem', color: '#5a5550' }}>By Peter Burchardt</div>
         </a>
 
         {/* Google Translate */}
