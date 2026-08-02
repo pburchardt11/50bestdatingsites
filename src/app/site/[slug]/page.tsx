@@ -16,7 +16,7 @@ import playStoreData from '@/lib/play-store-data.json';
 import scrapedData from '@/lib/scraped-data.json';
 import enrichedEditorials from '@/lib/enriched-editorials.json';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -37,10 +37,18 @@ export async function generateMetadata(
   return {
     title: `${site.name} Review 2026 — Rating ${site.metrics.overallScore}/10 | 50 Best Dating Sites`,
     description: `In-depth review of ${site.name}: safety score ${site.metrics.safetyScore}/10, ${site.bestFor}. Read our expert analysis, pros & cons, and pricing breakdown.`,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/site/${slug}`,
+    },
     openGraph: {
       title: `${site.name} Review — ${site.metrics.overallScore}/10`,
       description: site.bestFor,
       type: 'article',
+    },
+    twitter: {
+      card: 'summary',
+      title: `${site.name} Review — ${site.metrics.overallScore}/10`,
+      description: site.bestFor,
     },
   };
 }
@@ -93,6 +101,46 @@ export default async function SiteDetailPage(
     ],
   };
 
+  const productJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: site.name,
+    url: site.url,
+    applicationCategory: 'DatingApplication',
+    operatingSystem: 'Web, iOS, Android',
+    offers: {
+      '@type': 'Offer',
+      price: site.pricing.free ? '0' : String(site.pricing.premiumMonthly),
+      priceCurrency: site.pricing.currency || 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: site.metrics.overallScore,
+      bestRating: 10,
+      worstRating: 1,
+      ratingCount: 1,
+    },
+  };
+
+  const siteFaqs = [
+    { question: `Is ${site.name} safe to use?`, answer: `${site.name} received a safety score of ${site.metrics.safetyScore}/10 in our review. ${site.metrics.safetyScore >= 7 ? 'It offers strong safety features including profile verification and reporting tools.' : 'We recommend using caution and reviewing our detailed safety analysis.'}` },
+    { question: `How much does ${site.name} cost?`, answer: `${site.pricing.free ? `${site.name} offers a free tier with basic features. Premium plans start at ${site.pricing.currency} ${site.pricing.premiumMonthly} per month.` : `${site.name} premium plans start at ${site.pricing.currency} ${site.pricing.premiumMonthly} per month.`}` },
+    { question: `What is ${site.name} best for?`, answer: site.bestFor },
+  ];
+
+  const faqPageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: siteFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   // Parse gender ratio for visualization (only if real data available)
   const genderMatch = site.demographics.genderRatio.match(/(\d+)%\s*male\s*\/\s*(\d+)%\s*female/i);
   const malePct = genderMatch ? parseInt(genderMatch[1]) : null;
@@ -119,6 +167,14 @@ export default async function SiteDetailPage(
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
       />
 
       {/* ── Hero ────────────────────────────────────────────── */}

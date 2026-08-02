@@ -9,7 +9,7 @@ import {
   getAllCountries,
 } from '@/lib/dating-db';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -27,7 +27,15 @@ export async function generateMetadata(
   return {
     title: `Best Dating Sites in ${country.name} ${country.emoji} 2026 | 50 Best Dating Sites`,
     description: `Top-ranked dating sites available in ${country.name}. Expert reviews, safety scores, and pricing for the best dating platforms in ${country.name}.`,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/country/${slug}`,
+    },
     openGraph: {
+      title: `Best Dating Sites in ${country.name} ${country.emoji}`,
+      description: `Top-ranked dating platforms available in ${country.name} with expert reviews and scores.`,
+    },
+    twitter: {
+      card: 'summary',
       title: `Best Dating Sites in ${country.name} ${country.emoji}`,
       description: `Top-ranked dating platforms available in ${country.name} with expert reviews and scores.`,
     },

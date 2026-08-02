@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Get in touch with the 50 Best Dating Sites team. Questions, suggestions, or partnership inquiries welcome.',
 };
 
+export const revalidate = 3600;
+
 export default function ContactPage() {
   return (
     <>

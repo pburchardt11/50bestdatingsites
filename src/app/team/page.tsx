@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     'Meet the expert editors, analysts, and correspondents behind the 50 Best Dating Sites rankings and reviews.',
 };
 
+export const revalidate = 3600;
+
 export default function TeamPage() {
   const team = getAllTeamMembers();
 

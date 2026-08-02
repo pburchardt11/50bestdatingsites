@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Own or represent a dating site? Submit it for review and inclusion in our comprehensive database of 1,000+ dating platforms.',
 };
 
+export const revalidate = 3600;
+
 export default function SubmitPage() {
   return (
     <>

@@ -5,7 +5,7 @@ import AdUnit from '@/components/AdUnit';
 import FAQSection from '@/components/FAQSection';
 import { getAllSites, type DatingSite } from '@/lib/dating-db';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 
 interface BestForTopic {
   slug: string;
@@ -263,10 +263,18 @@ export async function generateMetadata(
   return {
     title: `${topic.title} | 50 Best Dating Sites`,
     description: topic.intro.slice(0, 160),
+    alternates: {
+      canonical: `https://50bestdatingsites.com/best-for/${slug}`,
+    },
     openGraph: {
       title: topic.title,
       description: topic.intro.slice(0, 160),
       type: 'article',
+    },
+    twitter: {
+      card: 'summary',
+      title: topic.title,
+      description: topic.intro.slice(0, 160),
     },
   };
 }

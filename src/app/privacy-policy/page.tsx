@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Privacy policy for 50 Best Dating Sites. Learn how we collect, use, and protect your information.',
 };
 
+export const revalidate = 3600;
+
 export default function PrivacyPolicyPage() {
   return (
     <>

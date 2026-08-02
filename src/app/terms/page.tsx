@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Terms of service for 50 Best Dating Sites. Read our terms and conditions for using the site.',
 };
 
+export const revalidate = 3600;
+
 export default function TermsPage() {
   return (
     <>

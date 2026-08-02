@@ -5,7 +5,7 @@ import SiteCard from '@/components/SiteCard';
 import AdUnit from '@/components/AdUnit';
 import { getAllCategories, getSitesByCategory, toSlug } from '@/lib/dating-db';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -28,7 +28,15 @@ export async function generateMetadata(
   return {
     title: `Best ${catName} Dating Sites 2026 | Expert Rankings | 50 Best Dating Sites`,
     description: `Top-ranked ${catName.toLowerCase()} dating sites and apps. Expert reviews, safety scores, pricing, and detailed comparisons to help you find the perfect match.`,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/category/${slug}`,
+    },
     openGraph: {
+      title: `Best ${catName} Dating Sites 2026`,
+      description: `Expert rankings of the best ${catName.toLowerCase()} dating platforms.`,
+    },
+    twitter: {
+      card: 'summary',
       title: `Best ${catName} Dating Sites 2026`,
       description: `Expert rankings of the best ${catName.toLowerCase()} dating platforms.`,
     },

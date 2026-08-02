@@ -9,7 +9,7 @@ import {
   getAllCities,
 } from '@/lib/dating-db';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -27,7 +27,15 @@ export async function generateMetadata(
   return {
     title: `Best Dating Sites in ${city.name} 2026 | 50 Best Dating Sites`,
     description: `Top-ranked dating sites in ${city.name}, ${city.country}. Compare pricing, reviews, and scores for the best dating platforms in ${city.name}.`,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/city/${slug}`,
+    },
     openGraph: {
+      title: `Best Dating Sites in ${city.name} 2026`,
+      description: `Compare the top dating sites in ${city.name} with expert reviews, pricing, and scores.`,
+    },
+    twitter: {
+      card: 'summary',
       title: `Best Dating Sites in ${city.name} 2026`,
       description: `Compare the top dating sites in ${city.name} with expert reviews, pricing, and scores.`,
     },

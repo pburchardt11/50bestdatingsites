@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     'Compare 2-3 dating sites side by side. See scores, pricing, features, and demographics in a detailed comparison table.',
 };
 
+export const revalidate = 3600;
+
 export default function ComparePage() {
   return (
     <>

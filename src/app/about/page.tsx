@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Learn about our mission, methodology, and the expert team behind the 50 Best Dating Sites rankings.',
 };
 
+export const revalidate = 3600;
+
 export default function AboutPage() {
   return (
     <>

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import AdUnit from '@/components/AdUnit';
 import { getAllBlogPosts } from '@/lib/dating-db';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Dating Advice & Guides | 50 Best Dating Sites Blog',

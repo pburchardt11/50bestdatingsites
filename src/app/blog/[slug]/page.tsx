@@ -66,7 +66,7 @@ function generateFAQs(post: BlogPost): { question: string; answer: string }[] {
   return faqs.slice(0, 5);
 }
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -84,6 +84,9 @@ export async function generateMetadata(
   return {
     title: `${post.title} | 50 Best Dating Sites Blog`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -91,6 +94,11 @@ export async function generateMetadata(
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
+    },
+    twitter: {
+      card: 'summary',
+      title: post.title,
+      description: post.excerpt,
     },
   };
 }
