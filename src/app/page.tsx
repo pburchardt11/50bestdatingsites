@@ -13,7 +13,7 @@ import {
 } from '@/lib/dating-db';
 import { getSearchIndex } from '@/lib/search-index';
 
-export const revalidate = 604800;
+export const revalidate = 3600;
 
 export default function HomePage() {
   const top5 = getTopSitesGlobal(5);
@@ -168,6 +168,30 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Book Promotion */}
+      <div style={{ background: 'linear-gradient(135deg, rgba(20,16,10,0.95), rgba(15,12,8,0.98))', padding: '20px 0', borderBottom: '1px solid rgba(196,168,124,0.15)' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
+          <a
+            href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,24,16,0.9), rgba(20,16,10,0.95))', border: '1px solid rgba(196,168,124,0.25)', borderRadius: '12px', padding: '16px 20px', flexWrap: 'wrap' }}
+          >
+            <img
+              src="https://peterburchardt.com/covers/designed-to-feel.jpg"
+              alt="Designed to Feel by Peter Burchardt"
+              style={{ width: '56px', height: '84px', objectFit: 'cover', borderRadius: '4px', flexShrink: 0, boxShadow: '0 4px 16px rgba(0,0,0,0.5)' }}
+            />
+            <div style={{ flex: 1, minWidth: '180px' }}>
+              <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', color: '#c4a87c', marginBottom: '4px' }}>Recommended Read</div>
+              <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#f5f0e8', fontFamily: 'Georgia, serif' }}>Designed to Feel</span>
+              <span style={{ fontSize: '0.75rem', color: '#7a6e62', marginLeft: '8px' }}>— Why Evolution Built Your Emotions</span>
+            </div>
+            <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '6px 14px', borderRadius: '6px', flexShrink: 0, whiteSpace: 'nowrap' }}>Get it on Amazon &rarr;</span>
+          </a>
+        </div>
+      </div>
 
       {/* ── Editor's Top Picks ────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
