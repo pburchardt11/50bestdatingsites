@@ -98,6 +98,22 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <Nav />
+        {/* Book Promotion - All Pages */}
+        <div style={{ background: 'linear-gradient(135deg, rgba(20,16,10,0.95), rgba(15,12,8,0.98))', padding: '14px 0', borderBottom: '1px solid rgba(196,168,124,0.12)' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
+            <a
+              href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none', flexWrap: 'wrap', justifyContent: 'center' }}
+            >
+              <img src="https://peterburchardt.com/covers/designed-to-feel.jpg" alt="Designed to Feel" style={{ width: '32px', height: '48px', objectFit: 'cover', borderRadius: '3px', flexShrink: 0 }} />
+              <span style={{ fontSize: '0.78rem', color: '#c4a87c', fontWeight: 600, fontFamily: 'Georgia, serif' }}>Designed to Feel</span>
+              <span style={{ fontSize: '0.7rem', color: '#7a6e62' }}>— Why Evolution Built Your Emotions</span>
+              <span style={{ display: 'inline-block', background: 'linear-gradient(135deg, #d4af37, #c4a87c)', color: '#0a0a0a', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: '4px', flexShrink: 0 }}>Get Book &rarr;</span>
+            </a>
+          </div>
+        </div>
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
         <LanguageToggle />
