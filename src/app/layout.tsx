@@ -22,9 +22,9 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://50bestdatingsites.com'),
-  title: '50 Best Dating Sites | Expert Rankings & Reviews 2026',
+  title: '50 Best Dating Sites (2026) — Top Dating Apps Ranked & Reviewed',
   description:
-    'Discover the 50 best dating sites worldwide with expert rankings, in-depth reviews, safety scores, and pricing comparisons. Find your perfect match on the right platform.',
+    'Compare the top 50 dating sites and apps for 2026. Ranked by safety score, success rate, pricing and user reviews — from Hinge and Bumble to elite matchmaking platforms.',
   keywords: [
     'best dating sites',
     'dating app reviews',
@@ -33,18 +33,18 @@ export const metadata: Metadata = {
     'best dating apps 2026',
   ],
   openGraph: {
-    title: '50 Best Dating Sites | Expert Rankings & Reviews 2026',
+    title: '50 Best Dating Sites (2026) — Top Dating Apps Ranked & Reviewed',
     description:
-      'Discover the 50 best dating sites worldwide with expert rankings, in-depth reviews, safety scores, and pricing comparisons.',
+      'Compare the top 50 dating sites and apps for 2026. Ranked by safety score, success rate, pricing and user reviews.',
     type: 'website',
     locale: 'en_US',
     siteName: '50 Best Dating Sites',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '50 Best Dating Sites | Expert Rankings & Reviews 2026',
+    title: '50 Best Dating Sites (2026) — Top Dating Apps Ranked & Reviewed',
     description:
-      'Discover the 50 best dating sites worldwide with expert rankings, in-depth reviews, safety scores, and pricing comparisons.',
+      'Compare the top 50 dating sites and apps for 2026. Ranked by safety score, success rate, pricing and user reviews.',
   },
   robots: {
     index: true,
