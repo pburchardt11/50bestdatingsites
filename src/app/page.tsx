@@ -209,28 +209,71 @@ export default function HomePage() {
           {top5.map((site, i) => (
             <div
               key={site.slug}
-              className="relative overflow-hidden rounded-2xl border border-card-border bg-card-bg p-6 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_40px_rgba(196,168,124,0.08)] sm:p-8"
+              className="relative overflow-hidden rounded-2xl border border-card-border bg-card-bg p-5 transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_40px_rgba(196,168,124,0.08)] sm:p-8"
             >
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                {/* Rank badge */}
+              {/* Mobile: compact horizontal layout */}
+              <div className="flex items-start gap-4 sm:hidden">
+                {/* Left: rank + score stacked */}
+                <div className="flex shrink-0 flex-col items-center gap-2">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-lg font-bold text-[#080808]">
+                    {i + 1}
+                  </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-gold/30 bg-gold/5">
+                    <span className="font-serif text-lg font-bold text-gold">
+                      {site.metrics.overallScore.toFixed(1)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Right: info + CTAs */}
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-xl">{site.logo}</span>
+                    <h3 className="font-serif text-lg font-bold text-text">{site.name}</h3>
+                    {site.pricing.free && (
+                      <span className="rounded-full bg-emerald-900/30 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Free</span>
+                    )}
+                  </div>
+                  <span className="mt-1 inline-block rounded-full bg-gold/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-gold/80">
+                    {site.category}
+                  </span>
+                  <p className="mt-2 line-clamp-2 text-[13px] leading-relaxed text-text/50">
+                    {site.editorial}
+                  </p>
+                  <div className="mt-3 flex items-center gap-3">
+                    <a
+                      href={site.url}
+                      target="_blank"
+                      rel="nofollow sponsored noopener"
+                      className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-gold to-gold-light px-4 py-2 text-sm font-bold text-[#080808] transition-opacity hover:opacity-90"
+                    >
+                      Visit Site
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                    </a>
+                    <Link
+                      href={`/site/${site.slug}`}
+                      className="text-sm font-medium text-text/50 transition-colors hover:text-gold"
+                    >
+                      Review &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop: original horizontal layout */}
+              <div className="hidden sm:flex sm:flex-row sm:items-center sm:gap-6">
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-light font-serif text-2xl font-bold text-[#080808]">
                   {i + 1}
                 </div>
-
-                {/* Score circle */}
                 <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gold/30 bg-gold/5">
                   <span className="font-serif text-2xl font-bold text-gold">
                     {site.metrics.overallScore.toFixed(1)}
                   </span>
                 </div>
-
-                {/* Info */}
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="text-2xl">{site.logo}</span>
-                    <h3 className="font-serif text-xl font-bold text-text sm:text-2xl">
-                      {site.name}
-                    </h3>
+                    <h3 className="font-serif text-2xl font-bold text-text">{site.name}</h3>
                     <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider text-gold/80">
                       {site.category}
                     </span>
@@ -239,13 +282,9 @@ export default function HomePage() {
                     {site.editorial}
                   </p>
                 </div>
-
-                {/* Pricing + CTAs */}
                 <div className="flex shrink-0 flex-col items-end gap-3">
                   {site.pricing.free ? (
-                    <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400">
-                      Free
-                    </span>
+                    <span className="rounded-full bg-emerald-900/30 px-3 py-1 text-xs font-semibold text-emerald-400">Free</span>
                   ) : (
                     <span className="rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold/80">
                       From {site.pricing.currency} {site.pricing.premiumMonthly}/mo
