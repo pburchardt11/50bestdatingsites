@@ -67,7 +67,7 @@ function generateFAQs(post: BlogPost): { question: string; answer: string }[] {
 }
 
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts();

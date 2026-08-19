@@ -8,7 +8,7 @@ import {
 } from '@/lib/dating-db';
 
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const members = getAllTeamMembers();

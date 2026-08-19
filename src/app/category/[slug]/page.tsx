@@ -6,7 +6,7 @@ import AdUnit from '@/components/AdUnit';
 import { getAllCategories, getSitesByCategory, toSlug } from '@/lib/dating-db';
 
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const categories = getAllCategories();
