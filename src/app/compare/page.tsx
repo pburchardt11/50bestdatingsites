@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Compare Dating Sites Side by Side | 50 Best Dating Sites',
   description:
     'Compare 2-3 dating sites side by side. See scores, pricing, features, and demographics in a detailed comparison table.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/compare',
+  },
 };
 
 export const revalidate = 3600;

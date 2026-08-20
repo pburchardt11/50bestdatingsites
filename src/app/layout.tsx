@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: '50 Best Dating Sites (2026) — Top Dating Apps Ranked & Reviewed',
   description:
     'Compare the top 50 dating sites and apps for 2026. Ranked by safety score, success rate, pricing and user reviews — from Hinge and Bumble to elite matchmaking platforms.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com',
+  },
   keywords: [
     'best dating sites',
     'dating app reviews',

@@ -11,6 +11,7 @@ import {
   getAllSites,
   getSitesByCategory,
   isVerified,
+  isCoreSite,
 } from '@/lib/dating-db';
 import playStoreData from '@/lib/play-store-data.json';
 import scrapedData from '@/lib/scraped-data.json';
@@ -34,12 +35,18 @@ export async function generateMetadata(
   const site = getSiteBySlug(slug);
   if (!site) return { title: 'Site Not Found' };
 
+  const isCoreEntry = isCoreSite(slug);
+
   return {
     title: `${site.name} Review 2026 — Rating ${site.metrics.overallScore}/10 | 50 Best Dating Sites`,
     description: `In-depth review of ${site.name}: safety score ${site.metrics.safetyScore}/10, ${site.bestFor}. Read our expert analysis, pros & cons, and pricing breakdown.`,
     alternates: {
       canonical: `https://50bestdatingsites.com/site/${slug}`,
     },
+    // Noindex generated/thin pages — only core sites should be indexed
+    ...(!isCoreEntry && {
+      robots: { index: false, follow: true },
+    }),
     openGraph: {
       title: `${site.name} Review — ${site.metrics.overallScore}/10`,
       description: site.bestFor,

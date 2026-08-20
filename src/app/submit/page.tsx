@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Submit a Dating Site | 50 Best Dating Sites',
   description:
     'Own or represent a dating site? Submit it for review and inclusion in our comprehensive database of 1,000+ dating platforms.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/submit',
+  },
 };
 
 export const revalidate = 3600;

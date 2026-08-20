@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | 50 Best Dating Sites',
   description:
     'Privacy policy for 50 Best Dating Sites. Learn how we collect, use, and protect your information.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/privacy-policy',
+  },
 };
 
 export const revalidate = 3600;

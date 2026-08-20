@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Dating Advice & Guides | 50 Best Dating Sites Blog',
   description:
     'Expert dating advice, safety guides, platform comparisons, and tips for finding love online. Updated weekly by our editorial team.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/blog',
+  },
   openGraph: {
     title: 'Dating Advice & Guides | 50 Best Dating Sites Blog',
     description:

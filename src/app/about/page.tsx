@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'About Us | 50 Best Dating Sites',
   description:
     'Learn about our mission, methodology, and the expert team behind the 50 Best Dating Sites rankings.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/about',
+  },
 };
 
 export const revalidate = 3600;

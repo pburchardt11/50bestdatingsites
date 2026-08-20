@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import {
-  getAllSites,
+  getCoreSites,
   getAllCountries,
   getAllCategories,
   getAllBlogPosts,
@@ -93,7 +93,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const sitePages: MetadataRoute.Sitemap = getAllSites()
+  // Only include core sites (from data.ts) — exclude generated thin pages
+  const sitePages: MetadataRoute.Sitemap = getCoreSites()
     .sort((a, b) => a.globalRank - b.globalRank)
     .map((site) => ({
       url: `${baseUrl}/site/${site.slug}`,

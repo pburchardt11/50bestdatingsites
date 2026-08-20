@@ -25,6 +25,9 @@ export async function generateMetadata(
   return {
     title: `${member.name} \u2013 ${member.role} | 50 Best Dating Sites`,
     description: member.bio,
+    alternates: {
+      canonical: `https://50bestdatingsites.com/team/${slug}`,
+    },
     openGraph: {
       title: `${member.name} \u2013 ${member.role}`,
       description: member.bio,

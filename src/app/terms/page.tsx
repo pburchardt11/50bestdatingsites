@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Terms of Service | 50 Best Dating Sites',
   description:
     'Terms of service for 50 Best Dating Sites. Read our terms and conditions for using the site.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/terms',
+  },
 };
 
 export const revalidate = 3600;

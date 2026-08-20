@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Contact Us | 50 Best Dating Sites',
   description:
     'Get in touch with the 50 Best Dating Sites team. Questions, suggestions, or partnership inquiries welcome.',
+  alternates: {
+    canonical: 'https://50bestdatingsites.com/contact',
+  },
 };
 
 export const revalidate = 3600;

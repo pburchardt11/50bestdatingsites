@@ -103,6 +103,14 @@ export function getAllSites(): DatingSite[] {
   return datingSites;
 }
 
+export function getCoreSites(): DatingSite[] {
+  return coreSites;
+}
+
+export function isCoreSite(slug: string): boolean {
+  return coreSites.some((s) => s.slug === slug);
+}
+
 export function getSiteBySlug(slug: string): DatingSite | undefined {
   return datingSites.find((s) => s.slug === slug);
 }
