@@ -5,8 +5,8 @@ import SiteCard from '@/components/SiteCard';
 import AdUnit from '@/components/AdUnit';
 import { getAllCategories, getSitesByCategory, toSlug } from '@/lib/dating-db';
 
-export const revalidate = 3600;
-export const dynamicParams = false;
+export const revalidate = 86400;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const categories = getAllCategories();

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: 'Expert Dating Site Reviews 2026 | 50 Best Dating Sites',
   description:

@@ -5,7 +5,7 @@ import AdUnit from '@/components/AdUnit';
 import FAQSection from '@/components/FAQSection';
 import { getAllSites, type DatingSite } from '@/lib/dating-db';
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 interface BestForTopic {
   slug: string;

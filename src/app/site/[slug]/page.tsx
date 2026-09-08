@@ -17,8 +17,8 @@ import playStoreData from '@/lib/play-store-data.json';
 import scrapedData from '@/lib/scraped-data.json';
 import enrichedEditorials from '@/lib/enriched-editorials.json';
 
-export const revalidate = 3600;
-export const dynamicParams = false;
+export const revalidate = 86400;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const sites = getAllSites();

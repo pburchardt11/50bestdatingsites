@@ -86,7 +86,7 @@ export default function Footer() {
         <div style={{ borderTop: '1px solid rgba(196,168,124,0.15)', background: 'rgba(10,8,6,0.98)', padding: '28px 0' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
             <a
-              href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
+              href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt&tag=50bestbooks-20"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'flex', alignItems: 'center', gap: '24px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,24,16,0.9), rgba(20,16,10,0.95))', border: '1px solid rgba(196,168,124,0.2)', borderRadius: '12px', padding: '20px 24px', flexWrap: 'wrap' }}

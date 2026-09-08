@@ -106,7 +106,7 @@ export default function RootLayout({
           <div style={{ background: 'linear-gradient(135deg, #1a1408, #0f0c06)', padding: '24px 0', borderBottom: '2px solid rgba(196,168,124,0.2)' }}>
             <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 24px' }}>
               <a
-                href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
+                href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt&tag=50bestbooks-20"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ display: 'flex', alignItems: 'center', gap: '24px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,24,16,0.95), rgba(20,16,10,0.98))', border: '1px solid rgba(212,175,55,0.3)', borderRadius: '14px', padding: '20px 28px', flexWrap: 'wrap' }}
@@ -131,7 +131,7 @@ export default function RootLayout({
         <div style={{ background: 'linear-gradient(135deg, #0c1a0c, #0a0f0a)', padding: '32px 0', borderTop: '2px solid rgba(34,197,94,0.2)', borderBottom: '2px solid rgba(34,197,94,0.2)' }}>
           <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 24px' }}>
             <a
-              href="https://www.amazon.com/s?k=The+Tribe+Manager+Peter+Burchardt"
+              href="https://www.amazon.com/s?k=The+Tribe+Manager+Peter+Burchardt&tag=50bestbooks-20"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'flex', alignItems: 'center', gap: '28px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(16,32,16,0.95), rgba(10,20,10,0.98))', border: '1px solid rgba(34,197,94,0.25)', borderRadius: '14px', padding: '24px 32px', flexWrap: 'wrap' }}
@@ -157,7 +157,7 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{ __html: '@media(min-width:1400px){.hb-side-ad{display:flex!important}}' }} />
         <a
           className="hb-side-ad"
-          href="https://www.amazon.com/s?k=The+Happiness+Blueprint+Peter+Burchardt"
+          href="https://www.amazon.com/s?k=The+Happiness+Blueprint+Peter+Burchardt&tag=50bestbooks-20"
           target="_blank"
           rel="noopener noreferrer"
           style={{ position: 'fixed', right: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 40, display: 'none', flexDirection: 'column', alignItems: 'center', gap: '12px', textDecoration: 'none', background: 'linear-gradient(180deg, #1a1408, #0f0c06)', border: '1px solid rgba(212,175,55,0.3)', borderRadius: '14px', padding: '20px 16px', width: '160px', boxShadow: '0 8px 40px rgba(0,0,0,0.5)' }}

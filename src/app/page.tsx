@@ -13,7 +13,7 @@ import {
 } from '@/lib/dating-db';
 import { getSearchIndex } from '@/lib/search-index';
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export default function HomePage() {
   const top5 = getTopSitesGlobal(5);
@@ -173,7 +173,7 @@ export default function HomePage() {
       <div style={{ background: 'linear-gradient(135deg, rgba(20,16,10,0.95), rgba(15,12,8,0.98))', padding: '20px 0', borderBottom: '1px solid rgba(196,168,124,0.15)' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
           <a
-            href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt"
+            href="https://www.amazon.com/s?k=Designed+to+Feel+Peter+Burchardt&tag=50bestbooks-20"
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,24,16,0.9), rgba(20,16,10,0.95))', border: '1px solid rgba(196,168,124,0.25)', borderRadius: '12px', padding: '16px 20px', flexWrap: 'wrap' }}

@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
+        disallow: ['/*/opengraph-image'],
       },
     ],
     sitemap: 'https://50bestdatingsites.com/sitemap.xml',
