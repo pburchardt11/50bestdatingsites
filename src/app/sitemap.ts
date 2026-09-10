@@ -31,7 +31,7 @@ const citySlugs = [
   'dallas', 'houston', 'philadelphia', 'washington-dc', 'san-diego',
 ];
 
-const LAST_UPDATED = new Date("2026-08-02");
+const LAST_UPDATED = new Date("2026-09-10");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = LAST_UPDATED;
