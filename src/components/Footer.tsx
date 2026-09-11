@@ -119,6 +119,7 @@ export default function Footer() {
             {[
               { name: '50 Best Bakeries', url: 'https://www.50bestbakeries.com' },
               { name: '50 Best Bar', url: 'https://www.50bestbar.com' },
+              { name: '50 Best Books', url: 'https://www.50bestbooks.com' },
               { name: '50 Best Charms', url: 'https://www.50bestcharms.com' },
               { name: '50 Best Games', url: 'https://www.50bestgames.com' },
               { name: '50 Best Health Insurance', url: 'https://www.50besthealthinsurance.com' },
