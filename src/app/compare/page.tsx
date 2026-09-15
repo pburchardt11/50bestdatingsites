@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://50bestdatingsites.com/compare',
   },
+  robots: { index: false, follow: true },
 };
 
 export const revalidate = 86400;

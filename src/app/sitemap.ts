@@ -31,7 +31,19 @@ const citySlugs = [
   'dallas', 'houston', 'philadelphia', 'washington-dc', 'san-diego',
 ];
 
-const LAST_UPDATED = new Date("2026-09-10");
+const LAST_UPDATED = new Date("2026-09-11");
+
+// Only include countries with meaningful content (high/medium dating popularity)
+const TOP_COUNTRY_SLUGS = new Set([
+  'usa', 'uk', 'canada', 'australia', 'germany', 'france', 'spain', 'italy',
+  'netherlands', 'sweden', 'norway', 'denmark', 'brazil', 'mexico', 'india',
+  'japan', 'south-korea', 'singapore', 'thailand', 'philippines', 'indonesia',
+  'turkey', 'south-africa', 'nigeria', 'egypt', 'uae', 'israel', 'new-zealand',
+  'ireland', 'switzerland', 'austria', 'belgium', 'portugal', 'poland', 'russia',
+  'ukraine', 'colombia', 'argentina', 'chile', 'peru', 'malaysia', 'vietnam',
+  'taiwan', 'hong-kong', 'china', 'kenya', 'ghana', 'pakistan', 'bangladesh',
+  'czech-republic',
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = LAST_UPDATED;
@@ -41,14 +53,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/rankings`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/reviews`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/compare`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/quiz`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/team`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/submit`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${baseUrl}/cities`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   const teamPages: MetadataRoute.Sitemap = teamMembers.map((slug) => ({
@@ -86,12 +93,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const countryPages: MetadataRoute.Sitemap = getAllCountries().map((c) => ({
-    url: `${baseUrl}/country/${c.slug}`,
-    lastModified: now,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }));
+  // Only include top 50 countries with meaningful dating markets
+  const countryPages: MetadataRoute.Sitemap = getAllCountries()
+    .filter((c) => TOP_COUNTRY_SLUGS.has(c.slug))
+    .map((c) => ({
+      url: `${baseUrl}/country/${c.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }));
 
   // Only include core sites (from data.ts) — exclude generated thin pages
   const sitePages: MetadataRoute.Sitemap = getCoreSites()

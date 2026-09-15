@@ -24,12 +24,20 @@ export async function generateMetadata(
   const country = getCountryBySlug(slug);
   if (!country) return { title: 'Country Not Found' };
 
+  // Noindex low-popularity countries with thin content
+  const isLowPopularity = country.onlineDatingPopularity === 'low';
+  const sites = getSitesForCountry(slug);
+  const isThin = sites.length < 3;
+
   return {
     title: `Best Dating Sites in ${country.name} ${country.emoji} 2026 | 50 Best Dating Sites`,
     description: `Top-ranked dating sites available in ${country.name}. Expert reviews, safety scores, and pricing for the best dating platforms in ${country.name}.`,
     alternates: {
       canonical: `https://50bestdatingsites.com/country/${slug}`,
     },
+    ...((isLowPopularity || isThin) && {
+      robots: { index: false, follow: true },
+    }),
     openGraph: {
       title: `Best Dating Sites in ${country.name} ${country.emoji}`,
       description: `Top-ranked dating platforms available in ${country.name} with expert reviews and scores.`,

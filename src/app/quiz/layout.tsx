@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://50bestdatingsites.com/quiz',
   },
+  robots: { index: false, follow: true },
 };
 
 export default function QuizLayout({ children }: { children: React.ReactNode }) {
